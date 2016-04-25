@@ -1,0 +1,7 @@
+<h1>{{ group.display_name }}</h1>
+<ul>
+{% for d in group.dataset_set.all %}
+	<li>{{ d.display_name }}
+	</li>
+{% endfor %}
+</ul>

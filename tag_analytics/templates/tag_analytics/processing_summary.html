@@ -1,0 +1,29 @@
+<a href="/tag_analytics/load_all">LOAD ALL</a>
+{% if opendataportal_list %}
+	<ul>
+	{% for opendataportal in opendataportal_list %}
+		<li>{{ opendataportal.id }} {{ opendataportal.name }} - {{ opendataportal.url }} ({{ opendataportal.loadround_set.last.tag_set.count }}) @ {{ opendataportal.loadround_set.last.odpmetadata_set.last.insert_date}}</li>
+			<ul>
+		{% if opendataportal.loadround_set.count > 0 %}
+			{% for r in opendataportal.loadround_set.all %}
+				{% if r.success == 1 %}
+				<li style="background:green"><b>{{r.roundn}}:</b> {{r.tag_set.count}} | {{r.dataset_set.count}} | {{r.group_set.count}} <a href="{{opendataportal.id}}/load/{{ r.roundn }}">Reload Round</a> | <a href="{{r.id}}">Details</a></li>
+				{% else %}
+					{% if r.tag_set.count > 0 %}
+				<li style="background:yellow">
+					{% else %}
+				<li style="background:red">
+					{% endif %}				
+				<b>{{r.roundn}}: FAILED </b> {{r.tag_set.count}} | {{r.dataset_set.count}} | {{r.group_set.count}} <a href="{{opendataportal.id}}/load/{{ r.roundn }}">Reload Round</a></li>
+				{% endif %}				
+			{% endfor %}
+		{% endif %}
+			<li><a href="{{opendataportal.id}}/load/">Load New Round</a></li>
+
+			</ul>
+	{% endfor %}
+	</ul>
+{% else %}
+    <p>No data available.</p>
+{% endif %}
+

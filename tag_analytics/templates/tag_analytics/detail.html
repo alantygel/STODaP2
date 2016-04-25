@@ -1,0 +1,25 @@
+{% if loadround %}
+		<h1> {{ loadround.open_data_portal.url }} </h1>
+		<h2> Round:{{ loadround.roundn }} </h2>
+		<h2> Date:{{ loadround.insert_date }} </h2>
+		<p>Tags: {{ loadround.tag_set.count }}</p>
+		<p>Datasets: {{ loadround.dataset_set.count }}</p>		
+		<p>Groups: {{ loadround.group_set.count }}</p>
+		<p>Tags per Dataset: {{ loadround.tags_per_dataset }}</p>
+		<p>Datasets per Group: {{ loadround.datasets_per_group }}</p>
+		<p>Coocurence: {{ loadround.datasets_per_group }}</p>
+		{% for dataset in loadround.dataset_set.all %}
+			<p>{{ dataset.name }}</p>
+				<ul>
+				{% for tag in dataset.tag_set.all %}				
+				<li><a href=/tag_analytics/tag/{{ tag.id }}>{{ tag.name }}</a>
+				</li>
+				{% endfor%}
+				</ul>
+		{% endfor%}
+
+
+{% else %}
+    <p>No data available.</p>
+{% endif %}
+

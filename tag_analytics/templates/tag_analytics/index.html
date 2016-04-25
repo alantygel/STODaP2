@@ -1,0 +1,37 @@
+{% extends 'tag_analytics/base.html' %}
+{% load class_tag %}
+
+{% block content %}
+
+<h1>Welcome to the STODaP home!</h1>
+
+{% load static %}
+<img src="{% static "tag_analytics/overview_site.png" %}" height="300px" style="float:left" alt="Overview"/>
+
+
+<p>Welcome to the STODaP prototype. The Semantic Tags for Open Data Portals platform hosts Global Tags connected to several Open Data Portals (ODP) over the Web. Each Global Tag is semantically linked to resources over the Linked Open Data Cloud, and points to related datasets in ODPs.</p>
+
+<p>The figure on the left explains the model used in this application. After analysing data from almost 90 Open Data Portals, we build a dataset of Global Groups and Global Tags. These are semantic elements that groups real portal tags, which in turn are linked to open datasets.</p>
+
+<p>In the STODaP platform, you have pointers to over 400.000 open datasets, which are semantically connected through global tags and groups. The Global Tags are also linked by broader/narrow/related relationships, based on the Gemet Ontology.</p>
+
+<p>Navigate through <a href="{% url 'globalgroup_list' %}">Global Groups</a>, <a href="{% url 'globaltag_list' %}">Global Tags</a> or <a href="search">Search</a> directly for your desired open dataset!</p>
+
+
+
+<h2>Global Groups</h2>
+<p>
+{% for gg in groups_and_tags.globalgroups %}
+	<a href="{% url 'globalgroup' gg.id %}"> {{ gg }}</a>,
+{% endfor %}
+<a href="{% url 'globalgroup_list' %}">see more...</a>
+</p>
+<h2>Global Tags</h2>
+<p>
+{% for gg in groups_and_tags.globaltags %}
+	<a href="{% url 'globaltag' gg.id %}"> {{ gg }}</a>,
+{% endfor %}
+<a href="{% url 'globaltag_list' %}">see more...</a>
+</p>
+
+{% endblock content %}

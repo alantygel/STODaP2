@@ -1,0 +1,21 @@
+<style>
+ul {
+display:inline
+}
+
+li {
+display:inline
+}
+</style>
+
+
+{% for tag in all_tags %}
+	{#tag.id#} - {{ tag.display_name }} ({{tag.datasets.count}}): 
+	<ul>
+		{% for t in tag.similar_tags.all %}				
+			<li>{#t.id#} - {{ t.display_name }} ({{t.datasets.count}}),</a>
+			</li>
+		{% endfor%}
+	</ul>
+	<br />
+{% endfor%}

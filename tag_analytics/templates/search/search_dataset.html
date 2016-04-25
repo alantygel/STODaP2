@@ -1,0 +1,42 @@
+{% extends 'tag_analytics/base.html' %}
+
+{% block content %}
+
+    <h2>Search</h2>
+
+  <form method="get" action=".">
+	<input type="hidden" name="models" value="tag_analytics.dataset">
+    <input type="search" id="id_q" name="q" autocomplete="off">
+    <input type="submit" value="Search!">
+  </form>
+
+        {% if query %}
+            <h3>Results</h3>
+
+            {% for result in page_object %}
+                <p>
+					{% if result.content_type == 'tag_analytics.tag'%}
+						<a class="tag" href="{% url 'tag' result.object.id %}">{{ result.object.display_name }}</a>
+					{% elif result.content_type == 'tag_analytics.dataset' %}
+						<a href="{{ result.object.load_round.open_data_portal.url }}/dataset/{{ result.object.name }}">{{ result.object.display_name }}</a>
+					{% elif result.content_type == 'tag_analytics.globaltag'%}
+						<a class="tag globaltag" href="{% url 'globaltag' result.object.id %}">{{ result.object.name }}</a>
+					{% elif result.content_type == 'tag_analytics.globalgroup'%}
+						<a class="tag globalgroup" href="{% url 'globalgroup' result.object.id %}">{{ result.object.name }}</a>
+					{% endif %}
+                </p>
+            {% empty %}
+                <p>No results </p>
+            {% endfor %}
+
+            {% if page.has_previous or page.has_next %}
+                <div>
+                    {% if page.has_previous %}<a href="?q={{ query }}&amp;page={{ page.previous_page_number }}">{% endif %}&laquo; Previous{% if page.has_previous %}</a>{% endif %}
+                    |
+                    {% if page.has_next %}<a href="?q={{ query }}&amp;page={{ page.next_page_number }}">{% endif %}Next &raquo;{% if page.has_next %}</a>{% endif %}
+                </div>
+            {% endif %}
+        {% else %}
+            {# Show some example queries to run, maybe query syntax, something else? #}
+        {% endif %}
+{% endblock %}

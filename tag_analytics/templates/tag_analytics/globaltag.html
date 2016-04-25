@@ -1,0 +1,69 @@
+{% extends 'tag_analytics/base.html' %}
+{% block content %}
+
+{% block breadcrumb %}
+	<a href="{% url 'index' %}">Home</a> >
+	<a href="{% url 'globaltag_list' %}">Global Tags</a> > 
+	{{ globaltag.name }}
+{% endblock %}
+
+<h1 class="globaltag">{{ globaltag.name }}</h1>
+<p class="description">{{ globaltag.description }}</p>
+<p class="URI">URI: <a href="{{ globaltag.uri }}">{{ globaltag.uri }}</a></p>
+
+<h2 class="globalgroup">Global Groups</h2>
+<ul class="inline_list">
+{% for g in globaltag.globalgroups.all %}
+	<li><a class="group globalgroup" href="{% url 'globalgroup' g.id %}">{{ g.name }}</a></li>
+{% endfor %}
+</ul>
+<h2 class="localtag">Local Tags</h2>
+<ul class="inline_list">
+{% for t in globaltag.tags.all %}
+	<li><a class="tag localtag" href="{{ t.load_round.open_data_portal.url }}/dataset?tags={{ t.name }}">{{ t.display_name }} ({{t.datasets.count}})</a>
+	</li>
+{% endfor%}
+</ul>
+{% if globaltag.narrower.all %}
+<h2>Narrower</h2>
+<ul class="inline_list">
+{% for n in globaltag.narrower.all %}
+	<li><a class="tag globaltag" href="{% url 'globaltag' n.id %}">{{ n.name }}</a></li>
+	</li>
+{% endfor%}
+</ul>
+{% endif%}
+{% if globaltag.broader.all %}
+<h2>Broader</h2>
+<ul class="inline_list">
+{% for b in globaltag.broader.all %}
+	<li><a class="tag globaltag" href="{% url 'globaltag' b.id %}">{{ b.name }}</a></li>
+	</li>
+{% endfor%}
+</ul>
+{% endif%}
+{% if globaltag.related.all %}
+<h2>Related</h2>
+<ul class="inline_list">
+{% for r in globaltag.related.all %}
+	<li><a class="tag globaltag" href="{% url 'globaltag' r.id %}">{{ r.name }}</a></li>
+{% endfor%}
+</ul>
+{% endif%}
+<h2>Datasets</h2>
+{% for t in globaltag.tags.all %}
+	<h3 class="portal_title">{{ t.load_round.open_data_portal.url }} ({{ t.display_name }})</h3>
+	<ul>
+	{% for d in t.datasets.all %}
+		<li class="dataset">
+		<h3><a href="{{ t.load_round.open_data_portal.url }}/dataset/{{ d.name }}">{{ d.display_name }}</a></h3>
+		<p> {{ d.description }}</p>
+		{% for t in d.tag_set.all %}
+		<a class="tag localtag" href="{{ d.load_round.open_data_portal.url }}/dataset?tags={{ t.name }}">{{ t.display_name }}</a>
+		{% endfor%}		
+		</li>
+	{% endfor%}
+	</ul>
+{% endfor%}
+
+{% endblock content %}

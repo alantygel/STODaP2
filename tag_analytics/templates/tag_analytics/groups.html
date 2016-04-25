@@ -1,0 +1,17 @@
+{% extends 'tag_analytics/base.html' %}
+
+{% block content %}
+<form action="{% url 'edit_groups' %}" method="post">
+<input type="submit" value="Remove Selected Relations" />
+{% csrf_token %}
+{% for gg in global_groups %}
+	<p> {{ gg.name }} </p>
+	<ul>
+		{% for g in gg.groups.all %}
+			<li><input name="global_group_group" type="checkbox" value="{{gg.id}}#{{g.id}}" id="{{gg.id}}#{{g.id}}" />    
+			<label for="{{gg.id}}#{{g.id}}">{{ g.translated }}</label></li>
+		{% endfor%}
+	</ul>
+{% endfor%}
+</form>
+{% endblock %}

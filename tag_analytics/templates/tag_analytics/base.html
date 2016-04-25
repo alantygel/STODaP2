@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>STODaP - Tag Analytics</title>
+<style>
+body{
+	font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+#header {
+	height: 30px;
+	background: red;
+	color: yellow;
+	text-align: center;
+	padding: 20px;
+	font-size: 20pt
+}
+#footer {
+	height: 30px;
+	background: red;
+	color: yellow;
+	text-align: center;
+	padding: 20px;
+	font-size: 12pt
+}
+#menu-back {
+	background: #DDDDDD;
+	width:100%;
+}
+#menu {
+	margin: 0px auto;
+	width:600px;
+	height: 20px;
+	padding: 10px 0;
+}
+
+#menu ul,#menu li {
+	display:inline;
+}
+#menu li{
+	margin: 0px;
+	padding: 5px 20px;
+	border-left: 2px solid black; 
+	border-right: 2px solid black; 
+}
+#menu li:hover{
+	background: white;
+}
+
+a.tag{
+    display: inline-block;
+    margin-bottom: 4px;
+    color: #111111;
+    background-color: #f6f6f6;
+    padding: 1px 10px;
+    border: 1px solid #dddddd;
+    border-radius: 100px;
+    box-shadow: inset 0 1px 0 #ffffff;
+}
+a.tag:hover{
+	background: white;
+}
+a.globaltag{
+	background-color: #a7a7a7;
+}
+a.localtag{
+    background-color: #f6f6f6;
+}
+a.group{
+    display: inline-block;
+    margin-bottom: 4px;
+    color: #111111;
+    background-color: #d0d0d0;
+    padding: 1px 10px;
+    border: 1px solid #000;
+}
+a.group:hover{
+	background:white;
+}
+a.globalgroup{
+    background-color: #d0d0d0;
+}
+
+a.localgroup{
+    background-color: #c0c0c0;
+}
+
+.localgroup{
+	background-color: #ffbb8d;
+}
+
+.dataset {
+	background: #CCC;
+	margin: 10px 0px;
+	list-style: none;
+	padding: 15px;
+	border-radius: 15px;
+	width: 80%
+}
+
+.dataset h3 {
+	font-size: inherit;
+	font-weight: bold;
+	margin: 0;
+}
+
+h3.portal_title {
+	font-size: large;
+	font-weight: normal;
+	margin-left: 40px;
+	background-color: blanchedalmond;
+	width: 80%;
+	padding: 5px 0px;
+	text-align: center;
+	border-radius: 15px;
+}
+
+.dataset .tag {
+	font-size: small;
+}
+
+ul.inline_list, ul.inline_list li{
+	display:inline;
+}
+
+
+</style>
+    </head>
+
+    <body>
+		<div id="header">
+			STODaP - Semantic Tags for Open Data Portals
+		</div>
+		<div id="menu-back">		
+		<div id="menu">
+			<ul>
+				<li><a href="{% url 'index' %}">Home</a></li>
+				<li><a href="{% url 'globaltag_list' %}">Global Tags</a></li>
+				<li><a href="{% url 'globalgroup_list' %}">Global Groups</a></li>
+				<li><a href="{% url 'index'%}search">Search</a></li>
+		</div></div>
+        {% block content %}{% endblock %}
+		<div id="footer">GRECO/PPGI/UFRJ - EIS/University of Bonn</div>
+    </body>
+</html>

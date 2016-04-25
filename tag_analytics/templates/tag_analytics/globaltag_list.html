@@ -1,0 +1,39 @@
+{% extends 'tag_analytics/base.html' %}
+{% block content %}
+
+{% block breadcrumb %}
+	<a href="{% url 'index' %}">Home</a> >
+	Global Tags</a>
+{% endblock %}
+
+{% if globaltag_list %}
+<ul>
+{% for gt in globaltag_list %}
+	<li><a href="{% url 'globaltag' gt.id %}">{{ gt.name }}</a> ({{gt.dataset_count }} datasets): {{gt.description}} </li>
+
+{% endfor%}
+</ul>
+
+
+	{% if is_paginated %}
+	<div class="pagination">
+		<span class="page-links">
+			{% if page_obj.has_previous %}
+                <a href="{% url 'globaltag_list' %}?page={{ page_obj.previous_page_number }}">previous</a>
+            {% endif %}
+            <span class="page-current">
+                Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
+            </span>
+            {% if page_obj.has_next %}
+                <a href="{% url 'globaltag_list' %}?page={{ page_obj.next_page_number }}">next</a>
+            {% endif %}
+        </span>
+        </div>
+    {% endif %}
+{% else %}
+    <p>No tags found!!! :(</p>
+{% endif %}
+
+
+
+{% endblock %}

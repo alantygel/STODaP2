@@ -1,0 +1,2216 @@
+source,target,interaction,directed,symbol,value,similarity
+abastecimento de água,área urbana,coocurence,false,0,1,0.75
+abastecimento de água,domicílios,coocurence,false,0,1,0.753778361444
+abastecimento de água,IBGE,coocurence,false,0,1,0.211288563682
+abastecimento de água,residências,coocurence,false,0,1,0.753778361444
+acidente aeronáutico,aviação civil,coocurence,false,0,1,0.888888888889
+acidente aeronáutico,avião,coocurence,false,0,1,0.888888888889
+acidente aeronáutico,Cenipa,coocurence,false,0,1,0.888888888889
+acidente aeronáutico,Comando da Aeronáutica,coocurence,false,0,1,0.888888888889
+acidente aeronáutico,helicóptero,coocurence,false,0,1,0.888888888889
+acidente aeronáutico,investigação,coocurence,false,0,1,0.888888888889
+acidente aeronáutico,prevenção,coocurence,false,0,1,0.888888888889
+acidente aeronáutico,Sipaer,coocurence,false,0,1,0.888888888889
+acidente aeronáutico,transporte aéreo,coocurence,false,0,1,0.471404520791
+acidente de trabalho,aeat,coocurence,false,0,1,0.75
+acidente de trabalho,dataprev,coocurence,false,0,1,0.75
+acidente de trabalho,previdência social,coocurence,false,0,1,0.75
+acidente de trabalho,trabalho,coocurence,false,0,1,0.243332131696
+Acidente de trabalho,AEPS,coocurence,false,0,10,0.630362216148
+Acidente de trabalho,Benefícios,coocurence,false,0,1,0.895180840232
+Acidente de trabalho,Benefícios Previdenciários,coocurence,false,0,3,0.824803298546
+Acidente de trabalho,CBO,coocurence,false,0,1,0.782061887006
+Acidente de trabalho,CID,coocurence,false,0,1,0.804276485506
+Acidente de trabalho,CNAE,coocurence,false,0,2,0.760251044969
+Acidente de trabalho,CNAE 2.0,coocurence,false,0,1,0.760251044969
+Acidente de trabalho,CNAE 95,coocurence,false,0,1,0.788949794604
+Acidente de trabalho,Previdência Social,coocurence,false,0,10,0.630265188085
+acidentes de trabalho,IBGE,coocurence,false,0,1,0.566946709514
+acidentes de trabalho,Ministério da Saúde,coocurence,false,0,1,0.759554525313
+acidentes de trabalho,morbidade,coocurence,false,0,1,0.783929495902
+acidentes de trabalho,MS,coocurence,false,0,1,0.759554525313
+acidentes de trabalho,Previdência Social,coocurence,false,0,1,0.0140359517626
+acidentes de trânsito,autuações,coocurence,false,0,1,0.801783725737
+acidentes de trânsito,boletins de ocorrência,coocurence,false,0,1,0.824786098842
+acidentes de trânsito,BR-Brasil,coocurence,false,0,1,0.824786098842
+acidentes de trânsito,Departamento de Polícia Rodoviária Federal,coocurence,false,0,2,0.809523809524
+acidentes de trânsito,DPRF,coocurence,false,0,2,0.809523809524
+acidentes de trânsito,Ministério da Justiça,coocurence,false,0,2,0.542837290885
+acidentes de trânsito,MJ,coocurence,false,0,2,0.448435002084
+acidentes de trânsito,multas,coocurence,false,0,1,0.801783725737
+acidentes de trânsito,SIGER,coocurence,false,0,1,0.824786098842
+Ações do Governo Federal,MP,coocurence,false,0,3,0.407410857191
+Ações do Governo Federal,Plano Plurianual,coocurence,false,0,3,0.75
+Ações do Governo Federal,PPA,coocurence,false,0,3,0.75
+Ações do Governo Federal,Programas do Governo Federal,coocurence,false,0,3,0.75
+acolhimento de pessoas,combate às drogas,coocurence,false,0,1,0.857142857143
+acolhimento de pessoas,comunidades terapêuticas,coocurence,false,0,1,0.857142857143
+acolhimento de pessoas,drogas,coocurence,false,0,1,0.857142857143
+acolhimento de pessoas,Equipamentos públicos,coocurence,false,0,1,0.265279054539
+acolhimento de pessoas,MJ,coocurence,false,0,1,0.310684883001
+acolhimento de pessoas,política contra as drogas,coocurence,false,0,1,0.857142857143
+acolhimento de pessoas,substâncias psicoativas,coocurence,false,0,1,0.857142857143
+Acordos Internacionais,AEPS,coocurence,false,0,3,0.66193459537
+Acordos Internacionais,Benefícios,coocurence,false,0,1,0.868915787391
+Acordos Internacionais,Benefícios Previdenciários,coocurence,false,0,2,0.76907034419
+Acordos Internacionais,Créditos,coocurence,false,0,2,0.84118747725
+Acordos Internacionais,pagamento-de-beneficios,coocurence,false,0,1,0.816496580928
+Acordos Internacionais,Pensão Alimentícia,coocurence,false,0,1,0.761386987627
+Acordos Internacionais,Pensão por morte,coocurence,false,0,1,0.828487439439
+Acordos Internacionais,Previdência Social,coocurence,false,0,3,0.66183270755
+administração pública,API,coocurence,false,0,1,0.549125178387
+administração pública,autarquia,coocurence,false,0,1,0.923076923077
+administração pública,entidade pública,coocurence,false,0,1,0.923076923077
+administração pública,estrutura orgânica,coocurence,false,0,1,0.923076923077
+administração pública,estrutura organizacional,coocurence,false,0,1,0.923076923077
+administração pública,federal,coocurence,false,0,1,0.366088266073
+administração pública,fundação,coocurence,false,0,1,0.923076923077
+administração pública,hierarquia organizacional,coocurence,false,0,1,0.923076923077
+administração pública,MP,coocurence,false,0,1,0.376651470714
+administração pública,órgão,coocurence,false,0,1,0.923076923077
+administração pública,órgão colegiado,coocurence,false,0,1,0.923076923077
+administração pública,poder executivo,coocurence,false,0,1,0.923076923077
+administração pública,SIORG,coocurence,false,0,1,0.923076923077
+Administração Pública Federal,API,coocurence,false,0,1,0.471404520791
+Administração Pública Federal,contratos de repasse,coocurence,false,0,1,0.888888888889
+Administração Pública Federal,convênios,coocurence,false,0,1,0.739600261634
+Administração Pública Federal,Ministério do Planejamento,coocurence,false,0,1,0.888888888889
+Administração Pública Federal,MP,coocurence,false,0,1,0.301785820142
+Administração Pública Federal,ONG,coocurence,false,0,1,0.888888888889
+Administração Pública Federal,organizações da sociedade civil,coocurence,false,0,1,0.680882906649
+Administração Pública Federal,OSC,coocurence,false,0,1,0.680882906649
+Administração Pública Federal,siconv,coocurence,false,0,1,0.888888888889
+aeat,dataprev,coocurence,false,0,1,0.75
+aeat,previdência social,coocurence,false,0,1,0.75
+aeat,trabalho,coocurence,false,0,1,0.243332131696
+AEPS,agente-nocivo,coocurence,false,0,2,0.464543201356
+AEPS,Aposentadoria por tempo de contribuição,coocurence,false,0,2,0.715644133843
+AEPS,Aposentadorias,coocurence,false,0,2,0.715644133843
+AEPS,Arrecadação,coocurence,false,0,2,0.451748195391
+AEPS,Benefícios,coocurence,false,0,44,0.681010172597
+AEPS,Benefícios Ativos,coocurence,false,0,4,0.738781376707
+AEPS,Benefícios Cessados,coocurence,false,0,5,0.745753603318
+AEPS,Benefícios Cessados por morte por duração,coocurence,false,0,1,0.733745316799
+AEPS,Benefícios cessados por morte por idade,coocurence,false,0,1,0.733745316799
+AEPS,Benefícios Cessados Urbanos,coocurence,false,0,1,0.670319875183
+AEPS,Benefícios concedidos,coocurence,false,0,8,0.741543070697
+AEPS,Benefícios de Prestação Única,coocurence,false,0,2,0.697330770118
+AEPS,Benefícios mantidos,coocurence,false,0,4,0.727850551834
+AEPS,Benefícios Previdenciários,coocurence,false,0,43,0.683491112432
+AEPS,CBO,coocurence,false,0,1,0.498385948436
+AEPS,CID,coocurence,false,0,4,0.713145515124
+AEPS,CNAE,coocurence,false,0,2,0.469805105388
+AEPS,CNAE 2.0,coocurence,false,0,2,0.539017464664
+AEPS,CNAE 95,coocurence,false,0,2,0.552835307416
+AEPS,competencia,coocurence,false,0,3,0.499848694822
+AEPS,Contribuinte Individual,coocurence,false,0,2,0.519761131043
+AEPS,Contribuintes,coocurence,false,0,21,0.56253383628
+AEPS,Contribuintes-Empregados,coocurence,false,0,2,0.523460498524
+AEPS,Créditos,coocurence,false,0,11,0.697958997111
+AEPS,Data de Despacho do Benefício,coocurence,false,0,1,0.663300818899
+AEPS,DCB,coocurence,false,0,1,0.596184620956
+AEPS,DDB,coocurence,false,0,1,0.685601690277
+AEPS,Dependentes,coocurence,false,0,2,0.651257721607
+AEPS,Deslocados,coocurence,false,0,1,0.659791290756
+AEPS,Deslocamento,coocurence,false,0,1,0.659791290756
+AEPS,DIB,coocurence,false,0,2,0.713977923781
+AEPS,Empregado,coocurence,false,0,3,0.539768815066
+AEPS,Empresas,coocurence,false,0,5,0.57549700505
+AEPS,Empresas Equiparadas,coocurence,false,0,3,0.44874827869
+AEPS,Entidades Equiparadas,coocurence,false,0,8,0.490504120359
+AEPS,Espécie,coocurence,false,0,3,0.701176641348
+AEPS,Espécies,coocurence,false,0,3,0.720484572518
+AEPS,estabelecimento,coocurence,false,0,1,0.436015618311
+AEPS,Estabelecimentos,coocurence,false,0,2,0.49835299621
+AEPS,Fontes de Receitas,coocurence,false,0,2,0.541002613725
+AEPS,FPAS,coocurence,false,0,1,0.399531687919
+AEPS,fundo-de-garantia,coocurence,false,0,1,0.430083433028
+AEPS,GFIP,coocurence,false,0,19,0.557356393809
+AEPS,GPS,coocurence,false,0,13,0.6051394671
+AEPS,GR-6,coocurence,false,0,2,0.451748195391
+AEPS,GRPS,coocurence,false,0,8,0.503256260744
+AEPS,guia,coocurence,false,0,1,0.43304952567
+AEPS,guia-de-recolhimento,coocurence,false,0,2,0.472898194835
+AEPS,Histórico,coocurence,false,0,3,0.699565943036
+AEPS,Idade,coocurence,false,0,1,0.634341750817
+AEPS,Incapacidade,coocurence,false,0,2,0.667865010171
+AEPS,INSS,coocurence,false,0,2,0.37669376548
+AEPS,pagamento-de-beneficios,coocurence,false,0,1,0.550995918344
+AEPS,Pensão Alimentícia,coocurence,false,0,2,0.657803025341
+AEPS,Pensão por morte,coocurence,false,0,7,0.725501201553
+AEPS,Perícia Médica,coocurence,false,0,4,0.46008507731
+AEPS,Pessoa Física,coocurence,false,0,1,0.536957805775
+AEPS,Previdência Social,coocurence,false,0,100,0.384101479259
+AEPS,RE,coocurence,false,0,5,0.475543595636
+AEPS,Reabilitação Profissional,coocurence,false,0,1,0.449219602217
+AEPS,Receitas,coocurence,false,0,13,0.533611007969
+AEPS,recolhimento,coocurence,false,0,1,0.43304952567
+AEPS,Recolhimento,coocurence,false,0,9,0.52143605574
+AEPS,recolhimentos,coocurence,false,0,1,0.45515752272
+AEPS,Recolhimentos,coocurence,false,0,2,0.430424228195
+AEPS,Rubrica,coocurence,false,0,3,0.44874827869
+AEPS,SAE,coocurence,false,0,2,0.563379424515
+AEPS,salário base,coocurence,false,0,1,0.482623924954
+AEPS,Salário Maternidade,coocurence,false,0,4,0.742057041957
+AEPS,Segurados deslocados estrangeiros,coocurence,false,0,1,0.652432514316
+AEPS,Serviço Social,coocurence,false,0,1,0.449219602217
+AEPS,Serviços Previdenciários,coocurence,false,0,7,0.505898335958
+AEPS,Sexo,coocurence,false,0,1,0.502916729786
+AEPS,SIMPLES,coocurence,false,0,2,0.49835299621
+AEPS,tempo-de-servico,coocurence,false,0,1,0.430083433028
+AEPS,Terceiros,coocurence,false,0,3,0.515012905198
+AEPS,UF,coocurence,false,0,19,0.73084591828
+AEPS,Unidade da Federaçao,coocurence,false,0,2,0.702879821339
+AEPS,Unidade da Federação,coocurence,false,0,1,0.49835299621
+AEPS,UO,coocurence,false,0,1,0.432505739193
+AEPS,Valor de benefício,coocurence,false,0,1,0.616947269447
+AEPS,valores,coocurence,false,0,1,0.464543201356
+AEPS,vinculos,coocurence,false,0,2,0.464543201356
+aeronaves,aeroportos,coocurence,false,0,2,0.826086956522
+aeronaves,ANAC,coocurence,false,0,1,0.866921446863
+aeronaves,aviação,coocurence,false,0,2,0.826086956522
+aeronaves,infraestrutura,coocurence,false,0,2,0.826086956522
+aeronaves,passageiros avião,coocurence,false,0,1,0.851256530759
+aeronaves,reclamação,coocurence,false,0,1,0.291294927733
+aeronaves,transporte,coocurence,false,0,2,0.660295644514
+aeronaves,transporte aéreo,coocurence,false,0,2,0.700349291736
+aeroportos,ANAC,coocurence,false,0,1,0.866921446863
+aeroportos,aviação,coocurence,false,0,2,0.826086956522
+aeroportos,infraestrutura,coocurence,false,0,2,0.826086956522
+aeroportos,passageiros avião,coocurence,false,0,1,0.851256530759
+aeroportos,reclamação,coocurence,false,0,1,0.291294927733
+aeroportos,transporte,coocurence,false,0,2,0.660295644514
+aeroportos,transporte aéreo,coocurence,false,0,2,0.700349291736
+Aforamento,CDRU,coocurence,false,0,1,0.9
+Aforamento,Concessão de Direito Real de Uso,coocurence,false,0,1,0.9
+Aforamento,Concessão de Uso Especial para fins de Moradia,coocurence,false,0,1,0.9
+Aforamento,CUEM,coocurence,false,0,1,0.9
+Aforamento,imóveis,coocurence,false,0,1,0.9
+Aforamento,imóveis dominiais,coocurence,false,0,1,0.9
+Aforamento,MP,coocurence,false,0,1,0.257669250441
+Aforamento,patrimônio da união,coocurence,false,0,1,0.9
+Aforamento,SIAPA,coocurence,false,0,1,0.9
+Aforamento,SPU,coocurence,false,0,1,0.9
+agências,benefício,coocurence,false,0,1,0.866921446863
+agências,emprego,coocurence,false,0,1,0.866921446863
+agências,Equipamentos públicos,coocurence,false,0,1,0.318334865446
+agências,locais de atendimento,coocurence,false,0,1,0.857142857143
+agências,MTE,coocurence,false,0,1,0.866921446863
+agências,seguro-desemprego,coocurence,false,0,1,0.866921446863
+agências,trabalho,coocurence,false,0,1,0.735767207382
+Agências,aposentado,coocurence,false,0,1,0.9
+Agências,APS,coocurence,false,0,1,0.9
+Agências,benefício previdenciário,coocurence,false,0,1,0.9
+Agências,empregado,coocurence,false,0,1,0.9
+Agências,Equipamentos públicos,coocurence,false,0,1,0.199753542728
+Agências,INSS,coocurence,false,0,1,0.5378528742
+Agências,pensionista,coocurence,false,0,1,0.9
+Agências,Previdência,coocurence,false,0,1,0.9
+Agências,segurado,coocurence,false,0,1,0.9
+Agências,trabalhador,coocurence,false,0,1,0.9
+agente-nocivo,competencia,coocurence,false,0,1,0.812604508329
+agente-nocivo,Contribuintes,coocurence,false,0,2,0.7357900683
+agente-nocivo,estabelecimento,coocurence,false,0,1,0.848668424792
+agente-nocivo,fundo-de-garantia,coocurence,false,0,1,0.848668424792
+agente-nocivo,GFIP,coocurence,false,0,2,0.742847993179
+agente-nocivo,Previdência Social,coocurence,false,0,2,0.464471696868
+agente-nocivo,tempo-de-servico,coocurence,false,0,1,0.848668424792
+agente-nocivo,vinculos,coocurence,false,0,2,0.833333333333
+AIDS,DST,coocurence,false,0,1,0.782623792125
+AIDS,IBGE,coocurence,false,0,2,0.570479121942
+AIDS,Ministério da Saúde,coocurence,false,0,2,0.764286998048
+AIDS,morbidade,coocurence,false,0,1,0.842749828079
+AIDS,mortalidade,coocurence,false,0,1,0.782623792125
+AIDS,MS,coocurence,false,0,2,0.764286998048
+AIDS,óbitos,coocurence,false,0,1,0.782623792125
+alfândega,Equipamentos públicos,coocurence,false,0,1,0.318334865446
+alfândega,MJ,coocurence,false,0,1,0.341753371301
+alfândega,passaporte,coocurence,false,0,1,0.857142857143
+alfândega,polícia,coocurence,false,0,1,0.667124384995
+alfândega,polícia federal,coocurence,false,0,1,0.857142857143
+alfândega,segurança,coocurence,false,0,1,0.857142857143
+alfândega,segurança pública,coocurence,false,0,1,0.857142857143
+alunos por turma,avaliação educação,coocurence,false,0,1,0.840304985965
+alunos por turma,censo escolar,coocurence,false,0,1,0.868814542741
+alunos por turma,desempenho escolar,coocurence,false,0,1,0.863474513402
+alunos por turma,educação básica,coocurence,false,0,1,0.864276612781
+alunos por turma,INEP,coocurence,false,0,1,0.84
+amazônia,atmosfera,coocurence,false,0,1,0.8
+amazônia,desmatamento,coocurence,false,0,1,0.8
+amazônia,efeito estufa,coocurence,false,0,1,0.8
+amazônia,INPE,coocurence,false,0,1,0.8
+amazônia,poluição,coocurence,false,0,1,0.8
+ANAC,aviação,coocurence,false,0,1,0.866921446863
+ANAC,infraestrutura,coocurence,false,0,1,0.866921446863
+ANAC,reclamação,coocurence,false,0,1,0.288009216442
+ANAC,transporte,coocurence,false,0,1,0.692934867184
+ANAC,transporte aéreo,coocurence,false,0,1,0.734968415259
+analfabetismo,analfabetismo funcional,coocurence,false,0,1,0.5
+analfabetismo,educação,coocurence,false,0,1,0.176776695297
+analfabetismo funcional,educação,coocurence,false,0,1,0.176776695297
+ANP,derivados,coocurence,false,0,1,0.666666666667
+ANP,indústria,coocurence,false,0,1,0.377964473009
+ANP,petróleo,coocurence,false,0,1,0.292770021885
+API,ata,coocurence,false,0,1,0.693476092529
+API,autarquia,coocurence,false,0,1,0.549125178387
+API,aviso,coocurence,false,0,1,0.693476092529
+API,compras,coocurence,false,0,1,0.545482374058
+API,comprasnet,coocurence,false,0,1,0.693476092529
+API,concorrência,coocurence,false,0,1,0.693476092529
+API,contratos,coocurence,false,0,1,0.693476092529
+API,contratos de repasse,coocurence,false,0,1,0.471404520791
+API,convênios,coocurence,false,0,1,0.431455497304
+API,convite,coocurence,false,0,1,0.693476092529
+API,entidade pública,coocurence,false,0,1,0.549125178387
+API,estrutura orgânica,coocurence,false,0,1,0.549125178387
+API,estrutura organizacional,coocurence,false,0,1,0.549125178387
+API,federal,coocurence,false,0,1,0.315901589792
+API,fornecedores,coocurence,false,0,1,0.534679673207
+API,fundação,coocurence,false,0,1,0.549125178387
+API,hierarquia organizacional,coocurence,false,0,1,0.549125178387
+API,leilão,coocurence,false,0,1,0.693476092529
+API,licitação,coocurence,false,0,1,0.693476092529
+API,materiais,coocurence,false,0,1,0.693476092529
+API,Ministério do Planejamento,coocurence,false,0,1,0.471404520791
+API,modalidades,coocurence,false,0,1,0.693476092529
+API,MP,coocurence,false,0,3,0.537754895718
+API,ocorrências,coocurence,false,0,1,0.693476092529
+API,ONG,coocurence,false,0,1,0.471404520791
+API,organizações da sociedade civil,coocurence,false,0,1,0.341396725435
+API,órgão,coocurence,false,0,1,0.549125178387
+API,órgão colegiado,coocurence,false,0,1,0.549125178387
+API,OSC,coocurence,false,0,1,0.341396725435
+API,poder executivo,coocurence,false,0,1,0.549125178387
+API,preços praticados,coocurence,false,0,1,0.693476092529
+API,pregão,coocurence,false,0,1,0.693476092529
+API,registro de preços,coocurence,false,0,1,0.693476092529
+API,serviços,coocurence,false,0,1,0.549805160294
+API,SIASG,coocurence,false,0,1,0.693476092529
+API,SICAF,coocurence,false,0,1,0.693476092529
+API,siconv,coocurence,false,0,1,0.471404520791
+API,SIORG,coocurence,false,0,1,0.549125178387
+API,sustentável,coocurence,false,0,1,0.693476092529
+API,tomada de preços,coocurence,false,0,1,0.693476092529
+aposentado,APS,coocurence,false,0,1,0.9
+aposentado,benefício previdenciário,coocurence,false,0,1,0.9
+aposentado,empregado,coocurence,false,0,1,0.9
+aposentado,Equipamentos públicos,coocurence,false,0,1,0.199753542728
+aposentado,INSS,coocurence,false,0,1,0.5378528742
+aposentado,pensionista,coocurence,false,0,1,0.9
+aposentado,Previdência,coocurence,false,0,1,0.9
+aposentado,segurado,coocurence,false,0,1,0.9
+aposentado,trabalhador,coocurence,false,0,1,0.9
+Aposentadoria por tempo de contribuição,Aposentadorias,coocurence,false,0,1,0.941176470588
+Aposentadoria por tempo de contribuição,Benefícios,coocurence,false,0,2,0.816682261508
+Aposentadoria por tempo de contribuição,Benefícios Previdenciários,coocurence,false,0,2,0.818629981782
+Aposentadoria por tempo de contribuição,Previdência Social,coocurence,false,0,2,0.71553397882
+Aposentadorias,Benefícios,coocurence,false,0,2,0.816682261508
+Aposentadorias,Benefícios Previdenciários,coocurence,false,0,2,0.818629981782
+Aposentadorias,Previdência Social,coocurence,false,0,2,0.71553397882
+APS,benefício previdenciário,coocurence,false,0,1,0.9
+APS,empregado,coocurence,false,0,1,0.9
+APS,Equipamentos públicos,coocurence,false,0,1,0.199753542728
+APS,INSS,coocurence,false,0,1,0.5378528742
+APS,pensionista,coocurence,false,0,1,0.9
+APS,Previdência,coocurence,false,0,1,0.9
+APS,segurado,coocurence,false,0,1,0.9
+APS,trabalhador,coocurence,false,0,1,0.9
+áreas de conhecimento,CAPES,coocurence,false,0,1,0.4472135955
+áreas de conhecimento,ensino superior,coocurence,false,0,1,0.282842712475
+área urbana,domicílios,coocurence,false,0,1,0.753778361444
+área urbana,IBGE,coocurence,false,0,1,0.211288563682
+área urbana,residências,coocurence,false,0,1,0.753778361444
+armas,desarmamento,coocurence,false,0,1,0.75
+armas,Equipamentos públicos,coocurence,false,0,1,0.175465601586
+armas,paz,coocurence,false,0,1,0.75
+armas,polícia,coocurence,false,0,1,0.490290337845
+Arrecadação,Contribuinte Individual,coocurence,false,0,1,0.787838597158
+Arrecadação,Contribuintes,coocurence,false,0,1,0.527375501558
+Arrecadação,Empresas,coocurence,false,0,1,0.834814171265
+Arrecadação,Entidades Equiparadas,coocurence,false,0,1,0.796345198882
+Arrecadação,GPS,coocurence,false,0,2,0.757386137143
+Arrecadação,GR-6,coocurence,false,0,2,0.862068965517
+Arrecadação,GRPS,coocurence,false,0,2,0.767637607488
+Arrecadação,Previdência Social,coocurence,false,0,2,0.451678660366
+Arrecadação,Receitas,coocurence,false,0,2,0.730118983861
+Arrecadação,Recolhimentos,coocurence,false,0,1,0.85769002787
+arrecadação de prefeituras,execução orçamentária,coocurence,false,0,1,0.64051261522
+arrecadação de prefeituras,São Paulo,coocurence,false,0,1,0.555555555556
+arrecadação de prefeituras,SP,coocurence,false,0,1,0.589255650989
+Assistência à saúde,Internações,coocurence,false,0,1,0.5
+Assistência à saúde,Morbidade,coocurence,false,0,1,0.5
+assistência social,atenção básica,coocurence,false,0,3,0.747309681991
+assistência social,atendimento ao cidadão,coocurence,false,0,3,0.731523047479
+assistência social,CRAS,coocurence,false,0,1,0.818393207365
+assistência social,CREAS,coocurence,false,0,1,0.809344648274
+assistência social,Equipamentos públicos,coocurence,false,0,3,0.503055163627
+assistência social,família,coocurence,false,0,3,0.731792912317
+assistência social,organizações da sociedade civil,coocurence,false,0,1,0.113273094358
+assistência social,OSC,coocurence,false,0,1,0.113273094358
+assistência social,rede privada,coocurence,false,0,1,0.809344648274
+assistência social,Rede Privada de entidades de assistência social,coocurence,false,0,1,0.809344648274
+assistência social,serviços,coocurence,false,0,1,0.335100520447
+ata,aviso,coocurence,false,0,1,0.954545454545
+ata,compras,coocurence,false,0,1,0.700516639454
+ata,comprasnet,coocurence,false,0,1,0.954545454545
+ata,concorrência,coocurence,false,0,1,0.954545454545
+ata,contratos,coocurence,false,0,1,0.954545454545
+ata,convite,coocurence,false,0,1,0.954545454545
+ata,fornecedores,coocurence,false,0,1,0.686643649131
+ata,leilão,coocurence,false,0,1,0.954545454545
+ata,licitação,coocurence,false,0,1,0.954545454545
+ata,materiais,coocurence,false,0,1,0.954545454545
+ata,modalidades,coocurence,false,0,1,0.954545454545
+ata,MP,coocurence,false,0,1,0.443952575977
+ata,ocorrências,coocurence,false,0,1,0.954545454545
+ata,preços praticados,coocurence,false,0,1,0.954545454545
+ata,pregão,coocurence,false,0,1,0.954545454545
+ata,registro de preços,coocurence,false,0,1,0.954545454545
+ata,serviços,coocurence,false,0,1,0.756787468664
+ata,SIASG,coocurence,false,0,1,0.954545454545
+ata,SICAF,coocurence,false,0,1,0.954545454545
+ata,sustentável,coocurence,false,0,1,0.954545454545
+ata,tomada de preços,coocurence,false,0,1,0.954545454545
+atenção básica,atendimento ao cidadão,coocurence,false,0,4,0.756322556535
+atenção básica,cidadão,coocurence,false,0,1,0.586352729856
+atenção básica,CRAS,coocurence,false,0,1,0.801783725737
+atenção básica,CREAS,coocurence,false,0,1,0.780720058359
+atenção básica,Equipamentos públicos,coocurence,false,0,4,0.520109337284
+atenção básica,família,coocurence,false,0,4,0.75541100903
+atenção básica,geo,coocurence,false,0,1,0.443896761618
+atenção básica,geolocalização,coocurence,false,0,1,0.468807230938
+atenção básica,hospital,coocurence,false,0,1,0.684712471649
+atenção básica,postos de saúde,coocurence,false,0,1,0.684712471649
+atenção básica,rede privada,coocurence,false,0,1,0.780720058359
+atenção básica,Rede Privada de entidades de assistência social,coocurence,false,0,1,0.780720058359
+atenção básica,saúde,coocurence,false,0,1,0.684712471649
+atenção básica,serviços,coocurence,false,0,1,0.323248814257
+atenção básica,SUS,coocurence,false,0,1,0.684712471649
+atenção básica,UBS,coocurence,false,0,1,0.684712471649
+atendimento ao cidadão,censo escolar,coocurence,false,0,1,0.0864292574456
+atendimento ao cidadão,cidadão,coocurence,false,0,1,0.553398590529
+atendimento ao cidadão,CRAS,coocurence,false,0,1,0.775940289799
+atendimento ao cidadão,CREAS,coocurence,false,0,1,0.75
+atendimento ao cidadão,educação básica,coocurence,false,0,1,0.0876636660638
+atendimento ao cidadão,educação superior,coocurence,false,0,1,0.186338998125
+atendimento ao cidadão,ensino superior,coocurence,false,0,1,0.204124145232
+atendimento ao cidadão,Equipamentos públicos,coocurence,false,0,6,0.429801191296
+atendimento ao cidadão,família,coocurence,false,0,4,0.74061864798
+atendimento ao cidadão,geo,coocurence,false,0,1,0.416953923968
+atendimento ao cidadão,geolocalização,coocurence,false,0,1,0.440352422964
+atendimento ao cidadão,hospital,coocurence,false,0,1,0.646230327641
+atendimento ao cidadão,instituições de ensino superior,coocurence,false,0,1,0.283069258536
+atendimento ao cidadão,postos de saúde,coocurence,false,0,1,0.646230327641
+atendimento ao cidadão,rede privada,coocurence,false,0,1,0.75
+atendimento ao cidadão,Rede Privada de entidades de assistência social,coocurence,false,0,1,0.75
+atendimento ao cidadão,saúde,coocurence,false,0,1,0.646230327641
+atendimento ao cidadão,serviços,coocurence,false,0,1,0.310529501704
+atendimento ao cidadão,SUS,coocurence,false,0,1,0.646230327641
+atendimento ao cidadão,UBS,coocurence,false,0,1,0.646230327641
+atendimento ao cidadão,universidades,coocurence,false,0,1,0.276955854703
+atendimento ao consumidor,consumidor,coocurence,false,0,1,0.608780777528
+atendimento ao consumidor,Equipamentos públicos,coocurence,false,0,1,0.257880714778
+atendimento ao consumidor,Ministério da Justiça,coocurence,false,0,1,0.649955570962
+atendimento ao consumidor,MJ,coocurence,false,0,1,0.671156055214
+atendimento ao consumidor,procon,coocurence,false,0,1,0.715626447332
+atendimento ao consumidor,reclamação,coocurence,false,0,1,0.674018601575
+atendimentos do consumidor,consumidor,coocurence,false,0,1,0.764719112902
+atendimentos do consumidor,defesa do consumidor,coocurence,false,0,1,0.928414165097
+atendimentos do consumidor,Ministério da Justiça,coocurence,false,0,1,0.762861845828
+atendimentos do consumidor,MJ,coocurence,false,0,1,0.630196118004
+atendimentos do consumidor,procon,coocurence,false,0,1,0.898933149951
+atendimentos do consumidor,reclamação,coocurence,false,0,1,0.846667513335
+atendimentos do consumidor,Secretaria Nacional do Consumidor,coocurence,false,0,1,0.928414165097
+atendimentos do consumidor,Senacon,coocurence,false,0,1,0.928414165097
+atendimentos do consumidor,Sindec,coocurence,false,0,1,0.928414165097
+atmosfera,desmatamento,coocurence,false,0,1,0.8
+atmosfera,efeito estufa,coocurence,false,0,1,0.8
+atmosfera,INPE,coocurence,false,0,1,0.8
+atmosfera,poluição,coocurence,false,0,1,0.8
+autarquia,entidade pública,coocurence,false,0,1,0.923076923077
+autarquia,estrutura orgânica,coocurence,false,0,1,0.923076923077
+autarquia,estrutura organizacional,coocurence,false,0,1,0.923076923077
+autarquia,federal,coocurence,false,0,1,0.366088266073
+autarquia,fundação,coocurence,false,0,1,0.923076923077
+autarquia,hierarquia organizacional,coocurence,false,0,1,0.923076923077
+autarquia,MP,coocurence,false,0,1,0.376651470714
+autarquia,órgão,coocurence,false,0,1,0.923076923077
+autarquia,órgão colegiado,coocurence,false,0,1,0.923076923077
+autarquia,poder executivo,coocurence,false,0,1,0.923076923077
+autarquia,SIORG,coocurence,false,0,1,0.923076923077
+autuações,Departamento de Polícia Rodoviária Federal,coocurence,false,0,1,0.801783725737
+autuações,DPRF,coocurence,false,0,1,0.801783725737
+autuações,Ministério da Justiça,coocurence,false,0,1,0.528088901407
+autuações,MJ,coocurence,false,0,1,0.436251435889
+autuações,multas,coocurence,false,0,1,0.833333333333
+avaliação,CAPES,coocurence,false,0,1,0.676123403783
+avaliação,desempenho escolar,coocurence,false,0,1,0.21170244961
+avaliação,Dissertações,coocurence,false,0,1,0.654653670708
+avaliação,educação,coocurence,false,0,1,0.467707173347
+avaliação,Enade,coocurence,false,0,1,0.654653670708
+avaliação,ensino superior,coocurence,false,0,2,0.64142698059
+avaliação,estratificação Qualis,coocurence,false,0,1,0.654653670708
+avaliação,graduação,coocurence,false,0,1,0.654653670708
+avaliação,INEP,coocurence,false,0,1,0.203188863587
+avaliação,instituições de ensino superior,coocurence,false,0,1,0.592999453329
+avaliação,Teses,coocurence,false,0,1,0.654653670708
+avaliação da educação,censo escolar,coocurence,false,0,1,0.690596174999
+avaliação da educação,desempenho escolar,coocurence,false,0,1,0.686351536294
+avaliação da educação,educação básica,coocurence,false,0,1,0.696222826963
+avaliação da educação,INEP,coocurence,false,0,1,0.62
+avaliação da educação,não resposta,coocurence,false,0,1,0.8
+avaliação desempenho escolar,educação,coocurence,false,0,1,0.612372435696
+avaliação desempenho escolar,Enem,coocurence,false,0,1,0.833333333333
+avaliação desempenho escolar,ensino médio,coocurence,false,0,1,0.833333333333
+avaliação desempenho escolar,INEP,coocurence,false,0,1,0.109544511501
+avaliação desempenho escolar,universidades,coocurence,false,0,1,0.615457454897
+avaliação desempenho escolar,vestibular,coocurence,false,0,1,0.833333333333
+avaliação educação,censo escolar,coocurence,false,0,9,0.770957007898
+avaliação educação,controle de qualidade,coocurence,false,0,1,0.840304985965
+avaliação educação,desempenho escolar,coocurence,false,0,9,0.776010373213
+avaliação educação,distorção idade-série,coocurence,false,0,1,0.803633036021
+avaliação educação,educação básica,coocurence,false,0,8,0.793678830939
+avaliação educação,educação superior,coocurence,false,0,3,0.532635035929
+avaliação educação,ENC,coocurence,false,0,1,0.375925914774
+avaliação educação,Exame de cursos,coocurence,false,0,1,0.375925914774
+avaliação educação,horas-aula diária,coocurence,false,0,1,0.847836308416
+avaliação educação,INEP,coocurence,false,0,12,0.66339867313
+avaliação educação,magistério,coocurence,false,0,1,0.7872765721
+avaliação educação,PNERA,coocurence,false,0,1,0.395574541147
+avaliação educação,profissionais do magistério,coocurence,false,0,1,0.7872765721
+avaliação educação,Prova Brasil,coocurence,false,0,1,0.456770135632
+avaliação educação,Provão,coocurence,false,0,1,0.375925914774
+avaliação educação,reforma agrária,coocurence,false,0,1,0.395574541147
+avaliação educação,rendimento escolar,coocurence,false,0,4,0.809862749478
+avaliação educação,SAEB,coocurence,false,0,1,0.840304985965
+avaliação educação,tid,coocurence,false,0,1,0.803633036021
+aviação,infraestrutura,coocurence,false,0,2,0.826086956522
+aviação,passageiros avião,coocurence,false,0,1,0.851256530759
+aviação,reclamação,coocurence,false,0,1,0.291294927733
+aviação,transporte,coocurence,false,0,2,0.660295644514
+aviação,transporte aéreo,coocurence,false,0,2,0.700349291736
+aviação civil,avião,coocurence,false,0,1,0.888888888889
+aviação civil,Cenipa,coocurence,false,0,1,0.888888888889
+aviação civil,Comando da Aeronáutica,coocurence,false,0,1,0.888888888889
+aviação civil,helicóptero,coocurence,false,0,1,0.888888888889
+aviação civil,investigação,coocurence,false,0,1,0.888888888889
+aviação civil,prevenção,coocurence,false,0,1,0.888888888889
+aviação civil,Sipaer,coocurence,false,0,1,0.888888888889
+aviação civil,transporte aéreo,coocurence,false,0,1,0.471404520791
+avião,Cenipa,coocurence,false,0,1,0.888888888889
+avião,Comando da Aeronáutica,coocurence,false,0,1,0.888888888889
+avião,helicóptero,coocurence,false,0,1,0.888888888889
+avião,investigação,coocurence,false,0,1,0.888888888889
+avião,prevenção,coocurence,false,0,1,0.888888888889
+avião,Sipaer,coocurence,false,0,1,0.888888888889
+avião,transporte aéreo,coocurence,false,0,1,0.471404520791
+aviso,compras,coocurence,false,0,1,0.700516639454
+aviso,comprasnet,coocurence,false,0,1,0.954545454545
+aviso,concorrência,coocurence,false,0,1,0.954545454545
+aviso,contratos,coocurence,false,0,1,0.954545454545
+aviso,convite,coocurence,false,0,1,0.954545454545
+aviso,fornecedores,coocurence,false,0,1,0.686643649131
+aviso,leilão,coocurence,false,0,1,0.954545454545
+aviso,licitação,coocurence,false,0,1,0.954545454545
+aviso,materiais,coocurence,false,0,1,0.954545454545
+aviso,modalidades,coocurence,false,0,1,0.954545454545
+aviso,MP,coocurence,false,0,1,0.443952575977
+aviso,ocorrências,coocurence,false,0,1,0.954545454545
+aviso,preços praticados,coocurence,false,0,1,0.954545454545
+aviso,pregão,coocurence,false,0,1,0.954545454545
+aviso,registro de preços,coocurence,false,0,1,0.954545454545
+aviso,serviços,coocurence,false,0,1,0.756787468664
+aviso,SIASG,coocurence,false,0,1,0.954545454545
+aviso,SICAF,coocurence,false,0,1,0.954545454545
+aviso,sustentável,coocurence,false,0,1,0.954545454545
+aviso,tomada de preços,coocurence,false,0,1,0.954545454545
+bacen,banco-central,coocurence,false,0,1,0.857142857143
+bacen,bovespa,coocurence,false,0,1,0.857142857143
+bacen,câmbio,coocurence,false,0,1,0.857142857143
+bacen,dólar,coocurence,false,0,1,0.857142857143
+bacen,euro,coocurence,false,0,1,0.857142857143
+bacen,ipea,coocurence,false,0,1,0.857142857143
+bacen,ipeadata,coocurence,false,0,1,0.857142857143
+banco-central,bovespa,coocurence,false,0,1,0.857142857143
+banco-central,câmbio,coocurence,false,0,1,0.857142857143
+banco-central,dólar,coocurence,false,0,1,0.857142857143
+banco-central,euro,coocurence,false,0,1,0.857142857143
+banco-central,ipea,coocurence,false,0,1,0.857142857143
+banco-central,ipeadata,coocurence,false,0,1,0.857142857143
+benefício,emprego,coocurence,false,0,2,0.826086956522
+benefício,Equipamentos públicos,coocurence,false,0,2,0.307331699656
+benefício,locais de atendimento,coocurence,false,0,1,0.866921446863
+benefício,MTE,coocurence,false,0,2,0.826086956522
+benefício,qualificação profissional,coocurence,false,0,1,0.851256530759
+benefício,seguro-desemprego,coocurence,false,0,2,0.826086956522
+benefício,trabalho,coocurence,false,0,2,0.710335596066
+benefício previdenciário,empregado,coocurence,false,0,1,0.9
+benefício previdenciário,Equipamentos públicos,coocurence,false,0,1,0.199753542728
+benefício previdenciário,INSS,coocurence,false,0,1,0.5378528742
+benefício previdenciário,pensionista,coocurence,false,0,1,0.9
+benefício previdenciário,Previdência,coocurence,false,0,1,0.9
+benefício previdenciário,segurado,coocurence,false,0,1,0.9
+benefício previdenciário,trabalhador,coocurence,false,0,1,0.9
+Benefícios,Benefícios Ativos,coocurence,false,0,4,0.842661678289
+Benefícios,Benefícios Cessados,coocurence,false,0,5,0.843291788774
+Benefícios,Benefícios Cessados por morte por duração,coocurence,false,0,1,0.835188327899
+Benefícios,Benefícios cessados por morte por idade,coocurence,false,0,1,0.835188327899
+Benefícios,Benefícios Cessados Urbanos,coocurence,false,0,1,0.76480122508
+Benefícios,Benefícios concedidos,coocurence,false,0,8,0.845791249372
+Benefícios,Benefícios de Prestação Única,coocurence,false,0,2,0.796797191573
+Benefícios,Benefícios mantidos,coocurence,false,0,4,0.832731182566
+Benefícios,Benefícios Previdenciários,coocurence,false,0,38,0.740101831696
+Benefícios,CID,coocurence,false,0,3,0.858388003674
+Benefícios,Créditos,coocurence,false,0,5,0.867487166312
+Benefícios,Data de Despacho do Benefício,coocurence,false,0,1,0.758872533413
+Benefícios,DCB,coocurence,false,0,1,0.701492258261
+Benefícios,DDB,coocurence,false,0,1,0.773934628769
+Benefícios,Dependentes,coocurence,false,0,2,0.762937621112
+Benefícios,Deslocados,coocurence,false,0,1,0.752943841746
+Benefícios,Deslocamento,coocurence,false,0,1,0.752943841746
+Benefícios,DIB,coocurence,false,0,2,0.824919445394
+Benefícios,Empresas,coocurence,false,0,1,0.609639268433
+Benefícios,Espécie,coocurence,false,0,3,0.807262916507
+Benefícios,Espécies,coocurence,false,0,3,0.831401606188
+Benefícios,Histórico,coocurence,false,0,3,0.808278297307
+Benefícios,Idade,coocurence,false,0,1,0.741461847142
+Benefícios,Incapacidade,coocurence,false,0,2,0.769512813869
+Benefícios,Pensão Alimentícia,coocurence,false,0,2,0.768466154598
+Benefícios,Pensão por morte,coocurence,false,0,7,0.835023251169
+Benefícios,Previdência Social,coocurence,false,0,44,0.680905348582
+Benefícios,Salário Maternidade,coocurence,false,0,4,0.835711093323
+Benefícios,Segurados deslocados estrangeiros,coocurence,false,0,1,0.673543906705
+Benefícios,UF,coocurence,false,0,9,0.848700294879
+Benefícios,Unidade da Federaçao,coocurence,false,0,2,0.80617127618
+Benefícios,Valor de benefício,coocurence,false,0,1,0.706502917249
+Benefícios Ativos,Benefícios Previdenciários,coocurence,false,0,4,0.841932574457
+Benefícios Ativos,Dependentes,coocurence,false,0,1,0.853474310976
+Benefícios Ativos,Espécie,coocurence,false,0,1,0.905246209289
+Benefícios Ativos,Histórico,coocurence,false,0,1,0.915249233499
+Benefícios Ativos,Pensão por morte,coocurence,false,0,1,0.937659262721
+Benefícios Ativos,Previdência Social,coocurence,false,0,4,0.7386676603
+Benefícios Ativos,UF,coocurence,false,0,1,0.836628934911
+Benefícios Cessados,Benefícios Previdenciários,coocurence,false,0,5,0.840554885818
+Benefícios Cessados,DCB,coocurence,false,0,1,0.803862504766
+Benefícios Cessados,Dependentes,coocurence,false,0,1,0.866787518012
+Benefícios Cessados,Pensão por morte,coocurence,false,0,1,0.936301893829
+Benefícios Cessados,Previdência Social,coocurence,false,0,5,0.745638813716
+Benefícios Cessados,UF,coocurence,false,0,2,0.835929337717
+Benefícios Cessados por morte por duração,Benefícios Previdenciários,coocurence,false,0,1,0.837073875029
+Benefícios Cessados por morte por duração,Previdência Social,coocurence,false,0,1,0.733632375564
+Benefícios cessados por morte por idade,Benefícios Previdenciários,coocurence,false,0,1,0.837073875029
+Benefícios cessados por morte por idade,Previdência Social,coocurence,false,0,1,0.733632375564
+Benefícios Cessados Urbanos,Benefícios Previdenciários,coocurence,false,0,1,0.772853300337
+Benefícios Cessados Urbanos,CID,coocurence,false,0,1,0.838525491562
+Benefícios Cessados Urbanos,Previdência Social,coocurence,false,0,1,0.670216696665
+Benefícios concedidos,Benefícios Previdenciários,coocurence,false,0,8,0.845904429304
+Benefícios concedidos,CID,coocurence,false,0,1,0.919609600962
+Benefícios concedidos,DDB,coocurence,false,0,1,0.837022138659
+Benefícios concedidos,DIB,coocurence,false,0,1,0.909656389784
+Benefícios concedidos,Espécie,coocurence,false,0,2,0.889108448949
+Benefícios concedidos,Espécies,coocurence,false,0,2,0.909090909091
+Benefícios concedidos,Histórico,coocurence,false,0,1,0.90792248145
+Benefícios concedidos,Incapacidade,coocurence,false,0,1,0.868496237347
+Benefícios concedidos,Pensão Alimentícia,coocurence,false,0,1,0.855024674308
+Benefícios concedidos,Pensão por morte,coocurence,false,0,1,0.935278365702
+Benefícios concedidos,Previdência Social,coocurence,false,0,8,0.741428929198
+Benefícios concedidos,UF,coocurence,false,0,2,0.843942352675
+Benefícios de Prestação Única,Benefícios Previdenciários,coocurence,false,0,2,0.798747601937
+Benefícios de Prestação Única,Data de Despacho do Benefício,coocurence,false,0,1,0.843274042712
+Benefícios de Prestação Única,Previdência Social,coocurence,false,0,2,0.697223433967
+Benefícios de Prestação Única,Unidade da Federaçao,coocurence,false,0,1,0.888888888889
+Benefícios mantidos,Benefícios Previdenciários,coocurence,false,0,4,0.832161346241
+Benefícios mantidos,DIB,coocurence,false,0,1,0.888888888889
+Benefícios mantidos,Espécies,coocurence,false,0,1,0.906103044511
+Benefícios mantidos,Idade,coocurence,false,0,1,0.866025403784
+Benefícios mantidos,Pensão por morte,coocurence,false,0,2,0.90993497096
+Benefícios mantidos,Previdência Social,coocurence,false,0,4,0.727738517947
+Benefícios mantidos,UF,coocurence,false,0,1,0.819013721365
+Benefícios Previdenciários,CID,coocurence,false,0,4,0.799945598314
+Benefícios Previdenciários,Créditos,coocurence,false,0,3,0.923626628453
+Benefícios Previdenciários,Data de Despacho do Benefício,coocurence,false,0,1,0.76077746752
+Benefícios Previdenciários,DCB,coocurence,false,0,1,0.704209962488
+Benefícios Previdenciários,DDB,coocurence,false,0,1,0.766145532382
+Benefícios Previdenciários,Dependentes,coocurence,false,0,2,0.765732507293
+Benefícios Previdenciários,Deslocados,coocurence,false,0,1,0.754739551111
+Benefícios Previdenciários,Deslocamento,coocurence,false,0,1,0.754739551111
+Benefícios Previdenciários,DIB,coocurence,false,0,2,0.827387954197
+Benefícios Previdenciários,Empresas,coocurence,false,0,1,0.605696670149
+Benefícios Previdenciários,Espécie,coocurence,false,0,3,0.806210046453
+Benefícios Previdenciários,Espécies,coocurence,false,0,3,0.830435532137
+Benefícios Previdenciários,Histórico,coocurence,false,0,3,0.807068159988
+Benefícios Previdenciários,Idade,coocurence,false,0,1,0.744098178932
+Benefícios Previdenciários,Incapacidade,coocurence,false,0,2,0.777797204433
+Benefícios Previdenciários,pagamento-de-beneficios,coocurence,false,0,1,0.549450393209
+Benefícios Previdenciários,Pensão Alimentícia,coocurence,false,0,2,0.774178086418
+Benefícios Previdenciários,Pensão por morte,coocurence,false,0,7,0.836690707505
+Benefícios Previdenciários,Previdência Social,coocurence,false,0,43,0.683385906541
+Benefícios Previdenciários,Salário Maternidade,coocurence,false,0,4,0.834613132257
+Benefícios Previdenciários,UF,coocurence,false,0,7,0.878172259143
+Benefícios Previdenciários,Unidade da Federaçao,coocurence,false,0,2,0.808294386024
+Benefícios Previdenciários,Valor de benefício,coocurence,false,0,1,0.699106991745
+biocombustíveis,biodiesel,coocurence,false,0,1,0.666666666667
+biocombustíveis,combustíveis,coocurence,false,0,1,0.32025630761
+biocombustíveis,indústria,coocurence,false,0,1,0.503952630679
+biodiesel,combustíveis,coocurence,false,0,1,0.32025630761
+biodiesel,indústria,coocurence,false,0,1,0.503952630679
+boletins de ocorrência,BR-Brasil,coocurence,false,0,1,0.857142857143
+boletins de ocorrência,Departamento de Polícia Rodoviária Federal,coocurence,false,0,1,0.824786098842
+boletins de ocorrência,DPRF,coocurence,false,0,1,0.824786098842
+boletins de ocorrência,Ministério da Justiça,coocurence,false,0,1,0.526524190111
+boletins de ocorrência,MJ,coocurence,false,0,1,0.434958836201
+boletins de ocorrência,SIGER,coocurence,false,0,1,0.857142857143
+bovespa,câmbio,coocurence,false,0,1,0.857142857143
+bovespa,dólar,coocurence,false,0,1,0.857142857143
+bovespa,euro,coocurence,false,0,1,0.857142857143
+bovespa,ipea,coocurence,false,0,1,0.857142857143
+bovespa,ipeadata,coocurence,false,0,1,0.857142857143
+BR-Brasil,Departamento de Polícia Rodoviária Federal,coocurence,false,0,1,0.824786098842
+BR-Brasil,DPRF,coocurence,false,0,1,0.824786098842
+BR-Brasil,Ministério da Justiça,coocurence,false,0,1,0.526524190111
+BR-Brasil,MJ,coocurence,false,0,1,0.434958836201
+BR-Brasil,SIGER,coocurence,false,0,1,0.857142857143
+câmara dos deputados,deputado,coocurence,false,0,1,0.833333333333
+câmara dos deputados,deputado federal,coocurence,false,0,1,0.833333333333
+câmara dos deputados,federal,coocurence,false,0,1,0.207256668072
+câmara dos deputados,poder legislativo,coocurence,false,0,1,0.645497224368
+câmara dos deputados,projetos de lei,coocurence,false,0,1,0.833333333333
+câmara dos deputados,proposições parlamentares,coocurence,false,0,1,0.833333333333
+câmara municipal,governo municipal,coocurence,false,0,1,0.721687836487
+câmara municipal,legislativo,coocurence,false,0,2,0.57735026919
+câmara municipal,presença,coocurence,false,0,1,0.721687836487
+câmara municipal,São Paulo,coocurence,false,0,1,0.444444444444
+câmara municipal,SP,coocurence,false,0,1,0.471404520791
+câmara municipal,vereadores,coocurence,false,0,2,0.666666666667
+câmbio,dólar,coocurence,false,0,1,0.857142857143
+câmbio,euro,coocurence,false,0,1,0.857142857143
+câmbio,ipea,coocurence,false,0,1,0.857142857143
+câmbio,ipeadata,coocurence,false,0,1,0.857142857143
+campanha eleitoral,candidatos,coocurence,false,0,1,0.792593923901
+campanha eleitoral,eleição,coocurence,false,0,1,0.721687836487
+campanha eleitoral,partidos,coocurence,false,0,1,0.737864787373
+campanha eleitoral,partidos políticos,coocurence,false,0,1,0.75
+campanha eleitoral,prestação de contas,coocurence,false,0,1,0.833333333333
+campanha eleitoral,TSE,coocurence,false,0,1,0.73029674334
+candidatos,eleição,coocurence,false,0,2,0.686406472984
+candidatos,partidos,coocurence,false,0,1,0.716114874039
+candidatos,partidos políticos,coocurence,false,0,1,0.792593923901
+candidatos,perfil dos candidatos,coocurence,false,0,1,0.64051261522
+candidatos,prestação de contas,coocurence,false,0,1,0.792593923901
+candidatos,TSE,coocurence,false,0,2,0.661518584476
+CAPES,Dissertações,coocurence,false,0,1,0.774596669241
+CAPES,ensino superior,coocurence,false,0,2,0.505964425627
+CAPES,estratificação Qualis,coocurence,false,0,1,0.774596669241
+CAPES,instituições de ensino superior,coocurence,false,0,1,0.701646415446
+CAPES,Teses,coocurence,false,0,1,0.774596669241
+cargo,comissão,coocurence,false,0,1,0.8
+cargo,função de confiança,coocurence,false,0,1,0.8
+cargo,função pública,coocurence,false,0,1,0.8
+cargo,inabilitados,coocurence,false,0,1,0.8
+cargo,TCU,coocurence,false,0,1,0.516397779494
+Cartografia,Geoespacial,coocurence,false,0,734,0.666666666667
+Cartografia,Geoserviço,coocurence,false,0,734,0.666666666667
+Cartografia,INDE,coocurence,false,0,734,0.666666666667
+cartórios,Equipamentos públicos,coocurence,false,0,1,0.24565184222
+cartórios,justiça,coocurence,false,0,1,0.75
+cartórios,MJ,coocurence,false,0,1,0.287698227784
+cartórios,registro,coocurence,false,0,1,0.75
+CBO,Previdência Social,coocurence,false,0,1,0.498309234727
+CDRU,Concessão de Direito Real de Uso,coocurence,false,0,1,0.9
+CDRU,Concessão de Uso Especial para fins de Moradia,coocurence,false,0,1,0.9
+CDRU,CUEM,coocurence,false,0,1,0.9
+CDRU,imóveis,coocurence,false,0,1,0.9
+CDRU,imóveis dominiais,coocurence,false,0,1,0.9
+CDRU,MP,coocurence,false,0,1,0.257669250441
+CDRU,patrimônio da união,coocurence,false,0,1,0.9
+CDRU,SIAPA,coocurence,false,0,1,0.9
+CDRU,SPU,coocurence,false,0,1,0.9
+ce,estadual,coocurence,false,0,1,0.116247638744
+ce,fornecedores,coocurence,false,0,1,0.0990147542977
+ceis,CGU,coocurence,false,0,1,0.696357518164
+ceis,compras,coocurence,false,0,1,0.606091526731
+ceis,empresas inidôneas,coocurence,false,0,1,0.810930758852
+ceis,empresas suspensas,coocurence,false,0,1,0.875
+ceis,federal,coocurence,false,0,1,0.682060250687
+ceis,fornecedores,coocurence,false,0,1,0.594088525786
+ceis,portal da transparência,coocurence,false,0,1,0.689441039806
+ceis,transparência,coocurence,false,0,1,0.753856066549
+Cenipa,Comando da Aeronáutica,coocurence,false,0,1,0.888888888889
+Cenipa,helicóptero,coocurence,false,0,1,0.888888888889
+Cenipa,investigação,coocurence,false,0,1,0.888888888889
+Cenipa,prevenção,coocurence,false,0,1,0.888888888889
+Cenipa,Sipaer,coocurence,false,0,1,0.888888888889
+Cenipa,transporte aéreo,coocurence,false,0,1,0.471404520791
+censo,Interlegis,coocurence,false,0,1,0.53033008589
+censo,legislativo,coocurence,false,0,1,0.265165042945
+censo,poder legislativo,coocurence,false,0,1,0.335410196625
+censo,populacao,coocurence,false,0,2,0.0
+censo,Senado Federal,coocurence,false,0,1,0.53033008589
+censo escolar,controle de qualidade,coocurence,false,0,1,0.868814542741
+censo escolar,desempenho escolar,coocurence,false,0,10,0.742307572562
+censo escolar,distorção idade-série,coocurence,false,0,1,0.809593313251
+censo escolar,educação básica,coocurence,false,0,10,0.730037865409
+censo escolar,educação superior,coocurence,false,0,1,0.627532091653
+censo escolar,Equipamentos públicos,coocurence,false,0,1,0.0594358365007
+censo escolar,horas-aula diária,coocurence,false,0,1,0.854124426521
+censo escolar,INEP,coocurence,false,0,10,0.741833955725
+censo escolar,magistério,coocurence,false,0,1,0.813451834782
+censo escolar,não resposta,coocurence,false,0,1,0.690596174999
+censo escolar,profissionais do magistério,coocurence,false,0,1,0.813451834782
+censo escolar,rendimento escolar,coocurence,false,0,3,0.872352484821
+censo escolar,SAEB,coocurence,false,0,1,0.868814542741
+censo escolar,tid,coocurence,false,0,1,0.809593313251
+CGU,compras,coocurence,false,0,1,0.487709607765
+CGU,copa,coocurence,false,0,1,0.645942241466
+CGU,copa 2014,coocurence,false,0,1,0.645942241466
+CGU,despesas diretas,coocurence,false,0,1,0.704664263418
+CGU,empresas inidôneas,coocurence,false,0,1,0.657102813832
+CGU,empresas suspensas,coocurence,false,0,1,0.696357518164
+CGU,executivo,coocurence,false,0,2,0.753094041411
+CGU,federal,coocurence,false,0,3,0.706603860226
+CGU,fornecedores,coocurence,false,0,1,0.478051035379
+CGU,gastos diretos,coocurence,false,0,1,0.704664263418
+CGU,MP,coocurence,false,0,1,0.249646443042
+CGU,portal da transparência,coocurence,false,0,4,0.738032160583
+CGU,servidor federal,coocurence,false,0,1,0.742781352708
+CGU,servidor público,coocurence,false,0,1,0.742781352708
+CGU,SIAPE,coocurence,false,0,1,0.742781352708
+CGU,transparência,coocurence,false,0,4,0.733268156838
+CID,Incapacidade,coocurence,false,0,2,0.845594324664
+CID,Previdência Social,coocurence,false,0,4,0.7130357447
+cidadão,Equipamentos públicos,coocurence,false,0,1,0.380562197554
+cidadão,família,coocurence,false,0,1,0.574177990955
+cidadão,geo,coocurence,false,0,1,0.527409631634
+cidadão,geolocalização,coocurence,false,0,1,0.557006651896
+cidadão,governo do estado,coocurence,false,0,1,0.389249472081
+cidadão,hospital,coocurence,false,0,1,0.778498944162
+cidadão,postos de saúde,coocurence,false,0,1,0.778498944162
+cidadão,São Paulo,coocurence,false,0,1,0.298142397
+cidadão,saúde,coocurence,false,0,1,0.778498944162
+cidadão,serviços oferecidos,coocurence,false,0,1,0.387298334621
+cidadão,SP,coocurence,false,0,1,0.316227766017
+cidadão,SUS,coocurence,false,0,1,0.778498944162
+cidadão,UBS,coocurence,false,0,1,0.778498944162
+CNAE,CNAE 2.0,coocurence,false,0,1,0.714285714286
+CNAE,CNAE 95,coocurence,false,0,1,0.741249316661
+CNAE,Previdência Social,coocurence,false,0,2,0.469732790966
+CNAE 2.0,Contribuintes,coocurence,false,0,1,0.780917887756
+CNAE 2.0,Empregado,coocurence,false,0,1,0.823754471048
+CNAE 2.0,GFIP,coocurence,false,0,1,0.776524328803
+CNAE 2.0,Previdência Social,coocurence,false,0,2,0.538934496778
+CNAE 2.0,SAE,coocurence,false,0,1,0.713024095907
+CNAE 95,Contribuintes,coocurence,false,0,1,0.795249187365
+CNAE 95,Contribuintes-Empregados,coocurence,false,0,1,0.784464540553
+CNAE 95,GFIP,coocurence,false,0,1,0.789557836317
+CNAE 95,Previdência Social,coocurence,false,0,2,0.552750212628
+CNES,entidades sociais,coocurence,false,0,1,0.666666666667
+CNES,organizações da sociedade civil,coocurence,false,0,1,0.536056267419
+CNES,OSC,coocurence,false,0,1,0.536056267419
+Comando da Aeronáutica,helicóptero,coocurence,false,0,1,0.888888888889
+Comando da Aeronáutica,investigação,coocurence,false,0,1,0.888888888889
+Comando da Aeronáutica,prevenção,coocurence,false,0,1,0.888888888889
+Comando da Aeronáutica,Sipaer,coocurence,false,0,1,0.888888888889
+Comando da Aeronáutica,transporte aéreo,coocurence,false,0,1,0.471404520791
+combate às drogas,comunidades terapêuticas,coocurence,false,0,1,0.857142857143
+combate às drogas,drogas,coocurence,false,0,1,0.857142857143
+combate às drogas,Equipamentos públicos,coocurence,false,0,1,0.265279054539
+combate às drogas,MJ,coocurence,false,0,1,0.310684883001
+combate às drogas,política contra as drogas,coocurence,false,0,1,0.857142857143
+combate às drogas,substâncias psicoativas,coocurence,false,0,1,0.857142857143
+combustíveis,comércio,coocurence,false,0,2,0.0620173672946
+combustíveis,comércio exterior,coocurence,false,0,1,0.620173672946
+combustíveis,concessões,coocurence,false,0,1,0.392232270276
+combustíveis,exportações,coocurence,false,0,1,0.620173672946
+combustíveis,gás natural,coocurence,false,0,4,0.514804854738
+combustíveis,importações,coocurence,false,0,1,0.620173672946
+combustíveis,indústria,coocurence,false,0,3,0.544704779402
+combustíveis,petróleo,coocurence,false,0,4,0.515687954032
+combustíveis,preços,coocurence,false,0,1,0.0427960492511
+comércio,preços,coocurence,false,0,1,0.138013111868
+comércio exterior,exportações,coocurence,false,0,1,0.8
+comércio exterior,gás natural,coocurence,false,0,1,0.711512473538
+comércio exterior,importações,coocurence,false,0,1,0.8
+comércio exterior,petróleo,coocurence,false,0,1,0.680336051417
+comissão,função de confiança,coocurence,false,0,1,0.8
+comissão,função pública,coocurence,false,0,1,0.8
+comissão,inabilitados,coocurence,false,0,1,0.8
+comissão,TCU,coocurence,false,0,1,0.516397779494
+competencia,Contribuintes,coocurence,false,0,3,0.785129519888
+competencia,estabelecimento,coocurence,false,0,1,0.780189497605
+competencia,GFIP,coocurence,false,0,3,0.791873963955
+competencia,guia,coocurence,false,0,1,0.835917318863
+competencia,guia-de-recolhimento,coocurence,false,0,2,0.830081873567
+competencia,Previdência Social,coocurence,false,0,3,0.499771755961
+competencia,recolhimento,coocurence,false,0,1,0.835917318863
+competencia,valores,coocurence,false,0,1,0.8427009716
+competencia,vinculos,coocurence,false,0,1,0.812604508329
+compras,comprasnet,coocurence,false,0,1,0.700516639454
+compras,concorrência,coocurence,false,0,1,0.700516639454
+compras,contratos,coocurence,false,0,1,0.700516639454
+compras,convite,coocurence,false,0,1,0.700516639454
+compras,empresas,coocurence,false,0,1,0.593944171872
+compras,empresas inidôneas,coocurence,false,0,2,0.625543242171
+compras,empresas suspensas,coocurence,false,0,1,0.606091526731
+compras,federal,coocurence,false,0,2,0.507673082567
+compras,fornecedores,coocurence,false,0,3,0.800160048016
+compras,leilão,coocurence,false,0,1,0.700516639454
+compras,licitação,coocurence,false,0,1,0.700516639454
+compras,licitantes inidôneas,coocurence,false,0,1,0.593944171872
+compras,materiais,coocurence,false,0,1,0.700516639454
+compras,modalidades,coocurence,false,0,1,0.700516639454
+compras,MP,coocurence,false,0,1,0.4268113742
+compras,ocorrências,coocurence,false,0,1,0.700516639454
+compras,portal da transparência,coocurence,false,0,1,0.491605144008
+compras,preços praticados,coocurence,false,0,1,0.700516639454
+compras,pregão,coocurence,false,0,1,0.700516639454
+compras,registro de preços,coocurence,false,0,1,0.700516639454
+compras,serviços,coocurence,false,0,1,0.555387081679
+compras,SIASG,coocurence,false,0,1,0.700516639454
+compras,SICAF,coocurence,false,0,1,0.700516639454
+compras,sustentável,coocurence,false,0,1,0.700516639454
+compras,TCU,coocurence,false,0,1,0.453632354363
+compras,tomada de preços,coocurence,false,0,1,0.700516639454
+compras,transparência,coocurence,false,0,2,0.507673082567
+comprasnet,concorrência,coocurence,false,0,1,0.954545454545
+comprasnet,contratos,coocurence,false,0,1,0.954545454545
+comprasnet,convite,coocurence,false,0,1,0.954545454545
+comprasnet,fornecedores,coocurence,false,0,1,0.686643649131
+comprasnet,leilão,coocurence,false,0,1,0.954545454545
+comprasnet,licitação,coocurence,false,0,1,0.954545454545
+comprasnet,materiais,coocurence,false,0,1,0.954545454545
+comprasnet,modalidades,coocurence,false,0,1,0.954545454545
+comprasnet,MP,coocurence,false,0,1,0.443952575977
+comprasnet,ocorrências,coocurence,false,0,1,0.954545454545
+comprasnet,preços praticados,coocurence,false,0,1,0.954545454545
+comprasnet,pregão,coocurence,false,0,1,0.954545454545
+comprasnet,registro de preços,coocurence,false,0,1,0.954545454545
+comprasnet,serviços,coocurence,false,0,1,0.756787468664
+comprasnet,SIASG,coocurence,false,0,1,0.954545454545
+comprasnet,SICAF,coocurence,false,0,1,0.954545454545
+comprasnet,sustentável,coocurence,false,0,1,0.954545454545
+comprasnet,tomada de preços,coocurence,false,0,1,0.954545454545
+comunidades terapêuticas,drogas,coocurence,false,0,1,0.857142857143
+comunidades terapêuticas,Equipamentos públicos,coocurence,false,0,1,0.265279054539
+comunidades terapêuticas,MJ,coocurence,false,0,1,0.310684883001
+comunidades terapêuticas,política contra as drogas,coocurence,false,0,1,0.857142857143
+comunidades terapêuticas,substâncias psicoativas,coocurence,false,0,1,0.857142857143
+Concessão de Direito Real de Uso,Concessão de Uso Especial para fins de Moradia,coocurence,false,0,1,0.9
+Concessão de Direito Real de Uso,CUEM,coocurence,false,0,1,0.9
+Concessão de Direito Real de Uso,imóveis,coocurence,false,0,1,0.9
+Concessão de Direito Real de Uso,imóveis dominiais,coocurence,false,0,1,0.9
+Concessão de Direito Real de Uso,MP,coocurence,false,0,1,0.257669250441
+Concessão de Direito Real de Uso,patrimônio da união,coocurence,false,0,1,0.9
+Concessão de Direito Real de Uso,SIAPA,coocurence,false,0,1,0.9
+Concessão de Direito Real de Uso,SPU,coocurence,false,0,1,0.9
+Concessão de Uso Especial para fins de Moradia,CUEM,coocurence,false,0,1,0.9
+Concessão de Uso Especial para fins de Moradia,imóveis,coocurence,false,0,1,0.9
+Concessão de Uso Especial para fins de Moradia,imóveis dominiais,coocurence,false,0,1,0.9
+Concessão de Uso Especial para fins de Moradia,MP,coocurence,false,0,1,0.257669250441
+Concessão de Uso Especial para fins de Moradia,patrimônio da união,coocurence,false,0,1,0.9
+Concessão de Uso Especial para fins de Moradia,SIAPA,coocurence,false,0,1,0.9
+Concessão de Uso Especial para fins de Moradia,SPU,coocurence,false,0,1,0.9
+concessões,petróleo,coocurence,false,0,1,0.478091443734
+concorrência,contratos,coocurence,false,0,1,0.954545454545
+concorrência,convite,coocurence,false,0,1,0.954545454545
+concorrência,fornecedores,coocurence,false,0,1,0.686643649131
+concorrência,leilão,coocurence,false,0,1,0.954545454545
+concorrência,licitação,coocurence,false,0,1,0.954545454545
+concorrência,materiais,coocurence,false,0,1,0.954545454545
+concorrência,modalidades,coocurence,false,0,1,0.954545454545
+concorrência,MP,coocurence,false,0,1,0.443952575977
+concorrência,ocorrências,coocurence,false,0,1,0.954545454545
+concorrência,preços praticados,coocurence,false,0,1,0.954545454545
+concorrência,pregão,coocurence,false,0,1,0.954545454545
+concorrência,registro de preços,coocurence,false,0,1,0.954545454545
+concorrência,serviços,coocurence,false,0,1,0.756787468664
+concorrência,SIASG,coocurence,false,0,1,0.954545454545
+concorrência,SICAF,coocurence,false,0,1,0.954545454545
+concorrência,sustentável,coocurence,false,0,1,0.954545454545
+concorrência,tomada de preços,coocurence,false,0,1,0.954545454545
+consocial,diretrizes,coocurence,false,0,1,0.666666666667
+consocial,participação social,coocurence,false,0,1,0.666666666667
+consocial,São Paulo,coocurence,false,0,1,0.222222222222
+consumidor,defesa do consumidor,coocurence,false,0,2,0.738818834044
+consumidor,economia,coocurence,false,0,1,0.421463615212
+consumidor,Equipamentos públicos,coocurence,false,0,1,0.209323762736
+consumidor,finanças,coocurence,false,0,1,0.39735970712
+consumidor,IBGE,coocurence,false,0,2,0.22297543612
+consumidor,índice,coocurence,false,0,1,0.415748589838
+consumidor,índices,coocurence,false,0,1,0.421463615212
+consumidor,inflação,coocurence,false,0,2,0.417148843813
+consumidor,IPCA,coocurence,false,0,2,0.425532248173
+consumidor,IPCA15,coocurence,false,0,1,0.433554984762
+consumidor,Ministério da Justiça,coocurence,false,0,3,0.627762264856
+consumidor,MJ,coocurence,false,0,3,0.556306786223
+consumidor,preços,coocurence,false,0,2,0.407095587108
+consumidor,procon,coocurence,false,0,3,0.711491458623
+consumidor,reclamação,coocurence,false,0,3,0.67012402876
+consumidor,Secretaria Nacional do Consumidor,coocurence,false,0,2,0.738818834044
+consumidor,Senacon,coocurence,false,0,2,0.738818834044
+consumidor,Sindec,coocurence,false,0,2,0.738818834044
+contratos,convite,coocurence,false,0,1,0.954545454545
+contratos,fornecedores,coocurence,false,0,1,0.686643649131
+contratos,leilão,coocurence,false,0,1,0.954545454545
+contratos,licitação,coocurence,false,0,1,0.954545454545
+contratos,materiais,coocurence,false,0,1,0.954545454545
+contratos,modalidades,coocurence,false,0,1,0.954545454545
+contratos,MP,coocurence,false,0,1,0.443952575977
+contratos,ocorrências,coocurence,false,0,1,0.954545454545
+contratos,preços praticados,coocurence,false,0,1,0.954545454545
+contratos,pregão,coocurence,false,0,1,0.954545454545
+contratos,registro de preços,coocurence,false,0,1,0.954545454545
+contratos,serviços,coocurence,false,0,1,0.756787468664
+contratos,SIASG,coocurence,false,0,1,0.954545454545
+contratos,SICAF,coocurence,false,0,1,0.954545454545
+contratos,sustentável,coocurence,false,0,1,0.954545454545
+contratos,tomada de preços,coocurence,false,0,1,0.954545454545
+contratos de repasse,convênios,coocurence,false,0,1,0.739600261634
+contratos de repasse,Ministério do Planejamento,coocurence,false,0,1,0.888888888889
+contratos de repasse,MP,coocurence,false,0,1,0.301785820142
+contratos de repasse,ONG,coocurence,false,0,1,0.888888888889
+contratos de repasse,organizações da sociedade civil,coocurence,false,0,1,0.680882906649
+contratos de repasse,OSC,coocurence,false,0,1,0.680882906649
+contratos de repasse,siconv,coocurence,false,0,1,0.888888888889
+contribuinte,Equipamentos públicos,coocurence,false,0,1,0.125552964115
+contribuinte,finanças,coocurence,false,0,1,0.34426518633
+contribuinte,imposto de renda,coocurence,false,0,1,0.8
+contribuinte,MF,coocurence,false,0,1,0.8
+contribuinte,receita federal,coocurence,false,0,1,0.8
+Contribuinte Individual,Contribuintes,coocurence,false,0,2,0.611466915606
+Contribuinte Individual,GPS,coocurence,false,0,1,0.801122357501
+Contribuinte Individual,GR-6,coocurence,false,0,1,0.787838597158
+Contribuinte Individual,GRPS,coocurence,false,0,1,0.653846153846
+Contribuinte Individual,Previdência Social,coocurence,false,0,2,0.519681127174
+Contribuinte Individual,Receitas,coocurence,false,0,1,0.663252774608
+Contribuinte Individual,salário base,coocurence,false,0,1,0.707106781187
+Contribuintes,Contribuintes-Empregados,coocurence,false,0,2,0.798125237212
+Contribuintes,Empregado,coocurence,false,0,3,0.819531292691
+Contribuintes,estabelecimento,coocurence,false,0,1,0.701851938519
+Contribuintes,Estabelecimentos,coocurence,false,0,2,0.76938047072
+Contribuintes,fundo-de-garantia,coocurence,false,0,1,0.681209234445
+Contribuintes,GFIP,coocurence,false,0,19,0.706066179966
+Contribuintes,GPS,coocurence,false,0,6,0.766888434506
+Contribuintes,GR-6,coocurence,false,0,1,0.527375501558
+Contribuintes,GRPS,coocurence,false,0,1,0.565916343755
+Contribuintes,guia,coocurence,false,0,1,0.691530586482
+Contribuintes,guia-de-recolhimento,coocurence,false,0,2,0.745921265626
+Contribuintes,Pessoa Física,coocurence,false,0,1,0.818230024416
+Contribuintes,Previdência Social,coocurence,false,0,21,0.562447248652
+Contribuintes,Receitas,coocurence,false,0,1,0.634739303703
+Contribuintes,recolhimento,coocurence,false,0,1,0.691530586482
+Contribuintes,SAE,coocurence,false,0,1,0.761656215922
+Contribuintes,salário base,coocurence,false,0,1,0.600770075047
+Contribuintes,SIMPLES,coocurence,false,0,2,0.76938047072
+Contribuintes,tempo-de-servico,coocurence,false,0,1,0.681209234445
+Contribuintes,Unidade da Federação,coocurence,false,0,1,0.76938047072
+Contribuintes,valores,coocurence,false,0,1,0.7357900683
+Contribuintes,vinculos,coocurence,false,0,2,0.7357900683
+Contribuintes-Empregados,GFIP,coocurence,false,0,2,0.802427172648
+Contribuintes-Empregados,Previdência Social,coocurence,false,0,2,0.523379925232
+Contribuintes-Empregados,Unidade da Federação,coocurence,false,0,1,0.843274042712
+controle de qualidade,desempenho escolar,coocurence,false,0,1,0.863474513402
+controle de qualidade,educação básica,coocurence,false,0,1,0.864276612781
+controle de qualidade,INEP,coocurence,false,0,1,0.84
+convênios,federal,coocurence,false,0,1,0.366088266073
+convênios,Ministério do Planejamento,coocurence,false,0,1,0.739600261634
+convênios,MP,coocurence,false,0,1,0.351541372666
+convênios,ONG,coocurence,false,0,1,0.739600261634
+convênios,organizações da sociedade civil,coocurence,false,0,1,0.566528822887
+convênios,OSC,coocurence,false,0,1,0.566528822887
+convênios,portal da transparência,coocurence,false,0,1,0.349956619637
+convênios,repasse,coocurence,false,0,1,0.416025147169
+convênios,siconv,coocurence,false,0,1,0.739600261634
+convênios,transparência,coocurence,false,0,1,0.337927630222
+convite,fornecedores,coocurence,false,0,1,0.686643649131
+convite,leilão,coocurence,false,0,1,0.954545454545
+convite,licitação,coocurence,false,0,1,0.954545454545
+convite,materiais,coocurence,false,0,1,0.954545454545
+convite,modalidades,coocurence,false,0,1,0.954545454545
+convite,MP,coocurence,false,0,1,0.443952575977
+convite,ocorrências,coocurence,false,0,1,0.954545454545
+convite,preços praticados,coocurence,false,0,1,0.954545454545
+convite,pregão,coocurence,false,0,1,0.954545454545
+convite,registro de preços,coocurence,false,0,1,0.954545454545
+convite,serviços,coocurence,false,0,1,0.756787468664
+convite,SIASG,coocurence,false,0,1,0.954545454545
+convite,SICAF,coocurence,false,0,1,0.954545454545
+convite,sustentável,coocurence,false,0,1,0.954545454545
+convite,tomada de preços,coocurence,false,0,1,0.954545454545
+copa,copa 2014,coocurence,false,0,1,0.8
+copa,executivo,coocurence,false,0,1,0.71818484646
+copa,portal da transparência,coocurence,false,0,1,0.615587011251
+copa,transparência,coocurence,false,0,1,0.544891931024
+copa 2014,executivo,coocurence,false,0,1,0.71818484646
+copa 2014,portal da transparência,coocurence,false,0,1,0.615587011251
+copa 2014,transparência,coocurence,false,0,1,0.544891931024
+CRAS,Equipamentos públicos,coocurence,false,0,1,0.533600097488
+CRAS,família,coocurence,false,0,1,0.785135883885
+CREAS,Equipamentos públicos,coocurence,false,0,1,0.515761429555
+CREAS,família,coocurence,false,0,1,0.764509572108
+CREAS,serviços,coocurence,false,0,1,0.345032779671
+Créditos,Histórico,coocurence,false,0,1,0.799848814135
+Créditos,pagamento-de-beneficios,coocurence,false,0,1,0.704214716792
+Créditos,Pensão por morte,coocurence,false,0,1,0.845301931517
+Créditos,Previdência Social,coocurence,false,0,11,0.69785156426
+Créditos,Sexo,coocurence,false,0,1,0.740778532672
+Créditos,UF,coocurence,false,0,3,0.904001994351
+Créditos,Valor de benefício,coocurence,false,0,1,0.705386742684
+crimes,crimes-violentos-letais-intencionais,coocurence,false,0,1,0.621059003408
+crimes,estadual,coocurence,false,0,3,0.72250101869
+crimes,municipal,coocurence,false,0,3,0.742857142857
+crimes,ocorrências criminais,coocurence,false,0,2,0.774596669241
+crimes,ocorrências-criminais,coocurence,false,0,1,0.621059003408
+crimes,pe,coocurence,false,0,1,0.621059003408
+crimes,pernambuco,coocurence,false,0,1,0.621059003408
+crimes,rio grande do sul,coocurence,false,0,2,0.774596669241
+crimes,RS,coocurence,false,0,2,0.774596669241
+crimes,violência contra a mulher,coocurence,false,0,1,0.828078671211
+crimes-violentos-letais-intencionais,estadual,coocurence,false,0,1,0.604040449693
+crimes-violentos-letais-intencionais,municipal,coocurence,false,0,1,0.621059003408
+crimes-violentos-letais-intencionais,ocorrências-criminais,coocurence,false,0,1,0.833333333333
+crimes-violentos-letais-intencionais,pe,coocurence,false,0,1,0.833333333333
+crimes-violentos-letais-intencionais,pernambuco,coocurence,false,0,1,0.833333333333
+CUEM,imóveis,coocurence,false,0,1,0.9
+CUEM,imóveis dominiais,coocurence,false,0,1,0.9
+CUEM,MP,coocurence,false,0,1,0.257669250441
+CUEM,patrimônio da união,coocurence,false,0,1,0.9
+CUEM,SIAPA,coocurence,false,0,1,0.9
+CUEM,SPU,coocurence,false,0,1,0.9
+Data de Despacho do Benefício,Previdência Social,coocurence,false,0,1,0.663198720784
+dataprev,previdência social,coocurence,false,0,1,0.75
+dataprev,trabalho,coocurence,false,0,1,0.243332131696
+DCB,Dependentes,coocurence,false,0,1,0.866921446863
+DCB,Pensão por morte,coocurence,false,0,1,0.793568511826
+DCB,Previdência Social,coocurence,false,0,1,0.596092853655
+DDB,Previdência Social,coocurence,false,0,1,0.685496159516
+DDB,UF,coocurence,false,0,1,0.732166904516
+defesa do consumidor,Ministério da Justiça,coocurence,false,0,2,0.74481908914
+defesa do consumidor,MJ,coocurence,false,0,2,0.61529109256
+defesa do consumidor,procon,coocurence,false,0,2,0.868487174604
+defesa do consumidor,reclamação,coocurence,false,0,2,0.817991723328
+defesa do consumidor,Secretaria Nacional do Consumidor,coocurence,false,0,2,0.878787878788
+defesa do consumidor,Senacon,coocurence,false,0,2,0.878787878788
+defesa do consumidor,Sindec,coocurence,false,0,2,0.878787878788
+Defesa do consumidor,Justiça,coocurence,false,0,2,0.0
+dengue,IBGE,coocurence,false,0,1,0.59160797831
+dengue,Ministério da Saúde,coocurence,false,0,1,0.792593923901
+dengue,morbidade,coocurence,false,0,1,0.809039834956
+dengue,MS,coocurence,false,0,1,0.792593923901
+Departamento de Polícia Rodoviária Federal,DPRF,coocurence,false,0,2,0.809523809524
+Departamento de Polícia Rodoviária Federal,Ministério da Justiça,coocurence,false,0,2,0.542837290885
+Departamento de Polícia Rodoviária Federal,MJ,coocurence,false,0,2,0.448435002084
+Departamento de Polícia Rodoviária Federal,multas,coocurence,false,0,1,0.801783725737
+Departamento de Polícia Rodoviária Federal,SIGER,coocurence,false,0,1,0.824786098842
+DEPEN,Ministério da Justiça,coocurence,false,0,1,0.402139492735
+DEPEN,MJ,coocurence,false,0,1,0.332205298513
+DEPEN,sistema prisional,coocurence,false,0,1,0.666666666667
+Dependentes,Pensão por morte,coocurence,false,0,2,0.833220308783
+Dependentes,Previdência Social,coocurence,false,0,2,0.651157477217
+deputado,deputado federal,coocurence,false,0,1,0.833333333333
+deputado,federal,coocurence,false,0,1,0.207256668072
+deputado,poder legislativo,coocurence,false,0,1,0.645497224368
+deputado,projetos de lei,coocurence,false,0,1,0.833333333333
+deputado,proposições parlamentares,coocurence,false,0,1,0.833333333333
+deputado federal,federal,coocurence,false,0,1,0.207256668072
+deputado federal,poder legislativo,coocurence,false,0,1,0.645497224368
+deputado federal,projetos de lei,coocurence,false,0,1,0.833333333333
+deputado federal,proposições parlamentares,coocurence,false,0,1,0.833333333333
+derivados,indústria,coocurence,false,0,1,0.377964473009
+derivados,petróleo,coocurence,false,0,1,0.292770021885
+desarmamento,Equipamentos públicos,coocurence,false,0,1,0.175465601586
+desarmamento,paz,coocurence,false,0,1,0.75
+desarmamento,polícia,coocurence,false,0,1,0.490290337845
+desempenho escolar,distorção idade-série,coocurence,false,0,1,0.804617277708
+desempenho escolar,educação,coocurence,false,0,1,0.321797951467
+desempenho escolar,educação básica,coocurence,false,0,9,0.770731624014
+desempenho escolar,educação superior,coocurence,false,0,1,0.64175260438
+desempenho escolar,Enade,coocurence,false,0,1,0.303169531295
+desempenho escolar,ensino superior,coocurence,false,0,1,0.168325082306
+desempenho escolar,graduação,coocurence,false,0,1,0.303169531295
+desempenho escolar,horas-aula diária,coocurence,false,0,1,0.848874687627
+desempenho escolar,INEP,coocurence,false,0,11,0.708491908432
+desempenho escolar,magistério,coocurence,false,0,1,0.808452083454
+desempenho escolar,não resposta,coocurence,false,0,1,0.686351536294
+desempenho escolar,profissionais do magistério,coocurence,false,0,1,0.808452083454
+desempenho escolar,rendimento escolar,coocurence,false,0,3,0.873228053326
+desempenho escolar,SAEB,coocurence,false,0,1,0.863474513402
+desempenho escolar,tid,coocurence,false,0,1,0.804617277708
+Deslocados,Deslocamento,coocurence,false,0,1,0.8
+Deslocados,Previdência Social,coocurence,false,0,1,0.659689732843
+Deslocamento,Previdência Social,coocurence,false,0,1,0.659689732843
+desmatamento,efeito estufa,coocurence,false,0,1,0.8
+desmatamento,INPE,coocurence,false,0,1,0.8
+desmatamento,poluição,coocurence,false,0,1,0.8
+despesas diretas,federal,coocurence,false,0,1,0.590299591942
+despesas diretas,gastos diretos,coocurence,false,0,1,0.8
+despesas diretas,portal da transparência,coocurence,false,0,1,0.71818484646
+despesas diretas,transparência,coocurence,false,0,1,0.68111491378
+DIB,Previdência Social,coocurence,false,0,2,0.713868025228
+diretrizes,participação social,coocurence,false,0,1,0.666666666667
+diretrizes,São Paulo,coocurence,false,0,1,0.222222222222
+Dissertações,ensino superior,coocurence,false,0,1,0.653197264742
+Dissertações,estratificação Qualis,coocurence,false,0,1,0.833333333333
+Dissertações,instituições de ensino superior,coocurence,false,0,1,0.679366220487
+Dissertações,Teses,coocurence,false,0,1,0.833333333333
+distorção idade-série,educação básica,coocurence,false,0,1,0.811607840616
+distorção idade-série,INEP,coocurence,false,0,1,0.794444999445
+distorção idade-série,rendimento escolar,coocurence,false,0,1,0.857142857143
+distorção idade-série,tid,coocurence,false,0,1,0.857142857143
+dns,domínios,coocurence,false,0,1,0.666666666667
+dns,governo eletrônico,coocurence,false,0,1,0.666666666667
+dns,localização internet,coocurence,false,0,1,0.666666666667
+dólar,euro,coocurence,false,0,1,0.857142857143
+dólar,ipea,coocurence,false,0,1,0.857142857143
+dólar,ipeadata,coocurence,false,0,1,0.857142857143
+domicílios,família,coocurence,false,0,1,0.141156934648
+domicílios,IBGE,coocurence,false,0,2,0.178376517003
+domicílios,residências,coocurence,false,0,2,0.636363636364
+domínios,governo eletrônico,coocurence,false,0,1,0.666666666667
+domínios,localização internet,coocurence,false,0,1,0.666666666667
+DPRF,Ministério da Justiça,coocurence,false,0,2,0.542837290885
+DPRF,MJ,coocurence,false,0,2,0.448435002084
+DPRF,multas,coocurence,false,0,1,0.801783725737
+DPRF,SIGER,coocurence,false,0,1,0.824786098842
+drogas,Equipamentos públicos,coocurence,false,0,1,0.265279054539
+drogas,MJ,coocurence,false,0,1,0.310684883001
+drogas,política contra as drogas,coocurence,false,0,1,0.857142857143
+drogas,substâncias psicoativas,coocurence,false,0,1,0.857142857143
+DRSAI,IBGE,coocurence,false,0,1,0.604743156815
+DRSAI,Ministério da Saúde,coocurence,false,0,1,0.759554525313
+DRSAI,morbidade,coocurence,false,0,1,0.783929495902
+DRSAI,MS,coocurence,false,0,1,0.759554525313
+DRSAI,saneamento ambiental,coocurence,false,0,1,0.674199862463
+DST,IBGE,coocurence,false,0,1,0.604743156815
+DST,Ministério da Saúde,coocurence,false,0,1,0.810191493667
+DST,morbidade,coocurence,false,0,1,0.783929495902
+DST,MS,coocurence,false,0,1,0.810191493667
+economia,IBGE,coocurence,false,0,1,0.379536057638
+economia,índices,coocurence,false,0,1,0.833333333333
+economia,inflação,coocurence,false,0,1,0.710046946805
+economia,IPCA,coocurence,false,0,1,0.801783725737
+economia,preços,coocurence,false,0,1,0.692934867184
+educação,Enade,coocurence,false,0,1,0.612372435696
+educação,Enem,coocurence,false,0,1,0.612372435696
+educação,ensino médio,coocurence,false,0,1,0.612372435696
+educação,ensino superior,coocurence,false,0,1,0.4
+educação,graduação,coocurence,false,0,1,0.612372435696
+educação,INEP,coocurence,false,0,2,0.22360679775
+educação,universidades,coocurence,false,0,1,0.527644853011
+educação,vestibular,coocurence,false,0,1,0.612372435696
+educação básica,Equipamentos públicos,coocurence,false,0,1,0.0602847169721
+educação básica,horas-aula diária,coocurence,false,0,1,0.854720744122
+educação básica,INEP,coocurence,false,0,9,0.761043572921
+educação básica,magistério,coocurence,false,0,1,0.81088891109
+educação básica,não resposta,coocurence,false,0,1,0.696222826963
+educação básica,profissionais do magistério,coocurence,false,0,1,0.81088891109
+educação básica,rendimento escolar,coocurence,false,0,3,0.86571502999
+educação básica,SAEB,coocurence,false,0,1,0.864276612781
+educação básica,tid,coocurence,false,0,1,0.811607840616
+educação superior,ENC,coocurence,false,0,1,0.653197264742
+educação superior,ensino superior,coocurence,false,0,1,0.328633534503
+educação superior,Equipamentos públicos,coocurence,false,0,1,0.128141957406
+educação superior,Exame de cursos,coocurence,false,0,1,0.653197264742
+educação superior,INEP,coocurence,false,0,3,0.522557811794
+educação superior,instituições de ensino superior,coocurence,false,0,1,0.253184841771
+educação superior,PNERA,coocurence,false,0,1,0.639009650423
+educação superior,Provão,coocurence,false,0,1,0.653197264742
+educação superior,reforma agrária,coocurence,false,0,1,0.639009650423
+educação superior,universidades,coocurence,false,0,1,0.385337317794
+efeito estufa,INPE,coocurence,false,0,1,0.8
+efeito estufa,poluição,coocurence,false,0,1,0.8
+eleição,eleitores,coocurence,false,0,1,0.692902328156
+eleição,município,coocurence,false,0,1,0.53033008589
+eleição,partidos,coocurence,false,0,1,0.775940289799
+eleição,partidos políticos,coocurence,false,0,2,0.721687836487
+eleição,perfil do eleitorado,coocurence,false,0,1,0.53033008589
+eleição,perfil dos candidatos,coocurence,false,0,1,0.612372435696
+eleição,prestação de contas,coocurence,false,0,1,0.721687836487
+eleição,resultado das eleições,coocurence,false,0,1,0.612372435696
+eleição,TSE,coocurence,false,0,4,0.527046276695
+eleitores,eleitores filiados,coocurence,false,0,1,0.674199862463
+eleitores,filiação partidária,coocurence,false,0,1,0.674199862463
+eleitores,município,coocurence,false,0,1,0.603022689156
+eleitores,partidos,coocurence,false,0,1,0.700649049745
+eleitores,partidos políticos,coocurence,false,0,1,0.738548945876
+eleitores,perfil do eleitorado,coocurence,false,0,1,0.603022689156
+eleitores,TSE,coocurence,false,0,2,0.584306547468
+eleitores filiados,filiação partidária,coocurence,false,0,1,0.8
+eleitores filiados,partidos,coocurence,false,0,1,0.692820323028
+eleitores filiados,partidos políticos,coocurence,false,0,1,0.639009650423
+eleitores filiados,TSE,coocurence,false,0,1,0.533333333333
+empregado,Equipamentos públicos,coocurence,false,0,1,0.199753542728
+empregado,INSS,coocurence,false,0,1,0.5378528742
+empregado,pensionista,coocurence,false,0,1,0.9
+empregado,Previdência,coocurence,false,0,1,0.9
+empregado,segurado,coocurence,false,0,1,0.9
+empregado,trabalhador,coocurence,false,0,1,0.9
+Empregado,GFIP,coocurence,false,0,3,0.823641450866
+Empregado,Previdência Social,coocurence,false,0,3,0.539685731528
+Empregado,SAE,coocurence,false,0,1,0.747545001596
+emprego,Equipamentos públicos,coocurence,false,0,2,0.307331699656
+emprego,locais de atendimento,coocurence,false,0,1,0.866921446863
+emprego,MTE,coocurence,false,0,2,0.826086956522
+emprego,qualificação profissional,coocurence,false,0,1,0.851256530759
+emprego,seguro-desemprego,coocurence,false,0,2,0.826086956522
+emprego,trabalho,coocurence,false,0,2,0.710335596066
+empresas,empresas inidôneas,coocurence,false,0,1,0.788110406239
+empresas,federal,coocurence,false,0,1,0.498894211695
+empresas,fornecedores,coocurence,false,0,1,0.582181736427
+empresas,licitantes inidôneas,coocurence,false,0,1,0.857142857143
+empresas,TCU,coocurence,false,0,1,0.654653670708
+empresas,transparência,coocurence,false,0,1,0.498894211695
+Empresas,Entidades Equiparadas,coocurence,false,0,4,0.84346532638
+Empresas,GPS,coocurence,false,0,3,0.839605253344
+Empresas,GR-6,coocurence,false,0,1,0.834814171265
+Empresas,GRPS,coocurence,false,0,3,0.891512163409
+Empresas,Previdência Social,coocurence,false,0,5,0.575408422076
+Empresas,Receitas,coocurence,false,0,4,0.855634698611
+Empresas,Recolhimento,coocurence,false,0,2,0.891106468579
+Empresas,Recolhimentos,coocurence,false,0,2,0.84715631035
+Empresas,Salário Maternidade,coocurence,false,0,1,0.560668624145
+Empresas,UF,coocurence,false,0,1,0.752868259581
+Empresas Equiparadas,Entidades Equiparadas,coocurence,false,0,3,0.838936683718
+Empresas Equiparadas,FPAS,coocurence,false,0,1,0.893819357297
+Empresas Equiparadas,GPS,coocurence,false,0,1,0.772320423396
+Empresas Equiparadas,GRPS,coocurence,false,0,3,0.83161214928
+Empresas Equiparadas,Previdência Social,coocurence,false,0,3,0.448679205425
+Empresas Equiparadas,Receitas,coocurence,false,0,3,0.826014982646
+Empresas Equiparadas,Recolhimento,coocurence,false,0,3,0.852825584719
+Empresas Equiparadas,Rubrica,coocurence,false,0,3,0.869565217391
+Empresas Equiparadas,UF,coocurence,false,0,2,0.609158395004
+empresas inidôneas,empresas suspensas,coocurence,false,0,1,0.810930758852
+empresas inidôneas,federal,coocurence,false,0,2,0.635142932064
+empresas inidôneas,fornecedores,coocurence,false,0,2,0.613155020597
+empresas inidôneas,licitantes inidôneas,coocurence,false,0,1,0.788110406239
+empresas inidôneas,portal da transparência,coocurence,false,0,1,0.669710822529
+empresas inidôneas,TCU,coocurence,false,0,1,0.601929265429
+empresas inidôneas,transparência,coocurence,false,0,2,0.677485794201
+empresas suspensas,federal,coocurence,false,0,1,0.682060250687
+empresas suspensas,fornecedores,coocurence,false,0,1,0.594088525786
+empresas suspensas,portal da transparência,coocurence,false,0,1,0.689441039806
+empresas suspensas,transparência,coocurence,false,0,1,0.753856066549
+Enade,ensino superior,coocurence,false,0,1,0.489897948557
+Enade,graduação,coocurence,false,0,1,0.833333333333
+Enade,INEP,coocurence,false,0,1,0.292118697336
+ENC,Exame de cursos,coocurence,false,0,1,0.8
+ENC,INEP,coocurence,false,0,1,0.34
+ENC,Provão,coocurence,false,0,1,0.8
+Enem,ensino médio,coocurence,false,0,1,0.833333333333
+Enem,INEP,coocurence,false,0,1,0.109544511501
+Enem,universidades,coocurence,false,0,1,0.615457454897
+Enem,vestibular,coocurence,false,0,1,0.833333333333
+energias não renováveis,energias renováveis,coocurence,false,0,1,0.923076923077
+energias não renováveis,geo,coocurence,false,0,1,0.669534063412
+energias não renováveis,geolocalização,coocurence,false,0,1,0.707106781187
+energias não renováveis,governo federal,coocurence,false,0,1,0.923076923077
+energias não renováveis,habitação,coocurence,false,0,1,0.923076923077
+energias não renováveis,MP,coocurence,false,0,1,0.301321176571
+energias não renováveis,obras,coocurence,false,0,1,0.923076923077
+energias não renováveis,pac,coocurence,false,0,1,0.923076923077
+energias não renováveis,PAC,coocurence,false,0,1,0.923076923077
+energias não renováveis,programas de governo,coocurence,false,0,1,0.923076923077
+energias não renováveis,recursos hídricos,coocurence,false,0,1,0.923076923077
+energias não renováveis,saneamento e urbanismo,coocurence,false,0,1,0.923076923077
+energias não renováveis,transporte,coocurence,false,0,1,0.554700196225
+energias renováveis,geo,coocurence,false,0,1,0.669534063412
+energias renováveis,geolocalização,coocurence,false,0,1,0.707106781187
+energias renováveis,governo federal,coocurence,false,0,1,0.923076923077
+energias renováveis,habitação,coocurence,false,0,1,0.923076923077
+energias renováveis,MP,coocurence,false,0,1,0.301321176571
+energias renováveis,obras,coocurence,false,0,1,0.923076923077
+energias renováveis,pac,coocurence,false,0,1,0.923076923077
+energias renováveis,PAC,coocurence,false,0,1,0.923076923077
+energias renováveis,programas de governo,coocurence,false,0,1,0.923076923077
+energias renováveis,recursos hídricos,coocurence,false,0,1,0.923076923077
+energias renováveis,saneamento e urbanismo,coocurence,false,0,1,0.923076923077
+energias renováveis,transporte,coocurence,false,0,1,0.554700196225
+ensino médio,INEP,coocurence,false,0,1,0.109544511501
+ensino médio,universidades,coocurence,false,0,1,0.615457454897
+ensino médio,vestibular,coocurence,false,0,1,0.833333333333
+ensino superior,Equipamentos públicos,coocurence,false,0,1,0.140372481269
+ensino superior,estratificação Qualis,coocurence,false,0,1,0.653197264742
+ensino superior,graduação,coocurence,false,0,1,0.489897948557
+ensino superior,INEP,coocurence,false,0,1,0.18782971011
+ensino superior,instituições de ensino superior,coocurence,false,0,2,0.610170215848
+ensino superior,Teses,coocurence,false,0,1,0.653197264742
+ensino superior,universidades,coocurence,false,0,1,0.422115882409
+entidade pública,estrutura orgânica,coocurence,false,0,1,0.923076923077
+entidade pública,estrutura organizacional,coocurence,false,0,1,0.923076923077
+entidade pública,federal,coocurence,false,0,1,0.366088266073
+entidade pública,fundação,coocurence,false,0,1,0.923076923077
+entidade pública,hierarquia organizacional,coocurence,false,0,1,0.923076923077
+entidade pública,MP,coocurence,false,0,1,0.376651470714
+entidade pública,órgão,coocurence,false,0,1,0.923076923077
+entidade pública,órgão colegiado,coocurence,false,0,1,0.923076923077
+entidade pública,poder executivo,coocurence,false,0,1,0.923076923077
+entidade pública,SIORG,coocurence,false,0,1,0.923076923077
+Entidades Equiparadas,FPAS,coocurence,false,0,1,0.814955396847
+Entidades Equiparadas,GPS,coocurence,false,0,5,0.815339574361
+Entidades Equiparadas,GR-6,coocurence,false,0,1,0.796345198882
+Entidades Equiparadas,GRPS,coocurence,false,0,7,0.848486656467
+Entidades Equiparadas,Previdência Social,coocurence,false,0,8,0.490428619855
+Entidades Equiparadas,Receitas,coocurence,false,0,8,0.83686974857
+Entidades Equiparadas,Recolhimento,coocurence,false,0,6,0.864826862724
+Entidades Equiparadas,Recolhimentos,coocurence,false,0,2,0.794363391091
+Entidades Equiparadas,Rubrica,coocurence,false,0,3,0.838936683718
+Entidades Equiparadas,SAE,coocurence,false,0,1,0.754073902864
+Entidades Equiparadas,UF,coocurence,false,0,2,0.686701603499
+entidades sociais,organizações da sociedade civil,coocurence,false,0,1,0.536056267419
+entidades sociais,OSC,coocurence,false,0,1,0.536056267419
+Equipamentos públicos,família,coocurence,false,0,4,0.509310043516
+Equipamentos públicos,finanças,coocurence,false,0,1,0.0810440898473
+Equipamentos públicos,fiscalização,coocurence,false,0,1,0.318334865446
+Equipamentos públicos,geo,coocurence,false,0,1,0.286731669179
+Equipamentos públicos,geolocalização,coocurence,false,0,1,0.302822393568
+Equipamentos públicos,hospital,coocurence,false,0,1,0.444400903475
+Equipamentos públicos,imposto de renda,coocurence,false,0,1,0.125552964115
+Equipamentos públicos,INSS,coocurence,false,0,1,0.119375574542
+Equipamentos públicos,instituições de ensino superior,coocurence,false,0,1,0.194661607261
+Equipamentos públicos,justiça,coocurence,false,0,1,0.24565184222
+Equipamentos públicos,locais de atendimento,coocurence,false,0,1,0.318334865446
+Equipamentos públicos,meio ambiente,coocurence,false,0,1,0.175465601586
+Equipamentos públicos,MF,coocurence,false,0,1,0.125552964115
+Equipamentos públicos,Ministério da Justiça,coocurence,false,0,1,0.279351678689
+Equipamentos públicos,MJ,coocurence,false,0,5,0.236540211103
+Equipamentos públicos,MTE,coocurence,false,0,2,0.307331699656
+Equipamentos públicos,passaporte,coocurence,false,0,1,0.318334865446
+Equipamentos públicos,paz,coocurence,false,0,1,0.175465601586
+Equipamentos públicos,pensionista,coocurence,false,0,1,0.199753542728
+Equipamentos públicos,polícia,coocurence,false,0,3,0.316587047821
+Equipamentos públicos,polícia federal,coocurence,false,0,1,0.318334865446
+Equipamentos públicos,polícia rodoviária,coocurence,false,0,1,0.318334865446
+Equipamentos públicos,polícia rodoviária federal,coocurence,false,0,1,0.318334865446
+Equipamentos públicos,política contra as drogas,coocurence,false,0,1,0.265279054539
+Equipamentos públicos,postos de saúde,coocurence,false,0,1,0.444400903475
+Equipamentos públicos,Previdência,coocurence,false,0,1,0.199753542728
+Equipamentos públicos,procon,coocurence,false,0,1,0.236597768912
+Equipamentos públicos,qualificação profissional,coocurence,false,0,1,0.315187540284
+Equipamentos públicos,receita federal,coocurence,false,0,1,0.125552964115
+Equipamentos públicos,reclamação,coocurence,false,0,1,0.222841536856
+Equipamentos públicos,rede privada,coocurence,false,0,1,0.515761429555
+Equipamentos públicos,Rede Privada de entidades de assistência social,coocurence,false,0,1,0.515761429555
+Equipamentos públicos,registro,coocurence,false,0,1,0.24565184222
+Equipamentos públicos,rodovias,coocurence,false,0,1,0.318334865446
+Equipamentos públicos,saúde,coocurence,false,0,1,0.444400903475
+Equipamentos públicos,saúde no trabalho,coocurence,false,0,1,0.175465601586
+Equipamentos públicos,segurado,coocurence,false,0,1,0.199753542728
+Equipamentos públicos,segurança,coocurence,false,0,1,0.318334865446
+Equipamentos públicos,segurança do trabalho,coocurence,false,0,1,0.175465601586
+Equipamentos públicos,segurança pública,coocurence,false,0,1,0.318334865446
+Equipamentos públicos,seguro-desemprego,coocurence,false,0,2,0.307331699656
+Equipamentos públicos,serviços,coocurence,false,0,1,0.225409159603
+Equipamentos públicos,substâncias psicoativas,coocurence,false,0,1,0.265279054539
+Equipamentos públicos,SUS,coocurence,false,0,1,0.444400903475
+Equipamentos públicos,trabalhador,coocurence,false,0,1,0.199753542728
+Equipamentos públicos,trabalho,coocurence,false,0,3,0.25048565739
+Equipamentos públicos,trânsito,coocurence,false,0,1,0.318334865446
+Equipamentos públicos,UBS,coocurence,false,0,1,0.444400903475
+Equipamentos públicos,universidades,coocurence,false,0,1,0.190457530061
+Espécie,Histórico,coocurence,false,0,2,0.857194615415
+Espécie,Previdência Social,coocurence,false,0,3,0.701068713223
+Espécie,UF,coocurence,false,0,1,0.788560914965
+Espécies,Pensão Alimentícia,coocurence,false,0,1,0.880172458847
+Espécies,Pensão por morte,coocurence,false,0,1,0.91894162569
+Espécies,Previdência Social,coocurence,false,0,3,0.720373672434
+Espécies,UF,coocurence,false,0,1,0.806283597807
+estabelecimento,GFIP,coocurence,false,0,1,0.709928880682
+estabelecimento,Previdência Social,coocurence,false,0,1,0.435948504912
+estabelecimento,vinculos,coocurence,false,0,1,0.848668424792
+Estabelecimentos,GFIP,coocurence,false,0,2,0.774374243776
+Estabelecimentos,Previdência Social,coocurence,false,0,2,0.498276287573
+Estabelecimentos,SIMPLES,coocurence,false,0,2,0.8
+estadual,fornecedores,coocurence,false,0,1,0.0230204627758
+estadual,municipal,coocurence,false,0,3,0.72250101869
+estadual,ocorrências criminais,coocurence,false,0,2,0.753370803501
+estadual,ocorrências-criminais,coocurence,false,0,1,0.604040449693
+estadual,pe,coocurence,false,0,1,0.604040449693
+estadual,pernambuco,coocurence,false,0,1,0.604040449693
+estadual,rio grande do sul,coocurence,false,0,2,0.753370803501
+estadual,RS,coocurence,false,0,2,0.753370803501
+estadual,violência contra a mulher,coocurence,false,0,1,0.805387266257
+estratificação Qualis,instituições de ensino superior,coocurence,false,0,1,0.679366220487
+estratificação Qualis,Teses,coocurence,false,0,1,0.833333333333
+estrutura orgânica,estrutura organizacional,coocurence,false,0,1,0.923076923077
+estrutura orgânica,federal,coocurence,false,0,1,0.366088266073
+estrutura orgânica,fundação,coocurence,false,0,1,0.923076923077
+estrutura orgânica,hierarquia organizacional,coocurence,false,0,1,0.923076923077
+estrutura orgânica,MP,coocurence,false,0,1,0.376651470714
+estrutura orgânica,órgão,coocurence,false,0,1,0.923076923077
+estrutura orgânica,órgão colegiado,coocurence,false,0,1,0.923076923077
+estrutura orgânica,poder executivo,coocurence,false,0,1,0.923076923077
+estrutura orgânica,SIORG,coocurence,false,0,1,0.923076923077
+estrutura organizacional,federal,coocurence,false,0,1,0.366088266073
+estrutura organizacional,fundação,coocurence,false,0,1,0.923076923077
+estrutura organizacional,hierarquia organizacional,coocurence,false,0,1,0.923076923077
+estrutura organizacional,MP,coocurence,false,0,1,0.376651470714
+estrutura organizacional,órgão,coocurence,false,0,1,0.923076923077
+estrutura organizacional,órgão colegiado,coocurence,false,0,1,0.923076923077
+estrutura organizacional,poder executivo,coocurence,false,0,1,0.923076923077
+estrutura organizacional,SIORG,coocurence,false,0,1,0.923076923077
+euro,ipea,coocurence,false,0,1,0.857142857143
+euro,ipeadata,coocurence,false,0,1,0.857142857143
+Exame de cursos,INEP,coocurence,false,0,1,0.34
+Exame de cursos,Provão,coocurence,false,0,1,0.8
+execução orçamentária,governo do estado,coocurence,false,0,1,0.668993608006
+execução orçamentária,MP,coocurence,false,0,1,0.0502201960952
+execução orçamentária,orçamento,coocurence,false,0,1,0.32025630761
+execução orçamentária,orçamento federal,coocurence,false,0,1,0.32025630761
+execução orçamentária,São Paulo,coocurence,false,0,2,0.480384461415
+execução orçamentária,SP,coocurence,false,0,2,0.509524665365
+executivo,federal,coocurence,false,0,1,0.67551551826
+executivo,MP,coocurence,false,0,1,0.228473570818
+executivo,portal da transparência,coocurence,false,0,2,0.736842105263
+executivo,servidor federal,coocurence,false,0,1,0.811107105654
+executivo,servidor público,coocurence,false,0,1,0.811107105654
+executivo,SIAPE,coocurence,false,0,1,0.811107105654
+executivo,transparência,coocurence,false,0,2,0.67551551826
+exportações,gás natural,coocurence,false,0,1,0.711512473538
+exportações,importações,coocurence,false,0,1,0.8
+exportações,petróleo,coocurence,false,0,1,0.680336051417
+família,geo,coocurence,false,0,1,0.434679908184
+família,geolocalização,coocurence,false,0,1,0.459073148805
+família,hospital,coocurence,false,0,1,0.670495439579
+família,IBGE,coocurence,false,0,1,0.0494589117656
+família,postos de saúde,coocurence,false,0,1,0.670495439579
+família,rede privada,coocurence,false,0,1,0.764509572108
+família,Rede Privada de entidades de assistência social,coocurence,false,0,1,0.764509572108
+família,residências,coocurence,false,0,1,0.141156934648
+família,saúde,coocurence,false,0,1,0.670495439579
+família,serviços,coocurence,false,0,1,0.336320600006
+família,SUS,coocurence,false,0,1,0.670495439579
+família,UBS,coocurence,false,0,1,0.670495439579
+federal,fornecedores,coocurence,false,0,2,0.497619154701
+federal,fundação,coocurence,false,0,1,0.366088266073
+federal,gastos diretos,coocurence,false,0,1,0.590299591942
+federal,hierarquia organizacional,coocurence,false,0,1,0.366088266073
+federal,licitantes inidôneas,coocurence,false,0,1,0.498894211695
+federal,MP,coocurence,false,0,2,0.321737928931
+federal,órgão,coocurence,false,0,1,0.366088266073
+federal,órgão colegiado,coocurence,false,0,1,0.366088266073
+federal,poder executivo,coocurence,false,0,1,0.366088266073
+federal,poder legislativo,coocurence,false,0,1,0.160540324767
+federal,portal da transparência,coocurence,false,0,4,0.652221879699
+federal,projetos de lei,coocurence,false,0,1,0.207256668072
+federal,proposições parlamentares,coocurence,false,0,1,0.207256668072
+federal,repasse,coocurence,false,0,1,0.507673082567
+federal,servidor federal,coocurence,false,0,1,0.610264434825
+federal,servidor público,coocurence,false,0,1,0.610264434825
+federal,SIAPE,coocurence,false,0,1,0.610264434825
+federal,SIORG,coocurence,false,0,1,0.366088266073
+federal,TCU,coocurence,false,0,1,0.381036748144
+federal,transparência,coocurence,false,0,5,0.618556701031
+filiação partidária,partidos,coocurence,false,0,1,0.692820323028
+filiação partidária,partidos políticos,coocurence,false,0,1,0.639009650423
+filiação partidária,TSE,coocurence,false,0,1,0.533333333333
+finanças,IBGE,coocurence,false,0,2,0.390360029179
+finanças,imposto de renda,coocurence,false,0,1,0.34426518633
+finanças,índice,coocurence,false,0,2,0.738548945876
+finanças,inflação,coocurence,false,0,2,0.73029674334
+finanças,INPC,coocurence,false,0,1,0.727392967453
+finanças,IPCA,coocurence,false,0,1,0.713932893462
+finanças,IPCA15,coocurence,false,0,1,0.727392967453
+finanças,MF,coocurence,false,0,1,0.34426518633
+finanças,preços,coocurence,false,0,2,0.7126966451
+finanças,produtos,coocurence,false,0,1,0.727392967453
+finanças,receita federal,coocurence,false,0,1,0.34426518633
+finanças,serviços,coocurence,false,0,1,0.357830026748
+fiscalização,MJ,coocurence,false,0,1,0.341753371301
+fiscalização,polícia,coocurence,false,0,1,0.667124384995
+fiscalização,polícia rodoviária,coocurence,false,0,1,0.857142857143
+fiscalização,polícia rodoviária federal,coocurence,false,0,1,0.857142857143
+fiscalização,rodovias,coocurence,false,0,1,0.857142857143
+fiscalização,trânsito,coocurence,false,0,1,0.857142857143
+Fontes de Receitas,GPS,coocurence,false,0,2,0.724008097767
+Fontes de Receitas,Previdência Social,coocurence,false,0,2,0.540919340276
+Fontes de Receitas,Receitas,coocurence,false,0,1,0.786274026643
+Fontes de Receitas,Recolhimento,coocurence,false,0,1,0.787717658006
+Fontes de Receitas,UF,coocurence,false,0,1,0.727670442923
+fornecedores,leilão,coocurence,false,0,1,0.686643649131
+fornecedores,licitação,coocurence,false,0,1,0.686643649131
+fornecedores,licitantes inidôneas,coocurence,false,0,1,0.582181736427
+fornecedores,materiais,coocurence,false,0,1,0.686643649131
+fornecedores,modalidades,coocurence,false,0,1,0.686643649131
+fornecedores,MP,coocurence,false,0,1,0.418358826851
+fornecedores,ocorrências,coocurence,false,0,1,0.686643649131
+fornecedores,portal da transparência,coocurence,false,0,1,0.481869424652
+fornecedores,preços praticados,coocurence,false,0,1,0.686643649131
+fornecedores,pregão,coocurence,false,0,1,0.686643649131
+fornecedores,registro de preços,coocurence,false,0,1,0.686643649131
+fornecedores,serviços,coocurence,false,0,1,0.544388228581
+fornecedores,SIASG,coocurence,false,0,1,0.686643649131
+fornecedores,SICAF,coocurence,false,0,1,0.686643649131
+fornecedores,sustentável,coocurence,false,0,1,0.686643649131
+fornecedores,TCU,coocurence,false,0,1,0.4446486459
+fornecedores,tomada de preços,coocurence,false,0,1,0.686643649131
+fornecedores,transparência,coocurence,false,0,2,0.497619154701
+FPAS,GRPS,coocurence,false,0,1,0.807692307692
+FPAS,Previdência Social,coocurence,false,0,1,0.399470190283
+FPAS,Receitas,coocurence,false,0,1,0.776823455191
+FPAS,Recolhimento,coocurence,false,0,1,0.80439966654
+FPAS,Rubrica,coocurence,false,0,1,0.893819357297
+função de confiança,função pública,coocurence,false,0,1,0.8
+função de confiança,inabilitados,coocurence,false,0,1,0.8
+função de confiança,TCU,coocurence,false,0,1,0.516397779494
+função pública,inabilitados,coocurence,false,0,1,0.8
+função pública,TCU,coocurence,false,0,1,0.516397779494
+fundação,hierarquia organizacional,coocurence,false,0,1,0.923076923077
+fundação,MP,coocurence,false,0,1,0.376651470714
+fundação,órgão,coocurence,false,0,1,0.923076923077
+fundação,órgão colegiado,coocurence,false,0,1,0.923076923077
+fundação,poder executivo,coocurence,false,0,1,0.923076923077
+fundação,SIORG,coocurence,false,0,1,0.923076923077
+fundo-de-garantia,GFIP,coocurence,false,0,1,0.687743603161
+fundo-de-garantia,Previdência Social,coocurence,false,0,1,0.430017232736
+fundo-de-garantia,tempo-de-servico,coocurence,false,0,1,0.857142857143
+fundo-de-garantia,vinculos,coocurence,false,0,1,0.848668424792
+gás natural,importações,coocurence,false,0,1,0.711512473538
+gás natural,indústria,coocurence,false,0,2,0.694365074829
+gás natural,petróleo,coocurence,false,0,3,0.687256450367
+gastos diretos,portal da transparência,coocurence,false,0,1,0.71818484646
+gastos diretos,transparência,coocurence,false,0,1,0.68111491378
+geo,geolocalização,coocurence,false,0,2,0.801192744802
+geo,governo federal,coocurence,false,0,1,0.669534063412
+geo,habitação,coocurence,false,0,1,0.669534063412
+geo,hospital,coocurence,false,0,1,0.615881762051
+geo,mapa,coocurence,false,0,1,0.214422506968
+geo,MP,coocurence,false,0,1,0.252180989677
+geo,obras,coocurence,false,0,1,0.669534063412
+geo,organizações da sociedade civil,coocurence,false,0,1,0.206896551724
+geo,OSC,coocurence,false,0,1,0.206896551724
+geo,pac,coocurence,false,0,1,0.669534063412
+geo,PAC,coocurence,false,0,1,0.669534063412
+geo,postos de saúde,coocurence,false,0,1,0.615881762051
+geo,programas de governo,coocurence,false,0,1,0.669534063412
+geo,recursos hídricos,coocurence,false,0,1,0.669534063412
+geo,saneamento e urbanismo,coocurence,false,0,1,0.669534063412
+geo,saúde,coocurence,false,0,1,0.615881762051
+geo,SUS,coocurence,false,0,1,0.615881762051
+geo,transporte,coocurence,false,0,1,0.402339899384
+geo,UBS,coocurence,false,0,1,0.615881762051
+Geoespacial,Geoserviço,coocurence,false,0,734,0.666666666667
+Geoespacial,INDE,coocurence,false,0,734,0.666666666667
+geografia,IBGE,coocurence,false,0,1,0.0597614304667
+geografia,municípios,coocurence,false,0,1,0.5
+geolocalização,governo federal,coocurence,false,0,1,0.707106781187
+geolocalização,habitação,coocurence,false,0,1,0.707106781187
+geolocalização,hospital,coocurence,false,0,1,0.650443635588
+geolocalização,MP,coocurence,false,0,1,0.230821767874
+geolocalização,obras,coocurence,false,0,1,0.707106781187
+geolocalização,pac,coocurence,false,0,1,0.707106781187
+geolocalização,PAC,coocurence,false,0,1,0.707106781187
+geolocalização,postos de saúde,coocurence,false,0,1,0.650443635588
+geolocalização,programas de governo,coocurence,false,0,1,0.707106781187
+geolocalização,recursos hídricos,coocurence,false,0,1,0.707106781187
+geolocalização,saneamento e urbanismo,coocurence,false,0,1,0.707106781187
+geolocalização,saúde,coocurence,false,0,1,0.650443635588
+geolocalização,SUS,coocurence,false,0,1,0.650443635588
+geolocalização,transporte,coocurence,false,0,1,0.424918292799
+geolocalização,UBS,coocurence,false,0,1,0.650443635588
+Geoserviço,INDE,coocurence,false,0,734,0.666666666667
+GFIP,GPS,coocurence,false,0,5,0.760604416386
+GFIP,guia,coocurence,false,0,1,0.698836241922
+GFIP,guia-de-recolhimento,coocurence,false,0,2,0.752705489838
+GFIP,Pessoa Física,coocurence,false,0,1,0.813749205323
+GFIP,Previdência Social,coocurence,false,0,19,0.557270603116
+GFIP,recolhimento,coocurence,false,0,1,0.698836241922
+GFIP,SAE,coocurence,false,0,1,0.740274464382
+GFIP,SIMPLES,coocurence,false,0,2,0.774374243776
+GFIP,tempo-de-servico,coocurence,false,0,1,0.687743603161
+GFIP,Unidade da Federação,coocurence,false,0,1,0.774374243776
+GFIP,valores,coocurence,false,0,1,0.742847993179
+GFIP,vinculos,coocurence,false,0,2,0.742847993179
+governo do estado,São Paulo,coocurence,false,0,2,0.580258853186
+governo do estado,serviços oferecidos,coocurence,false,0,1,0.753778361444
+governo do estado,SP,coocurence,false,0,2,0.615457454897
+governo eletrônico,localização internet,coocurence,false,0,1,0.666666666667
+governo federal,habitação,coocurence,false,0,1,0.923076923077
+governo federal,MP,coocurence,false,0,1,0.301321176571
+governo federal,obras,coocurence,false,0,1,0.923076923077
+governo federal,pac,coocurence,false,0,1,0.923076923077
+governo federal,PAC,coocurence,false,0,1,0.923076923077
+governo federal,programas de governo,coocurence,false,0,1,0.923076923077
+governo federal,recursos hídricos,coocurence,false,0,1,0.923076923077
+governo federal,saneamento e urbanismo,coocurence,false,0,1,0.923076923077
+governo federal,transporte,coocurence,false,0,1,0.554700196225
+governo municipal,legislativo,coocurence,false,0,1,0.625
+governo municipal,SP,coocurence,false,0,1,0.306186217848
+governo municipal,vereadores,coocurence,false,0,1,0.721687836487
+GPS,GR-6,coocurence,false,0,2,0.757386137143
+GPS,GRPS,coocurence,false,0,5,0.834245685744
+GPS,Pessoa Física,coocurence,false,0,1,0.703010545237
+GPS,Previdência Social,coocurence,false,0,13,0.60504632143
+GPS,Receitas,coocurence,false,0,7,0.833595512191
+GPS,Recolhimento,coocurence,false,0,5,0.823835655552
+GPS,Recolhimentos,coocurence,false,0,1,0.784936398966
+GPS,Rubrica,coocurence,false,0,1,0.772320423396
+GPS,SAE,coocurence,false,0,1,0.875869861589
+GPS,UF,coocurence,false,0,2,0.776924680803
+GR-6,GRPS,coocurence,false,0,2,0.767637607488
+GR-6,Previdência Social,coocurence,false,0,2,0.451678660366
+GR-6,Receitas,coocurence,false,0,2,0.730118983861
+GR-6,Recolhimentos,coocurence,false,0,1,0.85769002787
+graduação,INEP,coocurence,false,0,1,0.292118697336
+GRPS,Previdência Social,coocurence,false,0,8,0.503178797376
+GRPS,Receitas,coocurence,false,0,8,0.834482416103
+GRPS,Recolhimento,coocurence,false,0,5,0.891589840186
+GRPS,Recolhimentos,coocurence,false,0,2,0.806028676044
+GRPS,Rubrica,coocurence,false,0,3,0.83161214928
+GRPS,SAE,coocurence,false,0,1,0.765147533713
+GRPS,UF,coocurence,false,0,2,0.688076043826
+guia,guia-de-recolhimento,coocurence,false,0,1,0.866921446863
+guia,Previdência Social,coocurence,false,0,1,0.432982868824
+guia,recolhimento,coocurence,false,0,1,0.857142857143
+guia-de-recolhimento,Previdência Social,coocurence,false,0,2,0.472825404311
+guia-de-recolhimento,recolhimento,coocurence,false,0,1,0.866921446863
+guia-de-recolhimento,valores,coocurence,false,0,1,0.851256530759
+habitação,MP,coocurence,false,0,1,0.301321176571
+habitação,obras,coocurence,false,0,1,0.923076923077
+habitação,pac,coocurence,false,0,1,0.923076923077
+habitação,PAC,coocurence,false,0,1,0.923076923077
+habitação,programas de governo,coocurence,false,0,1,0.923076923077
+habitação,recursos hídricos,coocurence,false,0,1,0.923076923077
+habitação,saneamento e urbanismo,coocurence,false,0,1,0.923076923077
+habitação,transporte,coocurence,false,0,1,0.554700196225
+helicóptero,investigação,coocurence,false,0,1,0.888888888889
+helicóptero,prevenção,coocurence,false,0,1,0.888888888889
+helicóptero,Sipaer,coocurence,false,0,1,0.888888888889
+helicóptero,transporte aéreo,coocurence,false,0,1,0.471404520791
+hierarquia organizacional,MP,coocurence,false,0,1,0.376651470714
+hierarquia organizacional,órgão,coocurence,false,0,1,0.923076923077
+hierarquia organizacional,órgão colegiado,coocurence,false,0,1,0.923076923077
+hierarquia organizacional,poder executivo,coocurence,false,0,1,0.923076923077
+hierarquia organizacional,SIORG,coocurence,false,0,1,0.923076923077
+Histórico,Pensão por morte,coocurence,false,0,1,0.888481048129
+Histórico,Previdência Social,coocurence,false,0,3,0.699458262837
+Histórico,Valor de benefício,coocurence,false,0,1,0.788810637747
+horas-aula diária,INEP,coocurence,false,0,1,0.839841254841
+horas-aula diária,rendimento escolar,coocurence,false,0,1,0.874385649785
+hospital,postos de saúde,coocurence,false,0,1,0.909090909091
+hospital,saúde,coocurence,false,0,1,0.909090909091
+hospital,SUS,coocurence,false,0,1,0.909090909091
+hospital,UBS,coocurence,false,0,1,0.909090909091
+IBGE,índice,coocurence,false,0,2,0.432449982094
+IBGE,índices,coocurence,false,0,1,0.379536057638
+IBGE,inflação,coocurence,false,0,3,0.414254924964
+IBGE,INPC,coocurence,false,0,1,0.383325939
+IBGE,IPCA,coocurence,false,0,2,0.424183890299
+IBGE,IPCA15,coocurence,false,0,1,0.4472135955
+IBGE,lixo,coocurence,false,0,1,0.169030850946
+IBGE,lixo domiciliar,coocurence,false,0,1,0.169030850946
+IBGE,Ministério da Saúde,coocurence,false,0,5,0.516752326587
+IBGE,morbidade,coocurence,false,0,4,0.558406824652
+IBGE,mortalidade,coocurence,false,0,1,0.491353814912
+IBGE,MS,coocurence,false,0,5,0.516752326587
+IBGE,municípios,coocurence,false,0,1,0.0597614304667
+IBGE,óbitos,coocurence,false,0,1,0.491353814912
+IBGE,população ativa,coocurence,false,0,1,0.0975900072949
+IBGE,preços,coocurence,false,0,3,0.404271411492
+IBGE,Previdência Social,coocurence,false,0,1,0.00994704583339
+IBGE,produtos,coocurence,false,0,1,0.383325939
+IBGE,residências,coocurence,false,0,2,0.178376517003
+IBGE,saneamento,coocurence,false,0,1,0.169030850946
+IBGE,saneamento ambiental,coocurence,false,0,2,0.458682472294
+IBGE,serviços,coocurence,false,0,1,0.185714285714
+IBGE,sexo,coocurence,false,0,1,0.0975900072949
+IBGE,trabalho,coocurence,false,0,1,0.0274204248554
+Idade,Pensão por morte,coocurence,false,0,1,0.829501895414
+Idade,Previdência Social,coocurence,false,0,1,0.634244110207
+imóveis,imóveis dominiais,coocurence,false,0,1,0.9
+imóveis,MP,coocurence,false,0,1,0.257669250441
+imóveis,patrimônio da união,coocurence,false,0,1,0.9
+imóveis,SIAPA,coocurence,false,0,1,0.9
+imóveis,SPU,coocurence,false,0,1,0.9
+imóveis dominiais,MP,coocurence,false,0,1,0.257669250441
+imóveis dominiais,patrimônio da união,coocurence,false,0,1,0.9
+imóveis dominiais,SIAPA,coocurence,false,0,1,0.9
+imóveis dominiais,SPU,coocurence,false,0,1,0.9
+importações,petróleo,coocurence,false,0,1,0.680336051417
+imposto de renda,MF,coocurence,false,0,1,0.8
+imposto de renda,receita federal,coocurence,false,0,1,0.8
+inabilitados,TCU,coocurence,false,0,1,0.516397779494
+Incapacidade,Previdência Social,coocurence,false,0,2,0.667762209516
+Indicador,PGI,coocurence,false,0,164,0.0
+índice,inflação,coocurence,false,0,2,0.809039834956
+índice,INPC,coocurence,false,0,1,0.805822964025
+índice,IPCA,coocurence,false,0,1,0.790911578839
+índice,IPCA15,coocurence,false,0,1,0.805822964025
+índice,preços,coocurence,false,0,2,0.789542033952
+índice,produtos,coocurence,false,0,1,0.805822964025
+índice,serviços,coocurence,false,0,1,0.360374985078
+índices,inflação,coocurence,false,0,1,0.710046946805
+índices,IPCA,coocurence,false,0,1,0.801783725737
+índices,preços,coocurence,false,0,1,0.692934867184
+indústria,petróleo,coocurence,false,0,2,0.737711113563
+INEP,magistério,coocurence,false,0,1,0.785068999091
+INEP,não resposta,coocurence,false,0,1,0.62
+INEP,PNERA,coocurence,false,0,1,0.3577708764
+INEP,profissionais do magistério,coocurence,false,0,1,0.785068999091
+INEP,Prova Brasil,coocurence,false,0,1,0.413118223595
+INEP,Provão,coocurence,false,0,1,0.34
+INEP,reforma agrária,coocurence,false,0,1,0.3577708764
+INEP,rendimento escolar,coocurence,false,0,4,0.800079361143
+INEP,SAEB,coocurence,false,0,1,0.84
+INEP,tid,coocurence,false,0,1,0.794444999445
+INEP,universidades,coocurence,false,0,1,0.134839972493
+INEP,vestibular,coocurence,false,0,1,0.109544511501
+inflação,INPC,coocurence,false,0,1,0.717137165601
+inflação,IPCA,coocurence,false,0,2,0.793575393244
+inflação,IPCA15,coocurence,false,0,1,0.836660026534
+inflação,preços,coocurence,false,0,3,0.756322556535
+inflação,produtos,coocurence,false,0,1,0.717137165601
+inflação,serviços,coocurence,false,0,1,0.320713490295
+infraestrutura,passageiros avião,coocurence,false,0,1,0.851256530759
+infraestrutura,reclamação,coocurence,false,0,1,0.291294927733
+infraestrutura,transporte,coocurence,false,0,2,0.660295644514
+infraestrutura,transporte aéreo,coocurence,false,0,2,0.700349291736
+INPC,preços,coocurence,false,0,1,0.699854212224
+INPC,produtos,coocurence,false,0,1,0.857142857143
+INPC,serviços,coocurence,false,0,1,0.383325939
+INPE,poluição,coocurence,false,0,1,0.8
+INSS,pensionista,coocurence,false,0,1,0.5378528742
+INSS,Previdência,coocurence,false,0,1,0.5378528742
+INSS,Previdência Social,coocurence,false,0,2,0.376635783155
+INSS,Reabilitação Profissional,coocurence,false,0,1,0.676123403783
+INSS,segurado,coocurence,false,0,1,0.5378528742
+INSS,Serviço Social,coocurence,false,0,1,0.676123403783
+INSS,Serviços Previdenciários,coocurence,false,0,2,0.578073313016
+INSS,trabalhador,coocurence,false,0,1,0.5378528742
+INSS,UF,coocurence,false,0,2,0.532600228749
+instituições de ensino superior,Teses,coocurence,false,0,1,0.679366220487
+instituições de ensino superior,universidades,coocurence,false,0,1,0.418121005004
+Interlegis,legislativo,coocurence,false,0,1,0.375
+Interlegis,poder legislativo,coocurence,false,0,1,0.474341649025
+Interlegis,Senado Federal,coocurence,false,0,1,0.75
+Internações,Morbidade,coocurence,false,0,1,0.5
+investigação,prevenção,coocurence,false,0,1,0.888888888889
+investigação,Sipaer,coocurence,false,0,1,0.888888888889
+investigação,transporte aéreo,coocurence,false,0,1,0.471404520791
+IPCA,IPCA15,coocurence,false,0,1,0.824786098842
+IPCA,preços,coocurence,false,0,2,0.774450284157
+IPCA15,preços,coocurence,false,0,1,0.816496580928
+ipea,ipeadata,coocurence,false,0,1,0.857142857143
+justiça,MJ,coocurence,false,0,1,0.287698227784
+justiça,registro,coocurence,false,0,1,0.75
+legislativo,poder legislativo,coocurence,false,0,1,0.237170824513
+legislativo,presença,coocurence,false,0,1,0.625
+legislativo,São Paulo,coocurence,false,0,1,0.38490017946
+legislativo,Senado Federal,coocurence,false,0,1,0.375
+legislativo,SP,coocurence,false,0,1,0.408248290464
+legislativo,vereadores,coocurence,false,0,2,0.57735026919
+leilão,licitação,coocurence,false,0,1,0.954545454545
+leilão,materiais,coocurence,false,0,1,0.954545454545
+leilão,modalidades,coocurence,false,0,1,0.954545454545
+leilão,MP,coocurence,false,0,1,0.443952575977
+leilão,ocorrências,coocurence,false,0,1,0.954545454545
+leilão,preços praticados,coocurence,false,0,1,0.954545454545
+leilão,pregão,coocurence,false,0,1,0.954545454545
+leilão,registro de preços,coocurence,false,0,1,0.954545454545
+leilão,serviços,coocurence,false,0,1,0.756787468664
+leilão,SIASG,coocurence,false,0,1,0.954545454545
+leilão,SICAF,coocurence,false,0,1,0.954545454545
+leilão,sustentável,coocurence,false,0,1,0.954545454545
+leilão,tomada de preços,coocurence,false,0,1,0.954545454545
+licitação,materiais,coocurence,false,0,1,0.954545454545
+licitação,modalidades,coocurence,false,0,1,0.954545454545
+licitação,MP,coocurence,false,0,1,0.443952575977
+licitação,ocorrências,coocurence,false,0,1,0.954545454545
+licitação,preços praticados,coocurence,false,0,1,0.954545454545
+licitação,pregão,coocurence,false,0,1,0.954545454545
+licitação,registro de preços,coocurence,false,0,1,0.954545454545
+licitação,serviços,coocurence,false,0,1,0.756787468664
+licitação,SIASG,coocurence,false,0,1,0.954545454545
+licitação,SICAF,coocurence,false,0,1,0.954545454545
+licitação,sustentável,coocurence,false,0,1,0.954545454545
+licitação,tomada de preços,coocurence,false,0,1,0.954545454545
+licitantes inidôneas,TCU,coocurence,false,0,1,0.654653670708
+licitantes inidôneas,transparência,coocurence,false,0,1,0.498894211695
+lixo,lixo domiciliar,coocurence,false,0,1,0.75
+lixo,saneamento,coocurence,false,0,1,0.75
+lixo,saneamento ambiental,coocurence,false,0,1,0.603022689156
+lixo domiciliar,saneamento,coocurence,false,0,1,0.75
+lixo domiciliar,saneamento ambiental,coocurence,false,0,1,0.603022689156
+locais de atendimento,MTE,coocurence,false,0,1,0.866921446863
+locais de atendimento,seguro-desemprego,coocurence,false,0,1,0.866921446863
+locais de atendimento,trabalho,coocurence,false,0,1,0.735767207382
+magistério,profissionais do magistério,coocurence,false,0,1,0.833333333333
+mapa,organizações da sociedade civil,coocurence,false,0,1,0.536056267419
+mapa,OSC,coocurence,false,0,1,0.536056267419
+materiais,modalidades,coocurence,false,0,1,0.954545454545
+materiais,MP,coocurence,false,0,1,0.443952575977
+materiais,ocorrências,coocurence,false,0,1,0.954545454545
+materiais,preços praticados,coocurence,false,0,1,0.954545454545
+materiais,pregão,coocurence,false,0,1,0.954545454545
+materiais,registro de preços,coocurence,false,0,1,0.954545454545
+materiais,serviços,coocurence,false,0,1,0.756787468664
+materiais,SIASG,coocurence,false,0,1,0.954545454545
+materiais,SICAF,coocurence,false,0,1,0.954545454545
+materiais,sustentável,coocurence,false,0,1,0.954545454545
+materiais,tomada de preços,coocurence,false,0,1,0.954545454545
+meio ambiente,saúde no trabalho,coocurence,false,0,1,0.75
+meio ambiente,segurança do trabalho,coocurence,false,0,1,0.75
+meio ambiente,trabalho,coocurence,false,0,1,0.405553552827
+MF,receita federal,coocurence,false,0,1,0.8
+Ministério da Justiça,MJ,coocurence,false,0,6,0.564361717086
+Ministério da Justiça,multas,coocurence,false,0,1,0.528088901407
+Ministério da Justiça,procon,coocurence,false,0,3,0.737939330464
+Ministério da Justiça,reclamação,coocurence,false,0,3,0.695034172396
+Ministério da Justiça,Secretaria Nacional do Consumidor,coocurence,false,0,2,0.74481908914
+Ministério da Justiça,Senacon,coocurence,false,0,2,0.74481908914
+Ministério da Justiça,SIGER,coocurence,false,0,1,0.526524190111
+Ministério da Justiça,Sindec,coocurence,false,0,2,0.74481908914
+Ministério da Justiça,sistema prisional,coocurence,false,0,1,0.402139492735
+Ministério da Saúde,morbidade,coocurence,false,0,4,0.732845779863
+Ministério da Saúde,mortalidade,coocurence,false,0,1,0.658280588604
+Ministério da Saúde,MS,coocurence,false,0,5,0.679487179487
+Ministério da Saúde,óbitos,coocurence,false,0,1,0.658280588604
+Ministério da Saúde,Previdência Social,coocurence,false,0,1,0.013326338348
+Ministério da Saúde,saneamento ambiental,coocurence,false,0,1,0.682788741999
+Ministério do Planejamento,MP,coocurence,false,0,1,0.301785820142
+Ministério do Planejamento,ONG,coocurence,false,0,1,0.888888888889
+Ministério do Planejamento,organizações da sociedade civil,coocurence,false,0,1,0.680882906649
+Ministério do Planejamento,OSC,coocurence,false,0,1,0.680882906649
+Ministério do Planejamento,siconv,coocurence,false,0,1,0.888888888889
+MJ,multas,coocurence,false,0,1,0.436251435889
+MJ,passaporte,coocurence,false,0,1,0.341753371301
+MJ,polícia,coocurence,false,0,2,0.403016175137
+MJ,polícia federal,coocurence,false,0,1,0.341753371301
+MJ,polícia rodoviária,coocurence,false,0,1,0.341753371301
+MJ,polícia rodoviária federal,coocurence,false,0,1,0.341753371301
+MJ,política contra as drogas,coocurence,false,0,1,0.310684883001
+MJ,procon,coocurence,false,0,3,0.653942870319
+MJ,reclamação,coocurence,false,0,3,0.615921421861
+MJ,registro,coocurence,false,0,1,0.287698227784
+MJ,rodovias,coocurence,false,0,1,0.341753371301
+MJ,Secretaria Nacional do Consumidor,coocurence,false,0,2,0.61529109256
+MJ,segurança,coocurence,false,0,1,0.341753371301
+MJ,segurança pública,coocurence,false,0,1,0.341753371301
+MJ,Senacon,coocurence,false,0,2,0.61529109256
+MJ,SIGER,coocurence,false,0,1,0.434958836201
+MJ,Sindec,coocurence,false,0,2,0.61529109256
+MJ,sistema prisional,coocurence,false,0,1,0.332205298513
+MJ,substâncias psicoativas,coocurence,false,0,1,0.310684883001
+MJ,trânsito,coocurence,false,0,1,0.341753371301
+modalidades,MP,coocurence,false,0,1,0.443952575977
+modalidades,ocorrências,coocurence,false,0,1,0.954545454545
+modalidades,preços praticados,coocurence,false,0,1,0.954545454545
+modalidades,pregão,coocurence,false,0,1,0.954545454545
+modalidades,registro de preços,coocurence,false,0,1,0.954545454545
+modalidades,serviços,coocurence,false,0,1,0.756787468664
+modalidades,SIASG,coocurence,false,0,1,0.954545454545
+modalidades,SICAF,coocurence,false,0,1,0.954545454545
+modalidades,sustentável,coocurence,false,0,1,0.954545454545
+modalidades,tomada de preços,coocurence,false,0,1,0.954545454545
+morbidade,MS,coocurence,false,0,4,0.732845779863
+morbidade,Previdência Social,coocurence,false,0,1,0.0137539957372
+morbidade,saneamento ambiental,coocurence,false,0,1,0.691148283954
+mortalidade,MS,coocurence,false,0,1,0.658280588604
+mortalidade,óbitos,coocurence,false,0,1,0.8
+MP,obras,coocurence,false,0,1,0.301321176571
+MP,ocorrências,coocurence,false,0,1,0.443952575977
+MP,ONG,coocurence,false,0,1,0.301785820142
+MP,orçamento,coocurence,false,0,1,0.104541674698
+MP,orçamento federal,coocurence,false,0,1,0.104541674698
+MP,organizações da sociedade civil,coocurence,false,0,1,0.235368923699
+MP,órgão,coocurence,false,0,1,0.376651470714
+MP,órgão colegiado,coocurence,false,0,1,0.376651470714
+MP,OSC,coocurence,false,0,1,0.235368923699
+MP,pac,coocurence,false,0,1,0.301321176571
+MP,PAC,coocurence,false,0,1,0.301321176571
+MP,patrimônio da união,coocurence,false,0,1,0.257669250441
+MP,Plano Plurianual,coocurence,false,0,3,0.407410857191
+MP,poder executivo,coocurence,false,0,1,0.376651470714
+MP,portal da transparência,coocurence,false,0,1,0.259629057748
+MP,PPA,coocurence,false,0,3,0.407410857191
+MP,preços praticados,coocurence,false,0,1,0.443952575977
+MP,pregão,coocurence,false,0,1,0.443952575977
+MP,programas de governo,coocurence,false,0,1,0.301321176571
+MP,Programas do Governo Federal,coocurence,false,0,3,0.407410857191
+MP,recursos hídricos,coocurence,false,0,1,0.301321176571
+MP,registro de preços,coocurence,false,0,1,0.443952575977
+MP,saneamento e urbanismo,coocurence,false,0,1,0.301321176571
+MP,serviços,coocurence,false,0,1,0.351976686475
+MP,servidor federal,coocurence,false,0,1,0.256073759866
+MP,servidor público,coocurence,false,0,1,0.256073759866
+MP,SIAPA,coocurence,false,0,1,0.257669250441
+MP,SIAPE,coocurence,false,0,1,0.256073759866
+MP,SIASG,coocurence,false,0,1,0.443952575977
+MP,SICAF,coocurence,false,0,1,0.443952575977
+MP,siconv,coocurence,false,0,1,0.301785820142
+MP,SIORG,coocurence,false,0,1,0.376651470714
+MP,SPU,coocurence,false,0,1,0.257669250441
+MP,sustentável,coocurence,false,0,1,0.443952575977
+MP,tomada de preços,coocurence,false,0,1,0.443952575977
+MP,transparência,coocurence,false,0,1,0.2665828554
+MP,transporte,coocurence,false,0,1,0.181071492085
+MS,óbitos,coocurence,false,0,1,0.658280588604
+MS,Previdência Social,coocurence,false,0,1,0.013326338348
+MS,saneamento ambiental,coocurence,false,0,1,0.682788741999
+MTE,qualificação profissional,coocurence,false,0,1,0.851256530759
+MTE,seguro-desemprego,coocurence,false,0,2,0.826086956522
+MTE,trabalho,coocurence,false,0,2,0.710335596066
+municipal,ocorrências criminais,coocurence,false,0,2,0.774596669241
+municipal,ocorrências-criminais,coocurence,false,0,1,0.621059003408
+municipal,pe,coocurence,false,0,1,0.621059003408
+municipal,pernambuco,coocurence,false,0,1,0.621059003408
+municipal,rio grande do sul,coocurence,false,0,2,0.774596669241
+municipal,RS,coocurence,false,0,2,0.774596669241
+municipal,violência contra a mulher,coocurence,false,0,1,0.828078671211
+município,perfil do eleitorado,coocurence,false,0,1,0.75
+município,TSE,coocurence,false,0,1,0.52174919475
+obras,pac,coocurence,false,0,1,0.923076923077
+obras,PAC,coocurence,false,0,1,0.923076923077
+obras,programas de governo,coocurence,false,0,1,0.923076923077
+obras,recursos hídricos,coocurence,false,0,1,0.923076923077
+obras,saneamento e urbanismo,coocurence,false,0,1,0.923076923077
+obras,transporte,coocurence,false,0,1,0.554700196225
+ocorrências,preços praticados,coocurence,false,0,1,0.954545454545
+ocorrências,pregão,coocurence,false,0,1,0.954545454545
+ocorrências,registro de preços,coocurence,false,0,1,0.954545454545
+ocorrências,serviços,coocurence,false,0,1,0.756787468664
+ocorrências,SIASG,coocurence,false,0,1,0.954545454545
+ocorrências,SICAF,coocurence,false,0,1,0.954545454545
+ocorrências,sustentável,coocurence,false,0,1,0.954545454545
+ocorrências,tomada de preços,coocurence,false,0,1,0.954545454545
+ocorrências criminais,rio grande do sul,coocurence,false,0,2,0.809523809524
+ocorrências criminais,RS,coocurence,false,0,2,0.809523809524
+ocorrências criminais,violência contra a mulher,coocurence,false,0,1,0.890870806375
+ocorrências-criminais,pe,coocurence,false,0,1,0.833333333333
+ocorrências-criminais,pernambuco,coocurence,false,0,1,0.833333333333
+ONG,organizações da sociedade civil,coocurence,false,0,1,0.680882906649
+ONG,OSC,coocurence,false,0,1,0.680882906649
+ONG,siconv,coocurence,false,0,1,0.888888888889
+orçamento,orçamento federal,coocurence,false,0,1,0.666666666667
+organizações da sociedade civil,OSC,coocurence,false,0,4,0.448275862069
+organizações da sociedade civil,siconv,coocurence,false,0,1,0.680882906649
+órgão,órgão colegiado,coocurence,false,0,1,0.923076923077
+órgão,poder executivo,coocurence,false,0,1,0.923076923077
+órgão,SIORG,coocurence,false,0,1,0.923076923077
+órgão colegiado,poder executivo,coocurence,false,0,1,0.923076923077
+órgão colegiado,SIORG,coocurence,false,0,1,0.923076923077
+OSC,siconv,coocurence,false,0,1,0.680882906649
+pac,PAC,coocurence,false,0,1,0.923076923077
+pac,programas de governo,coocurence,false,0,1,0.923076923077
+pac,recursos hídricos,coocurence,false,0,1,0.923076923077
+pac,saneamento e urbanismo,coocurence,false,0,1,0.923076923077
+pac,transporte,coocurence,false,0,1,0.554700196225
+PAC,programas de governo,coocurence,false,0,1,0.923076923077
+PAC,recursos hídricos,coocurence,false,0,1,0.923076923077
+PAC,saneamento e urbanismo,coocurence,false,0,1,0.923076923077
+PAC,transporte,coocurence,false,0,1,0.554700196225
+pagamento-de-beneficios,Previdência Social,coocurence,false,0,1,0.550911106683
+participação social,São Paulo,coocurence,false,0,1,0.222222222222
+partidos,partidos políticos,coocurence,false,0,2,0.737864787373
+partidos,prestação de contas,coocurence,false,0,1,0.737864787373
+partidos,TSE,coocurence,false,0,2,0.692820323028
+partidos políticos,prestação de contas,coocurence,false,0,1,0.75
+partidos políticos,resultado das eleições,coocurence,false,0,1,0.589255650989
+partidos políticos,TSE,coocurence,false,0,3,0.639009650423
+passageiros avião,transporte,coocurence,false,0,1,0.68041381744
+passageiros avião,transporte aéreo,coocurence,false,0,1,0.721687836487
+passaporte,polícia,coocurence,false,0,1,0.667124384995
+passaporte,polícia federal,coocurence,false,0,1,0.857142857143
+passaporte,segurança,coocurence,false,0,1,0.857142857143
+passaporte,segurança pública,coocurence,false,0,1,0.857142857143
+patrimônio da união,SIAPA,coocurence,false,0,1,0.9
+patrimônio da união,SPU,coocurence,false,0,1,0.9
+paz,polícia,coocurence,false,0,1,0.490290337845
+pe,pernambuco,coocurence,false,0,1,0.833333333333
+Pensão Alimentícia,Pensão por morte,coocurence,false,0,2,0.833220308783
+Pensão Alimentícia,Previdência Social,coocurence,false,0,2,0.65770177347
+Pensão por morte,Previdência Social,coocurence,false,0,7,0.725389529288
+Pensão por morte,Valor de benefício,coocurence,false,0,1,0.767969527574
+pensionista,Previdência,coocurence,false,0,1,0.9
+pensionista,segurado,coocurence,false,0,1,0.9
+pensionista,trabalhador,coocurence,false,0,1,0.9
+perfil do eleitorado,TSE,coocurence,false,0,1,0.52174919475
+perfil dos candidatos,TSE,coocurence,false,0,1,0.516397779494
+Perícia Médica,Previdência Social,coocurence,false,0,4,0.460014259036
+Perícia Médica,RE,coocurence,false,0,4,0.80258228667
+Perícia Médica,Serviços Previdenciários,coocurence,false,0,4,0.800933856166
+Perícia Médica,UF,coocurence,false,0,2,0.713255082758
+Perícia Médica,UO,coocurence,false,0,1,0.884651736929
+Pessoa Física,Previdência Social,coocurence,false,0,1,0.53687515492
+Plano Plurianual,PPA,coocurence,false,0,3,0.75
+Plano Plurianual,Programas do Governo Federal,coocurence,false,0,3,0.75
+PNERA,reforma agrária,coocurence,false,0,1,0.75
+poder executivo,SIORG,coocurence,false,0,1,0.923076923077
+poder legislativo,projetos de lei,coocurence,false,0,1,0.645497224368
+poder legislativo,proposições parlamentares,coocurence,false,0,1,0.645497224368
+poder legislativo,Senado Federal,coocurence,false,0,1,0.474341649025
+polícia,polícia federal,coocurence,false,0,1,0.667124384995
+polícia,polícia rodoviária,coocurence,false,0,1,0.667124384995
+polícia,polícia rodoviária federal,coocurence,false,0,1,0.667124384995
+polícia,rodovias,coocurence,false,0,1,0.667124384995
+polícia,segurança,coocurence,false,0,1,0.667124384995
+polícia,segurança pública,coocurence,false,0,1,0.667124384995
+polícia,trânsito,coocurence,false,0,1,0.667124384995
+polícia federal,segurança,coocurence,false,0,1,0.857142857143
+polícia federal,segurança pública,coocurence,false,0,1,0.857142857143
+polícia rodoviária,polícia rodoviária federal,coocurence,false,0,1,0.857142857143
+polícia rodoviária,rodovias,coocurence,false,0,1,0.857142857143
+polícia rodoviária,trânsito,coocurence,false,0,1,0.857142857143
+polícia rodoviária federal,rodovias,coocurence,false,0,1,0.857142857143
+polícia rodoviária federal,trânsito,coocurence,false,0,1,0.857142857143
+política contra as drogas,substâncias psicoativas,coocurence,false,0,1,0.857142857143
+população ativa,sexo,coocurence,false,0,1,0.666666666667
+população ativa,trabalho,coocurence,false,0,1,0.187317162316
+portal da transparência,repasse,coocurence,false,0,1,0.573539334676
+portal da transparência,servidor federal,coocurence,false,0,1,0.729996395088
+portal da transparência,servidor público,coocurence,false,0,1,0.729996395088
+portal da transparência,SIAPE,coocurence,false,0,1,0.729996395088
+portal da transparência,transparência,coocurence,false,0,5,0.67551551826
+postos de saúde,saúde,coocurence,false,0,1,0.909090909091
+postos de saúde,SUS,coocurence,false,0,1,0.909090909091
+postos de saúde,UBS,coocurence,false,0,1,0.909090909091
+PPA,Programas do Governo Federal,coocurence,false,0,3,0.75
+preços,produtos,coocurence,false,0,1,0.699854212224
+preços,serviços,coocurence,false,0,1,0.312984318574
+preços praticados,pregão,coocurence,false,0,1,0.954545454545
+preços praticados,registro de preços,coocurence,false,0,1,0.954545454545
+preços praticados,serviços,coocurence,false,0,1,0.756787468664
+preços praticados,SIASG,coocurence,false,0,1,0.954545454545
+preços praticados,SICAF,coocurence,false,0,1,0.954545454545
+preços praticados,sustentável,coocurence,false,0,1,0.954545454545
+preços praticados,tomada de preços,coocurence,false,0,1,0.954545454545
+pregão,registro de preços,coocurence,false,0,1,0.954545454545
+pregão,serviços,coocurence,false,0,1,0.756787468664
+pregão,SIASG,coocurence,false,0,1,0.954545454545
+pregão,SICAF,coocurence,false,0,1,0.954545454545
+pregão,sustentável,coocurence,false,0,1,0.954545454545
+pregão,tomada de preços,coocurence,false,0,1,0.954545454545
+presença,São Paulo,coocurence,false,0,1,0.288675134595
+presença,vereadores,coocurence,false,0,1,0.721687836487
+prestação de contas,TSE,coocurence,false,0,1,0.73029674334
+prevenção,Sipaer,coocurence,false,0,1,0.888888888889
+prevenção,transporte aéreo,coocurence,false,0,1,0.471404520791
+Previdência,segurado,coocurence,false,0,1,0.9
+Previdência,trabalhador,coocurence,false,0,1,0.9
+previdência social,trabalho,coocurence,false,0,1,0.243332131696
+Previdência Social,RE,coocurence,false,0,5,0.475470397921
+Previdência Social,Reabilitação Profissional,coocurence,false,0,1,0.449150456404
+Previdência Social,Receitas,coocurence,false,0,13,0.533528872267
+Previdência Social,recolhimento,coocurence,false,0,1,0.432982868824
+Previdência Social,Recolhimento,coocurence,false,0,9,0.52135579406
+Previdência Social,recolhimentos,coocurence,false,0,1,0.455087462917
+Previdência Social,Recolhimentos,coocurence,false,0,2,0.430357975446
+Previdência Social,Rubrica,coocurence,false,0,3,0.448679205425
+Previdência Social,SAE,coocurence,false,0,2,0.56329270673
+Previdência Social,salário base,coocurence,false,0,1,0.482549637403
+Previdência Social,Salário Maternidade,coocurence,false,0,4,0.741942821345
+Previdência Social,Segurados deslocados estrangeiros,coocurence,false,0,1,0.652332089098
+Previdência Social,Serviço Social,coocurence,false,0,1,0.449150456404
+Previdência Social,Serviços Previdenciários,coocurence,false,0,7,0.50582046591
+Previdência Social,Sexo,coocurence,false,0,1,0.502839318679
+Previdência Social,SIMPLES,coocurence,false,0,2,0.498276287573
+Previdência Social,tempo-de-servico,coocurence,false,0,1,0.430017232736
+Previdência Social,Terceiros,coocurence,false,0,3,0.514933632196
+Previdência Social,UF,coocurence,false,0,19,0.730733423333
+Previdência Social,Unidade da Federaçao,coocurence,false,0,2,0.702771631054
+Previdência Social,Unidade da Federação,coocurence,false,0,1,0.498276287573
+Previdência Social,UO,coocurence,false,0,1,0.43243916605
+Previdência Social,Valor de benefício,coocurence,false,0,1,0.61685230627
+Previdência Social,valores,coocurence,false,0,1,0.464471696868
+Previdência Social,vinculos,coocurence,false,0,2,0.464471696868
+procon,reclamação,coocurence,false,0,3,0.787735907038
+procon,Secretaria Nacional do Consumidor,coocurence,false,0,2,0.868487174604
+procon,Senacon,coocurence,false,0,2,0.868487174604
+procon,Sindec,coocurence,false,0,2,0.868487174604
+produtos,serviços,coocurence,false,0,1,0.383325939
+programas de governo,recursos hídricos,coocurence,false,0,1,0.923076923077
+programas de governo,saneamento e urbanismo,coocurence,false,0,1,0.923076923077
+programas de governo,transporte,coocurence,false,0,1,0.554700196225
+projetos de lei,proposições parlamentares,coocurence,false,0,1,0.833333333333
+Prova Brasil,rendimento escolar,coocurence,false,0,1,0.581914373963
+qualificação profissional,seguro-desemprego,coocurence,false,0,1,0.851256530759
+qualificação profissional,trabalho,coocurence,false,0,1,0.728492796386
+RE,Serviços Previdenciários,coocurence,false,0,5,0.77614243655
+RE,UF,coocurence,false,0,3,0.713813937696
+RE,UO,coocurence,false,0,1,0.893688910073
+Reabilitação Profissional,Serviços Previdenciários,coocurence,false,0,1,0.71818484646
+Reabilitação Profissional,UF,coocurence,false,0,1,0.644503386635
+Receitas,Recolhimento,coocurence,false,0,9,0.813236438765
+Receitas,recolhimentos,coocurence,false,0,1,0.558933924756
+Receitas,Recolhimentos,coocurence,false,0,2,0.764095796494
+Receitas,Rubrica,coocurence,false,0,3,0.826014982646
+Receitas,SAE,coocurence,false,0,1,0.794670210177
+Receitas,Terceiros,coocurence,false,0,3,0.677730251933
+Receitas,UF,coocurence,false,0,4,0.735760417273
+reclamação,Secretaria Nacional do Consumidor,coocurence,false,0,2,0.817991723328
+reclamação,Senacon,coocurence,false,0,2,0.817991723328
+reclamação,Sindec,coocurence,false,0,2,0.817991723328
+reclamação,transporte,coocurence,false,0,1,0.232833566167
+reclamação,transporte aéreo,coocurence,false,0,1,0.246957290287
+Recolhimento,Rubrica,coocurence,false,0,3,0.852825584719
+Recolhimento,SAE,coocurence,false,0,1,0.765014335158
+Recolhimento,Terceiros,coocurence,false,0,2,0.765114010482
+Recolhimento,UF,coocurence,false,0,4,0.707114537697
+recolhimentos,Terceiros,coocurence,false,0,1,0.783349451801
+recursos hídricos,saneamento e urbanismo,coocurence,false,0,1,0.923076923077
+recursos hídricos,transporte,coocurence,false,0,1,0.554700196225
+rede privada,Rede Privada de entidades de assistência social,coocurence,false,0,1,0.833333333333
+registro de preços,serviços,coocurence,false,0,1,0.756787468664
+registro de preços,SIASG,coocurence,false,0,1,0.954545454545
+registro de preços,SICAF,coocurence,false,0,1,0.954545454545
+registro de preços,sustentável,coocurence,false,0,1,0.954545454545
+registro de preços,tomada de preços,coocurence,false,0,1,0.954545454545
+remuneração,servidor,coocurence,false,0,1,0.5
+remuneração,tabela,coocurence,false,0,1,0.5
+rendimento escolar,tid,coocurence,false,0,1,0.857142857143
+repasse,transparência,coocurence,false,0,1,0.558440390823
+resultado das eleições,TSE,coocurence,false,0,1,0.602464076077
+rio grande do sul,RS,coocurence,false,0,2,0.809523809524
+rio grande do sul,violência contra a mulher,coocurence,false,0,1,0.890870806375
+rodovias,trânsito,coocurence,false,0,1,0.857142857143
+RS,violência contra a mulher,coocurence,false,0,1,0.890870806375
+Rubrica,UF,coocurence,false,0,2,0.609158395004
+Salário Maternidade,UF,coocurence,false,0,1,0.849024112806
+Salário Maternidade,Unidade da Federaçao,coocurence,false,0,1,0.921459653953
+saneamento,saneamento ambiental,coocurence,false,0,1,0.603022689156
+saneamento e urbanismo,transporte,coocurence,false,0,1,0.554700196225
+São Paulo,serviços oferecidos,coocurence,false,0,1,0.57735026919
+São Paulo,SP,coocurence,false,0,3,0.549971940923
+São Paulo,vereadores,coocurence,false,0,1,0.444444444444
+saúde,SUS,coocurence,false,0,1,0.909090909091
+saúde,UBS,coocurence,false,0,1,0.909090909091
+saúde no trabalho,segurança do trabalho,coocurence,false,0,1,0.75
+saúde no trabalho,trabalho,coocurence,false,0,1,0.405553552827
+Secretaria Nacional do Consumidor,Senacon,coocurence,false,0,2,0.878787878788
+Secretaria Nacional do Consumidor,Sindec,coocurence,false,0,2,0.878787878788
+segurado,trabalhador,coocurence,false,0,1,0.9
+segurança,segurança pública,coocurence,false,0,1,0.857142857143
+segurança do trabalho,trabalho,coocurence,false,0,1,0.405553552827
+seguro-desemprego,trabalho,coocurence,false,0,2,0.710335596066
+Senacon,Sindec,coocurence,false,0,2,0.878787878788
+serviços,SIASG,coocurence,false,0,1,0.756787468664
+serviços,SICAF,coocurence,false,0,1,0.756787468664
+serviços,sustentável,coocurence,false,0,1,0.756787468664
+serviços,tomada de preços,coocurence,false,0,1,0.756787468664
+Serviço Social,Serviços Previdenciários,coocurence,false,0,1,0.71818484646
+Serviço Social,UF,coocurence,false,0,1,0.644503386635
+serviços oferecidos,SP,coocurence,false,0,1,0.612372435696
+Serviços Previdenciários,UF,coocurence,false,0,5,0.724922113592
+Serviços Previdenciários,UO,coocurence,false,0,1,0.874146757476
+servidor,tabela,coocurence,false,0,1,0.5
+servidor federal,servidor público,coocurence,false,0,1,0.875
+servidor federal,SIAPE,coocurence,false,0,1,0.875
+servidor federal,transparência,coocurence,false,0,1,0.682060250687
+servidor público,SIAPE,coocurence,false,0,1,0.875
+servidor público,transparência,coocurence,false,0,1,0.682060250687
+sexo,trabalho,coocurence,false,0,1,0.187317162316
+SIAPA,SPU,coocurence,false,0,1,0.9
+SIAPE,transparência,coocurence,false,0,1,0.682060250687
+SIASG,SICAF,coocurence,false,0,1,0.954545454545
+SIASG,sustentável,coocurence,false,0,1,0.954545454545
+SIASG,tomada de preços,coocurence,false,0,1,0.954545454545
+SICAF,sustentável,coocurence,false,0,1,0.954545454545
+SICAF,tomada de preços,coocurence,false,0,1,0.954545454545
+Sipaer,transporte aéreo,coocurence,false,0,1,0.471404520791
+SP,vereadores,coocurence,false,0,1,0.471404520791
+SUS,UBS,coocurence,false,0,1,0.909090909091
+sustentável,tomada de preços,coocurence,false,0,1,0.954545454545
+TCU,transparência,coocurence,false,0,1,0.381036748144
+tempo-de-servico,vinculos,coocurence,false,0,1,0.848668424792
+Terceiros,UF,coocurence,false,0,1,0.747042862273
+transporte,transporte aéreo,coocurence,false,0,2,0.559792868439
+UF,UO,coocurence,false,0,1,0.627571632442
+universidades,vestibular,coocurence,false,0,1,0.615457454897
