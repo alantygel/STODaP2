@@ -4,7 +4,7 @@
 
     <h2>Search</h2>
 
-  <form method="get" action=".">
+  <form method="get" action="{% url 'search' %}">
 	<input type="hidden" name="models" value="tag_analytics.dataset">
     <input type="search" id="id_q" name="q" autocomplete="off">
     <input type="submit" value="Search!">
