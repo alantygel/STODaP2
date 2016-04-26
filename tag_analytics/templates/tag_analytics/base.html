@@ -28,7 +28,7 @@ body{
 }
 #menu {
 	margin: 0px auto;
-	width:600px;
+	width:700px;
 	height: 20px;
 	padding: 10px 0;
 }
@@ -130,12 +130,12 @@ ul.inline_list, ul.inline_list li{
 		<div id="header">
 			STODaP - Semantic Tags for Open Data Portals
 		</div>
-		<div id="menu-back">		
-		<div id="menu">
+		<div id="menu-back"><div id="menu">
 			<ul>
 				<li><a href="{% url 'index' %}">Home</a></li>
 				<li><a href="{% url 'globaltag_list' %}">Global Tags</a></li>
 				<li><a href="{% url 'globalgroup_list' %}">Global Groups</a></li>
+				<li><a href="{% url 'opendataportal_list' %}">Open Data Portals</a></li>
 				<li><a href="{% url 'index'%}search">Search</a></li>
 		</div></div>
         {% block content %}{% endblock %}
