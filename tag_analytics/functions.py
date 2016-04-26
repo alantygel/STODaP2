@@ -20,6 +20,26 @@ import rdflib
 from rdflib import URIRef
 from rdflib import Graph
 
+def MeaningAssocStats():
+
+	main_tags = Tag.objects.filter(main_tag = True)
+	meaning = 0
+
+	weight_meaning = 0; weight_no_meaning = 0
+	for i,t in enumerate(main_tags):
+		if i%100 == 0: 
+			print i
+		if t.tagmeaning_set.count() > 0:
+			meaning += 1
+			weight_meaning += t.dataset_count()
+		else:
+			weight_no_meaning += t.dataset_count()
+
+	print "Tags: " + str(len(Tag.objects.all()))
+	print "Main Tags: " + str(len(main_tags))
+	print "Tags With meaning: " + str(meaning)
+	print "Tags With meaning weigted: " + str(weight_meaning)
+	print "Tags With no meaning weigted: " + str(weight_no_meaning)
 
 def CalculateStats(rounds):
 

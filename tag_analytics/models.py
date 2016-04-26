@@ -134,6 +134,13 @@ class Tag(models.Model):
 	def get_translation(self):
 		return self.tagtranslation_set.first().translation if self.tagtranslation_set.count() > 0 else self.display_name
 
+	def dataset_count(self):
+		count = self.datasets.count()
+		for s in self.similar_tags.all():
+			if s.id != self.id:
+				count += s.datasets.count()
+		return count
+
 class TagTranslation(models.Model):
 	tag = models.ForeignKey(Tag, on_delete=models.CASCADE)
 	translation = models.CharField(max_length=400,default=None, null=True,blank=True)

@@ -1,0 +1,31 @@
+{% extends 'tag_analytics/base.html' %}
+{% block content %}
+
+	{% block breadcrumb %}
+		<a href="{% url 'index' %}">Home</a> >
+		<a href="{% url 'opendataportal_list' %}">Open Data Portals</a> > 
+		{{ opendataportal.url }}
+	{% endblock %}
+
+	<h1 class="globaltag">{{ opendataportal.url }}</h1>
+
+	<ul>
+	{% for r in opendataportal.loadround_set.all %}
+		<li>		
+		{% if r.success == 1 %}
+		{{r.odpmetadata_set.first.site_title }}: {{r.insert_date}}
+		<ul>
+			<li>Description: {{r.odpmetadata_set.first.site_description }} </li>
+			<li>Insert Date: {{r.odpmetadata_set.first.insert_date}} </li>
+			<li>Ckan Version: {{r.odpmetadata_set.first.ckan_version}} </li>
+			<li>Language: {{r.odpmetadata_set.first.locale_default}} </li>
+			<li>Packages: {{r.odpmetadata_set.first.n_packages}} </li>
+		</ul>
+		</li>
+		{% else %}
+			<p style="color:red">Round Failed: {{r.insert_date}}</p>
+		{% endif %}
+	{% endfor %}
+	</ul>
+
+{% endblock content %}

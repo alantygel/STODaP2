@@ -107,6 +107,17 @@ class GlobalTagIndexView(generic.ListView):
 	def get_queryset(self):
 		return GlobalTag.objects.order_by('name')
 
+class ODPIndexView(generic.ListView):
+	model = OpenDataPortal
+	paginate_by = 30
+
+	def get_queryset(self):
+		return OpenDataPortal.objects.order_by('url')
+
+class ODPDetailView(generic.DetailView):
+    model = OpenDataPortal
+    template_name = 'tag_analytics/opendataportal.html'
+
 class TagDetailView(generic.DetailView):
     model = Tag
     template_name = 'tag_analytics/tag.html'
