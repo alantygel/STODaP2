@@ -1,7 +1,7 @@
 <h1>{{ tag.name }}</h1>
 <ul>
 {% for d in tag.datasets.all %}
-	<li><a href={{ tag.load_round.open_data_portal.url }}/dataset/{{ d.name }}>{{ d.display_name }}
+	<li><a href={{ d.get_url }}>{{ d.display_name }}
 	</li>
 {% endfor %}
 </ul>

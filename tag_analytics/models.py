@@ -102,6 +102,13 @@ class Dataset(models.Model):
 	def __unicode__(self):
 		return self.name
 
+	def get_url(self):
+		url = self.load_round.open_data_portal.url + "/dataset/" + self.name
+		if self.load_round.open_data_portal.url == "http://publicdata.eu":
+			url += ".html" 
+		return url
+
+
 class Tag(models.Model):
 	name = models.CharField(max_length=200)
 	display_name = models.CharField(max_length=200,blank=True,null=True,default=None)

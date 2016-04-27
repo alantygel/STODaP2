@@ -35,7 +35,7 @@
 	<ul>
 	{% for d in g.dataset_set.all %}
 		<li class="dataset">
-		<h3><a href="{{ t.load_round.open_data_portal.url }}/dataset/{{ d.name }}">{{ d.display_name }}</a></h3>
+		<h3><a href="{{ d.get_url }}">{{ d.display_name }}</a></h3>
 		<p> {{ d.description }}</p>
 		{% for t in d.tag_set.all %}
 		<a class="tag localtag" href="{{ d.load_round.open_data_portal.url }}/dataset?tags={{ t.name }}">{{ t.display_name }}</a>
