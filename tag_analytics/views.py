@@ -36,22 +36,6 @@ def autocomplete(request):
     })
 	return HttpResponse(the_data, content_type='application/json')
 
-#class MySearchView2(SearchView):
-#	"""My custom search view."""
-#	template_name = 'search/search.html'
-#	context_object_name = 'page_object'
-
-#	def get_queryset(self):
-#		queryset = super(MySearchView, self).get_queryset()
-#        # further filter queryset based on some set of criteria
-#		return queryset
-
-#	def get_context_data(self, *args, **kwargs):
-#		context = super(MySearchView, self).get_context_data(*args, **kwargs)
-#        # do something
-#		return context
-
-
 class MySearchView(SearchView):
 	"""My custom search view."""
 	template_name = 'search/search.html'
@@ -59,11 +43,13 @@ class MySearchView(SearchView):
 
 	def get_queryset(self):
 		queryset = super(MySearchView, self).get_queryset()
+		# print queryset
         # further filter queryset based on some set of criteria
 		return queryset
 
 	def get_context_data(self, *args, **kwargs):
 		context = super(MySearchView, self).get_context_data(*args, **kwargs)
+		# print context
         # do something
 		return context
 
@@ -74,6 +60,7 @@ class MySearchSpecView(SearchView):
 
 	def get_queryset(self):
 		queryset = super(MySearchSpecView, self).get_queryset()
+
         # further filter queryset based on some set of criteria
 		return queryset
 

@@ -12,7 +12,7 @@ urlpatterns = [
     url(r'^globalgroup/(?P<pk>[0-9]+)/$', views.GlobalGroupDetailView.as_view(), name='globalgroup'),
 	url(r'^search_specific/', views.MySearchSpecView.as_view(),name='search_specific'),
 	url(r'^search/?$', views.MySearchView.as_view(), name='search'),
-	url(r'^search/autocomplete/', views.autocomplete),
+	url(r'^search/autocomplete/', views.autocomplete,name='autocomplete'),
     url(r'^opendataportals/$', views.ODPIndexView.as_view(), name='opendataportal_list'),
     url(r'^opendataportal/(?P<pk>[0-9]+)/$', views.ODPDetailView.as_view(), name='opendataportal'),
 

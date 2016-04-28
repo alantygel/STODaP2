@@ -1,7 +1,51 @@
-<h1>{{ tag.name }}</h1>
+<h1>{{ tag.name }} - {{ tag.load_round.open_data_portal.url }}</h1>
+<h2>Similar Tags</h2>
+<ul>
+{% for t in tag.similar_tags.all %}
+	<li><a href={% url 'tag' t.id %}>{{ t.display_name }}</a>
+	</li>
+{% endfor %}
+</ul>
+<h2>Global Tags </h2>
+<ul>
+{% if tag.main_tag %}
+	{% for gt in tag.globaltag_set.all %}
+		<li class="globaltag">
+		<a class="tag globaltag" href="{% url 'globaltag' gt.id %}">{{ gt.name }}</a>
+		</li>
+	{% endfor %}
+{% else %}
+	{% for r in tag.similar_tags.all %}
+		{% for gt in r.globaltag_set.all %}
+			<li class="globaltag">
+			<a class="tag globaltag" href="{% url 'globaltag' gt.id %}">{{ gt.name }}</a>
+			</li>
+		{% endfor %}
+	{% endfor %}
+{% endif %}	
+</ul>
+<h2>Resource Candidates </h2>
+<ul>
+{% if tag.main_tag %}
+	{% for r in tag.tagmeaning_set.all %}
+		<li class="globaltag">
+		<a href="{{ r.meaning }}}">{{ r.meaning }}</a>
+		</li>
+	{% endfor %}
+{% else %}
+	{% for r in tag.similar_tags.all %}
+		{% for m in r.tagmeaning_set.all %}
+			<li class="globaltag">
+			<a href="{{ m.meaning }}}">{{ m.meaning }}</a>
+			</li>
+		{% endfor %}
+	{% endfor %}
+{% endif %}
+</ul>
+<h2>Datasets</h2>
 <ul>
 {% for d in tag.datasets.all %}
-	<li><a href={{ d.get_url }}>{{ d.display_name }}
+	<li><a href={{ d.get_url }}>{{ d.display_name }}</a>
 	</li>
 {% endfor %}
 </ul>

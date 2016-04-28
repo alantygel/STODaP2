@@ -19,6 +19,7 @@ import lib
 import rdflib
 from rdflib import URIRef
 from rdflib import Graph
+from haystack.query import SearchQuerySet
 
 def MeaningAssocStats():
 
@@ -771,18 +772,15 @@ def SetRelations():
 
 		b, n, r = GetRelatedMeanings(gt.uri,'gemet')
 		if (b != []):
-			for br in b: 
-#				print br
+			for br in b:
 				t = GlobalTag.objects.get(uri = br)
 				gt.broader.add(t)
 		if (n != []):
 			for na in n:
-#				print na 
 				t = GlobalTag.objects.get(uri = na)
 				gt.narrower.add(t)
 		if (r != []):
 			for re in r:
-#				print re 
 				t = GlobalTag.objects.get(uri = re)
 				gt.related.add(t)
 
@@ -1026,4 +1024,15 @@ def HarvestDatasetDescriptions2():
 #		break
 		d.save()
 
-#30 de maio - oficina
+def ReconcileOrphanTags():
+	main_tags = Tag.objects.filter(main_tag=True)
+	orphans = filter(lambda x: x.tagmeaning_set.count() > 0,main_tags)
+
+	for orphan in orphans:
+		print orphan.display_name
+		sqs = SearchQuerySet().filter(text=orphan.get_translation())
+		for res in sqs:
+				if res.content_type == 'tag_analytics.globaltag':
+					print orphan.display_name + " > " + res.object.name
+					break
+		break

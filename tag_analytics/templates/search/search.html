@@ -11,7 +11,7 @@
     // But this is an example.
     var Autocomplete = function(options) {
       this.form_selector = options.form_selector
-      this.url = options.url || 'autocomplete/'
+      this.url = options.url || '{% url 'autocomplete' %}'
       this.delay = parseInt(options.delay || 300)
       this.minimum_length = parseInt(options.minimum_length || 3)
       this.form_elem = null
@@ -119,18 +119,18 @@
 
 				{% elif ct.grouper == "Global groups" %}
 		            {% for result in ct.list|range:'0#5' %}
-	<li><a class="group globalgroup" href="{% url 'globalgroup' result.object.id %}">{{ result.object.name }}</a></li>
+                  {% include "tag_analytics/snippets/globalgroup.html" %}
 		            {% endfor %}
 					<a href="{% url 'search_specific' %}?q={{query}}&models=tag_analytics.globalgroup" >See more global groups</a>
 
 				{% elif ct.grouper == "Global tags" %}
 		            {% for result in ct.list|range:'0#5' %}
-					<li><a class="tag globaltag" href="{% url 'globaltag' result.object.id %}">{{ result.object.name }}</a></li>
+                  {% include "tag_analytics/snippets/globaltag.html" %}
 		            {% endfor %}
 					<a href="{% url 'search_specific' %}?q={{query}}&models=tag_analytics.globaltag" >See more global tags</a>
 				{% elif ct.grouper == "Tags" %}
 		            {% for result in ct.list|range:'0#5' %}
-<li><a class="tag localtag" href="{{ result.object.load_round.open_data_portal.url }}/dataset?tags={{ result.object.name }}">{{ result.object.display_name }}</a></li>
+                  {% include "tag_analytics/snippets/tag.html" %}
 		            {% endfor %}
 					<a href="{% url 'search_specific' %}?q={{query}}&models=tag_analytics.tag" >See more tags</a>
 				{% endif %}

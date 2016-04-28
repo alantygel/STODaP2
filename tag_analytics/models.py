@@ -175,9 +175,9 @@ class GlobalTag(models.Model):
 	description = models.CharField(max_length=1000, blank=True)
 	tags = models.ManyToManyField(Tag, blank=True)
 	uri = models.CharField(max_length=200, blank=True)
-	narrower = models.ManyToManyField("self", blank=True)
-	broader = models.ManyToManyField("self", blank=True)
-	related = models.ManyToManyField("self", blank=True)
+	narrower = models.ManyToManyField("self", blank=True,symmetrical=False,related_name='narrower_set')
+	broader = models.ManyToManyField("self", blank=True,symmetrical=False,related_name='broader_set')
+	related = models.ManyToManyField("self", blank=True,symmetrical=False,related_name='related_set')
 	globalgroups = models.ManyToManyField(GlobalGroup, blank=True)
 	insert_date = models.DateTimeField('insert date', default=datetime.now)
 
