@@ -16,6 +16,13 @@
 }
 </style>
 
+{% block breadcrumb %}
+  <a href="{% url 'index' %}">Home</a> >
+  Faceted Search
+{% endblock %}
+
+   <h1>Faceted Search</h1>
+
 <form method="get" action="{% url 'faceted_search' %}">
     <table>
         <tbody>
@@ -30,6 +37,7 @@
 
 {% if query %}
     <!-- Begin faceting. -->
+
 <div id="wrapper">
 <div id="facets">
     <h2>Filters</h2>
@@ -47,7 +55,7 @@
             {% endif %}
             {% if facets.fields.language %}
                 <dt>Language</dt>
-                {% for f in facets.fields.language|slice:":5" %}
+                {% for f in facets.fields.language|slice:":15" %}
                     {% if f.1 > 0 %}
                     <dd><a href="{{ request.get_full_path }}&amp;selected_facets=language_exact:{{ f.0|urlencode }}">{{ f.0 }}</a> ({{ f.1 }})</dd>
                     {% endif %}
@@ -73,7 +81,7 @@
                     {% endif %}
                 {% endfor %}
             {% else %}
-                <p>No author facets.</p>
+                <p>No Global Groups facets.</p>
             {% endif %}
         </dl>
     </div>
@@ -82,7 +90,9 @@
 <div id="search_results">
     <ul>
     {% for result in page_object %}
-            {% include "tag_analytics/snippets/dataset.html" %}
+            {% if result.content_type == 'tag_analytics.dataset' %}
+                {% include "tag_analytics/snippets/dataset.html" %}
+            {% endif %}
     {% empty %}
         <p>Sorry, no results found.</p>
     {% endfor %}

@@ -3,7 +3,6 @@
 
 {% block content %}
 
-
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
   <script type="text/javascript">
     // In a perfect world, this would be its own library file that got included
@@ -95,11 +94,16 @@
     })
   </script>
 
-   <h2>Search</h2>
+{% block breadcrumb %}
+  <a href="{% url 'index' %}">Home</a> >
+  Search
+{% endblock %}
+
+   <h1>Search</h1>
 
     <form method="get" action="{% url 'search'%}" class="autocomplete-me" autocomplete="off">
         <table>
-            {{ form.as_table }}
+            {{ form.as_ul }}
             <tr>
                 <td>&nbsp;</td>
                 <td>

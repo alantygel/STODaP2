@@ -23,8 +23,10 @@ from functions import SyntacticSimilarity
 
 from django.db.models import Q
 from haystack.generic_views import SearchView
+from haystack.generic_views import FacetedSearchView as BaseFacetedSearchView
 from haystack.query import SearchQuerySet
-
+from haystack.forms import FacetedSearchForm
+import forms
 
 def autocomplete(request):
 	sqs = SearchQuerySet().autocomplete(name_auto=request.GET.get('q', ''))[:5]
@@ -40,6 +42,7 @@ class MySearchView(SearchView):
 	"""My custom search view."""
 	template_name = 'search/search.html'
 	context_object_name = 'page_object'
+	form_class = forms.MySearchForm
 
 	def get_queryset(self):
 		queryset = super(MySearchView, self).get_queryset()
@@ -68,6 +71,12 @@ class MySearchSpecView(SearchView):
 		context = super(MySearchSpecView, self).get_context_data(*args, **kwargs)
         # do something
 		return context
+
+class FacetedSearchView(BaseFacetedSearchView):
+    form_class = forms.MyFacetedSearchForm
+    facet_fields = ['language', 'portal','globaltags','globalgroups']
+    template_name = 'search/faceted_search.html'
+    context_object_name = 'page_object'
 
 class IndexView(generic.ListView):
     template_name = 'tag_analytics/index.html'
