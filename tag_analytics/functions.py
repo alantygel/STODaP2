@@ -1036,3 +1036,32 @@ def ReconcileOrphanTags():
 					print orphan.display_name + " > " + res.object.name
 					break
 		break
+
+def ManualReconcile():
+
+	term = 'public procurement'
+	term2 = 'procurement'	
+	gemet_uri = 'http://www.eionet.europa.eu/gemet/concept/6810'
+	# sqs = SearchQuerySet().filter(text=term).filter_or(text=term2)
+	# for res in sqs:
+	# 	t = res.object
+	# 	if res.content_type() == 'tag_analytics.tag':
+	# 		if t.main_tag == True:
+	# 			try:
+	# 				TagMeaning.objects.get(tag_id=t.id,meaning = gemet_uri)
+	# 			except:
+	# 				print str(t.id) + t.display_name
+	# 				m = TagMeaning(tag=t, meaning = gemet_uri)
+	# 				m.save()
+
+	gt = GlobalTag.objects.get(id = 4321)
+	tms = TagMeaning.objects.filter(meaning = gemet_uri)
+	for tm in tms:
+		t = Tag.objects.get(id = tm.tag_id)
+		gt.tags.add(t)
+	gt.save()
+#TODO
+#enhance tag - global tag matching.
+#failing examples: health-care not assigned to health care
+# PROCUREMENT not assigned to public procurement
+#tags containing - in the begging also failing
