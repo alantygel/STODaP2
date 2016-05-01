@@ -1,4 +1,7 @@
 from django.conf.urls import include, url
+from django.conf.urls import *
+from haystack.forms import FacetedSearchForm
+from haystack.generic_views import FacetedSearchView
 
 from . import views
 
@@ -15,7 +18,6 @@ urlpatterns = [
 	url(r'^search/autocomplete/', views.autocomplete,name='autocomplete'),
     url(r'^opendataportals/$', views.ODPIndexView.as_view(), name='opendataportal_list'),
     url(r'^opendataportal/(?P<pk>[0-9]+)/$', views.ODPDetailView.as_view(), name='opendataportal'),
-
     url(r'^load_odps/$', views.load_odps, name='load_odps'),
     url(r'^edit_groups/$', views.edit_groups, name='edit_groups'),
     url(r'^calculate_cooc_matrix/$', views.calculate_cooc_matrix, name='calculate_cooc_matrix'),
@@ -25,6 +27,9 @@ urlpatterns = [
     url(r'^(?P<open_data_portal_id>[0-9]+)/load/(?P<rnumber>[0-9]+)$', views.load_metadata, name='load'),
     url(r'^(?P<open_data_portal_id>[0-9]+)/load/$', views.load_metadata, name='load'),
     url(r'^load_all/(?P<start>[0-9]+)$', views.load_all, name='load'),
+    url(r'^faceted_search/$', FacetedSearchView.as_view(context_object_name = 'page_object',template_name='search/faceted_search.html',form_class=FacetedSearchForm, facet_fields=['language','globaltags','portal']), name='faceted_search'),
 ]
+
+    
 
 

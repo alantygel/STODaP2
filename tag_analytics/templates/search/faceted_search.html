@@ -1,0 +1,93 @@
+{% extends 'tag_analytics/base.html' %}
+
+{% block content %}
+
+<style>
+#facets {
+    float:left;
+    width: 300px;
+}
+#search_results {
+    float:right;
+    width: 900px;
+}
+#wrapper {
+    display: inline-block;
+}
+</style>
+
+<form method="get" action="{% url 'faceted_search' %}">
+    <table>
+        <tbody>
+            {{ form.as_table }}
+            <tr>
+                <td>&nbsp;</td>
+                <td><input type="submit" value="Search"></td>
+            </tr>
+        </tbody>
+    </table>
+</form>
+
+{% if query %}
+    <!-- Begin faceting. -->
+<div id="wrapper">
+<div id="facets">
+    <h2>Filters</h2>
+    <div>
+        <dl>
+            {% if facets.fields.globaltags %}
+                <dt>Global Tag</dt>
+                {% for f in facets.fields.globaltags|slice:":15" %}
+                    {% if f.1 > 0 %}
+                        <dd><a href="{{ request.get_full_path }}&amp;selected_facets=globaltags_exact:{{ f.0|urlencode }}">{{ f.0 }}</a> ({{ f.1 }})</dd>
+                    {% endif %}
+                {% endfor %}
+            {% else %}
+                <p>No author facets.</p>
+            {% endif %}
+            {% if facets.fields.language %}
+                <dt>Language</dt>
+                {% for f in facets.fields.language|slice:":5" %}
+                    {% if f.1 > 0 %}
+                    <dd><a href="{{ request.get_full_path }}&amp;selected_facets=language_exact:{{ f.0|urlencode }}">{{ f.0 }}</a> ({{ f.1 }})</dd>
+                    {% endif %}
+                {% endfor %}
+            {% else %}
+                <p>No author facets.</p>
+            {% endif %}
+            {% if facets.fields.portal %}
+                <dt>Portals</dt>
+                {% for f in facets.fields.portal|slice:":15" %}
+                    {% if f.1 > 0 %}
+                    <dd><a href="{{ request.get_full_path }}&amp;selected_facets=portal_exact:{{ f.0|urlencode }}">{{ f.0 }}</a> ({{ f.1 }})</dd>
+                    {% endif %}
+                {% endfor %}
+            {% else %}
+                <p>No author facets.</p>
+            {% endif %}
+            {% if facets.fields.globalgroups %}
+                <dt>Global Groups</dt>
+                {% for f in facets.fields.globalgroups|slice:":10" %}
+                    {% if f.1 > 0 %}
+                    <dd><a href="{{ request.get_full_path }}&amp;selected_facets=globalgroups_exact:{{ f.0|urlencode }}">{{ f.0 }}</a> ({{ f.1 }})</dd>
+                    {% endif %}
+                {% endfor %}
+            {% else %}
+                <p>No author facets.</p>
+            {% endif %}
+        </dl>
+    </div>
+</div>
+    <!-- End faceting -->
+<div id="search_results">
+    <ul>
+    {% for result in page_object %}
+            {% include "tag_analytics/snippets/dataset.html" %}
+    {% empty %}
+        <p>Sorry, no results found.</p>
+    {% endfor %}
+    </ul>
+</div>
+{% endif %}
+</div>
+{% endblock %}

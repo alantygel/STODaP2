@@ -28,7 +28,7 @@ body{
 }
 #menu {
 	margin: 0px auto;
-	width:700px;
+	width:900px;
 	height: 20px;
 	padding: 10px 0;
 }
@@ -136,7 +136,8 @@ ul.inline_list, ul.inline_list li{
 				<li><a href="{% url 'globaltag_list' %}">Global Tags</a></li>
 				<li><a href="{% url 'globalgroup_list' %}">Global Groups</a></li>
 				<li><a href="{% url 'opendataportal_list' %}">Open Data Portals</a></li>
-				<li><a href="{% url 'index'%}search">Search</a></li>
+				<li><a href="{% url 'search'%}">Search</a></li>
+				<li><a href="{% url 'faceted_search'%}">Faceted Search</a></li>
 		</div></div>
         {% block content %}{% endblock %}
 		<div id="footer">GRECO/PPGI/UFRJ - EIS/University of Bonn</div>

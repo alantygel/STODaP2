@@ -43,7 +43,7 @@ class MySearchView(SearchView):
 
 	def get_queryset(self):
 		queryset = super(MySearchView, self).get_queryset()
-		# print queryset
+		# print SearchQuerySet
         # further filter queryset based on some set of criteria
 		return queryset
 

@@ -102,12 +102,36 @@ class Dataset(models.Model):
 	def __unicode__(self):
 		return self.name
 
+	def get_language(self):
+		try:
+			return self.load_round.odpmetadata_set.first().locale_default
+		except:
+			return None
+
+	def get_portal(self):
+		return self.load_round.open_data_portal.url
+
 	def get_url(self):
 		url = self.load_round.open_data_portal.url + "/dataset/" + self.name
 		if self.load_round.open_data_portal.url == "http://publicdata.eu":
 			url += ".html" 
 		return url
 
+	def get_globaltags(self):
+		globaltags = []
+		tags = self.tag_set.all()
+		for t in tags:
+			for gt in t.globaltag_set.all():
+				globaltags.append(gt)
+		return globaltags
+
+	def get_globalgroups(self):	
+		globalgroups = []
+		groups = self.groups.all()
+		for g in groups:
+			for gg in g.globalgroup_set.all():
+				globalgroups.append(gg)
+		return globalgroups
 
 class Tag(models.Model):
 	name = models.CharField(max_length=200)

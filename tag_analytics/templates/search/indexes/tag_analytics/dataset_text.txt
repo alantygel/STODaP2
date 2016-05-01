@@ -1,2 +1,4 @@
 {{ object.display_name }}
 {{ object.description }}
+{{ object.get_globaltags }}
+

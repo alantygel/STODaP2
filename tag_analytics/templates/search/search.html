@@ -36,11 +36,11 @@
       })
 
       // On selecting a result, populate the search field.
-      this.form_elem.on('click', '.ac-result', function(ev) {
-        self.query_box.val($(this).text())
-        $('.ac-results').remove()
-        return false
-      })
+      // this.form_elem.on('click', '.ac-result', function(ev) {
+      //   self.query_box.val($(this).text())
+      //   $('.ac-results').remove()
+      //   return false
+      // })
     }
 
     Autocomplete.prototype.fetch = function(query) {
@@ -70,7 +70,11 @@
           var elem = base_elem.clone()
           // Don't use .html(...) here, as you open yourself to XSS.
           // Really, you should use some form of templating.
+          url = '{% url 'search' %}' + '?q=' + results[res_offset]
+          // elem = elem.html().replace("#",url)
+          elem.find('.ac-result').attr("href",url)
           elem.find('.ac-result').text(results[res_offset])
+          
           results_wrapper.append(elem)
         }
       }
@@ -93,7 +97,7 @@
 
    <h2>Search</h2>
 
-    <form method="get" action="{% url 'search'%}" class="autocomplete-me">
+    <form method="get" action="{% url 'search'%}" class="autocomplete-me" autocomplete="off">
         <table>
             {{ form.as_table }}
             <tr>
