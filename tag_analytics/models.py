@@ -131,6 +131,10 @@ class Dataset(models.Model):
 		for g in groups:
 			for gg in g.globalgroup_set.all():
 				globalgroups.append(gg)
+		gts = self.get_globaltags()
+		for gt in gts:
+			for gg in gt.globalgroups.all():
+				globalgroups.append(gg)
 		return globalgroups
 
 class Tag(models.Model):
