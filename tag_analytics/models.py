@@ -6,6 +6,7 @@ import numpy
 class OpenDataPortal(models.Model):
 	url = models.CharField(max_length=200)
 	insert_date = models.DateTimeField('insert date', default=datetime.now)
+	published = models.BooleanField(default = True,null=False,blank=False)
 
 	def __str__(self):
 		return self.url
@@ -114,7 +115,7 @@ class Dataset(models.Model):
 	def get_url(self):
 		url = self.load_round.open_data_portal.url + "/dataset/" + self.name
 		if self.load_round.open_data_portal.url == "http://publicdata.eu":
-			url += ".html" 
+			url = "http://www.europeandataportal.eu/data/en/dataset/" + self.name 
 		return url
 
 	def get_globaltags(self):
