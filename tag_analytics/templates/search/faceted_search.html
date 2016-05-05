@@ -2,19 +2,6 @@
 
 {% block content %}
 
-<style>
-#facets {
-    float:left;
-    width: 300px;
-}
-#search_results {
-    float:right;
-    width: 900px;
-}
-#wrapper {
-    display: inline-block;
-}
-</style>
 
 {% block breadcrumb %}
   <a href="{% url 'index' %}">Home</a> >
@@ -37,7 +24,6 @@
 
 {% if query %}
     <!-- Begin faceting. -->
-
 <div id="wrapper">
 <div id="facets">
     <h2>Filters</h2>
@@ -88,6 +74,7 @@
 </div>
     <!-- End faceting -->
 <div id="search_results">
+    {{ page_obj.paginator.count }} results
     <ul>
     {% for result in page_object %}
             {% if result.content_type == 'tag_analytics.dataset' %}

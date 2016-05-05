@@ -62,4 +62,5 @@ class MyFacetedSearchForm(FacetedSearchForm):
             if value:
                 sqs = sqs.narrow(u'%s:"%s"' % (field, sqs.query.clean(value)))
 
+        print "form search"
         return sqs.models(Dataset)

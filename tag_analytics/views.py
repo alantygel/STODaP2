@@ -27,15 +27,16 @@ from haystack.generic_views import FacetedSearchView as BaseFacetedSearchView
 from haystack.query import SearchQuerySet
 from haystack.forms import FacetedSearchForm
 import forms
+import pprint
 
 def autocomplete(request):
 	sqs = SearchQuerySet().autocomplete(name_auto=request.GET.get('q', ''))[:5]
 	suggestions = [result.object.name for result in sqs]
-    # Make sure you return a JSON object, not a bare list.
-    # Otherwise, you could be vulnerable to an XSS attack.
+	# Make sure you return a JSON object, not a bare list.
+	# Otherwise, you could be vulnerable to an XSS attack.
 	the_data = json.dumps({
-        'results': suggestions
-    })
+		'results': suggestions
+	})
 	return HttpResponse(the_data, content_type='application/json')
 
 class MySearchView(SearchView):
@@ -47,13 +48,13 @@ class MySearchView(SearchView):
 	def get_queryset(self):
 		queryset = super(MySearchView, self).get_queryset()
 		# print SearchQuerySet
-        # further filter queryset based on some set of criteria
+		# further filter queryset based on some set of criteria
 		return queryset
 
 	def get_context_data(self, *args, **kwargs):
 		context = super(MySearchView, self).get_context_data(*args, **kwargs)
 		# print context
-        # do something
+		# do something
 		return context
 
 class MySearchSpecView(SearchView):
@@ -64,25 +65,39 @@ class MySearchSpecView(SearchView):
 	def get_queryset(self):
 		queryset = super(MySearchSpecView, self).get_queryset()
 
-        # further filter queryset based on some set of criteria
+		# further filter queryset based on some set of criteria
 		return queryset
 
 	def get_context_data(self, *args, **kwargs):
 		context = super(MySearchSpecView, self).get_context_data(*args, **kwargs)
-        # do something
+		# do something
 		return context
 
 class FacetedSearchView(BaseFacetedSearchView):
-    form_class = forms.MyFacetedSearchForm
-    facet_fields = ['language', 'portal','globaltags','globalgroups']
-    template_name = 'search/faceted_search.html'
-    context_object_name = 'page_object'
+	form_class = forms.MyFacetedSearchForm
+	facet_fields = ['language', 'portal','globaltags','globalgroups']
+	template_name = 'search/faceted_search.html'
+	context_object_name = 'page_object'
+	print "view"	
+
+	def get_context_data(self, *args, **kwargs):
+		context = super(FacetedSearchView, self).get_context_data(*args, **kwargs)
+		print "view context"	
+		# print dir(context)
+		# print context['paginator'].count
+		return context
+
+	def get_queryset(self):
+		queryset = super(FacetedSearchView, self).get_queryset()
+		print "view get queryset"	
+		# further filter queryset based on some set of criteria
+		return queryset
 
 class IndexView(generic.ListView):
-    template_name = 'tag_analytics/index.html'
-    context_object_name = 'groups_and_tags'
+	template_name = 'tag_analytics/index.html'
+	context_object_name = 'groups_and_tags'
 
-    def get_queryset(self):
+	def get_queryset(self):
 		context = {
 			'globalgroups' : GlobalGroup.objects.order_by('name')[:5],
 			'globaltags' : GlobalTag.objects.order_by('name')[:5],
@@ -111,28 +126,28 @@ class ODPIndexView(generic.ListView):
 		return OpenDataPortal.objects.order_by('url')
 
 class ODPDetailView(generic.DetailView):
-    model = OpenDataPortal
-    template_name = 'tag_analytics/opendataportal.html'
+	model = OpenDataPortal
+	template_name = 'tag_analytics/opendataportal.html'
 
 class TagDetailView(generic.DetailView):
-    model = Tag
-    template_name = 'tag_analytics/tag.html'
+	model = Tag
+	template_name = 'tag_analytics/tag.html'
 
 class GroupDetailView(generic.DetailView):
-    model = Group
-    template_name = 'tag_analytics/group.html'
+	model = Group
+	template_name = 'tag_analytics/group.html'
 
 class GlobalTagDetailView(generic.DetailView):
-    model = GlobalTag
-    template_name = 'tag_analytics/globaltag.html'
+	model = GlobalTag
+	template_name = 'tag_analytics/globaltag.html'
 
 class GlobalGroupDetailView(generic.DetailView):
-    model = GlobalGroup
-    template_name = 'tag_analytics/globalgroup.html'
+	model = GlobalGroup
+	template_name = 'tag_analytics/globalgroup.html'
 
 class DetailView(generic.DetailView):
-    model = LoadRound
-    template_name = 'tag_analytics/detail.html'
+	model = LoadRound
+	template_name = 'tag_analytics/detail.html'
 
 
 def edit_groups(request):
