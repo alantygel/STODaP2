@@ -140,3 +140,28 @@ ul#id_models {
 #wrapper {
     display: inline-block;
 }
+
+.button {
+	text-align: center;
+	text-decoration: none;
+	border: 1px solid black;
+	padding: 8px;
+	margin: 5px;
+	background: #FFF;
+	border-radius: 5px;
+	font-weight: bold;
+}
+
+.radio_question{
+	border-top: 1px solid black;
+	text-align: center;
+	width: 100%;
+}
+
+.form_wrapper{
+    display: inline-block;
+    background: #EEE;
+    padding: 10px;
+    border: 1px solid red;
+    margin: 10px 100px;
+}

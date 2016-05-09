@@ -1,0 +1,76 @@
+{% extends 'evaluation/base.html' %}
+{% load class_tag %}
+
+{% block content %}
+
+<h1>Thanks for the evaluation!</h1>
+
+<p>Please fill in this form to finish the evaluation.</p>
+
+<div class="form_wrapper">
+<form action='{% url 'finish' %}' method="POST">
+{% csrf_token %}
+<table class="radio_question">
+	<tr>
+		<th colspan="7">How easy is it was get the data you need using the STDOaP in comparison with the other methods?</th>
+	</tr><tr>
+		<td></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td></td>
+	</tr>
+	<tr>
+		<td>Easier</td>
+		<td><input type="radio" name="usability" value="1" /></td>
+		<td><input type="radio" name="usability" value="2" /></td>
+		<td><input type="radio" name="usability" value="3" checked="True"/></td>
+		<td><input type="radio" name="usability" value="4" /></td>
+		<td><input type="radio" name="usability" value="5" /></td>
+		<td>Harder</td>
+	</tr>
+</table>
+
+<br>
+<br>
+<table class="radio_question">
+	<tr>
+		<th colspan="7">Do you think STODaP is a useful tool for finding data on the web?</th>
+	</tr><tr>
+		<td></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td></td>
+	</tr>
+	<tr>
+		<td>Very useful</td>
+		<td><input type="radio" name="usefulness" value="1" /></td>
+		<td><input type="radio" name="usefulness" value="2" /></td>
+		<td><input type="radio" name="usefulness" value="3" checked="True"/></td>
+		<td><input type="radio" name="usefulness" value="4" /></td>
+		<td><input type="radio" name="usefulness" value="5" /></td>
+		<td>Not useful</td>
+	</tr>
+</table>
+<br>
+<br>
+<table class="radio_question">
+	<tr>
+		<th colspan="7">How often do you use open data in your study/work?</th>
+	</tr><tr>
+		<td></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td></td>
+	</tr>
+	<tr>
+		<td>Never</td>
+		<td><input type="radio" name="open_data_ability" value="1" /></td>
+		<td><input type="radio" name="open_data_ability" value="2" /></td>
+		<td><input type="radio" name="open_data_ability" value="3" checked="True"/></td>
+		<td><input type="radio" name="open_data_ability" value="4" /></td>
+		<td><input type="radio" name="open_data_ability" value="5" /></td>
+		<td>Always</td>
+	</tr>
+</table>
+
+<br><br>
+If you have additional comments or suggestions, please write it here: <br />
+<textarea cols="80" rows="3" name="comments" /></textarea><br />
+
+<input type="hidden" value="{{id}}" name="subject">
+
+<p style="text-align: center;"><input class="button" type="submit" value="Finish"></p>
+</form>
+</div>
+{% endblock content %}

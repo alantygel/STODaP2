@@ -1,0 +1,78 @@
+{% extends 'evaluation/base.html' %}
+{% block content %}
+
+<script type="text/javascript">
+function isNumber(evt) {
+    evt = (evt) ? evt : window.event;
+    var charCode = (evt.which) ? evt.which : evt.keyCode;
+    if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+        return false;
+    }
+    return true;
+}
+</script>
+<h2>Please fill in this form to start the evaluation</h2>
+
+<div class="form_wrapper">
+<form action='{% url 'initialize' %}' method="POST">
+{% csrf_token %}
+How old are you? <input type="text" name="age" style="width:50px" onkeypress="return isNumber(event)"/> <br />
+<br>
+<br>
+<table class="radio_question">
+	<tr>
+		<th colspan="7">How often do you use internet?</th>
+	</tr><tr>
+		<td></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td></td>
+	</tr>
+	<tr>
+		<td>Once a week</td>
+		<td><input type="radio" name="internet_ability" value="1" /></td>
+		<td><input type="radio" name="internet_ability" value="2" /></td>
+		<td><input type="radio" name="internet_ability" value="3" checked="True"/></td>
+		<td><input type="radio" name="internet_ability" value="4" /></td>
+		<td><input type="radio" name="internet_ability" value="5" /></td>
+		<td>Everyday</td>
+	</tr>
+</table>
+
+<br>
+<br>
+<table class="radio_question">
+	<tr>
+		<th colspan="7">How often do you use structured data in your study/work? <br>(e.g. spreadsheets, charts, statistics, ...)</th>
+	</tr><tr>
+		<td></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td></td>
+	</tr>
+	<tr>
+		<td>Never</td>
+		<td><input type="radio" name="data_ability" value="1" /></td>
+		<td><input type="radio" name="data_ability" value="2" /></td>
+		<td><input type="radio" name="data_ability" value="3" checked="True"/></td>
+		<td><input type="radio" name="data_ability" value="4" /></td>
+		<td><input type="radio" name="data_ability" value="5" /></td>
+		<td>Always</td>
+	</tr>
+</table>
+<br>
+<br>
+<table class="radio_question">
+	<tr>
+		<th colspan="7">How often do you use open data in your study/work?</th>
+	</tr><tr>
+		<td></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td></td>
+	</tr>
+	<tr>
+		<td>Never</td>
+		<td><input type="radio" name="open_data_ability" value="1" /></td>
+		<td><input type="radio" name="open_data_ability" value="2" /></td>
+		<td><input type="radio" name="open_data_ability" value="3" checked="True"/></td>
+		<td><input type="radio" name="open_data_ability" value="4" /></td>
+		<td><input type="radio" name="open_data_ability" value="5" /></td>
+		<td>Always</td>
+	</tr>
+</table>
+<p style="text-align: center;"><input class="button" type="submit" value="Start Evaluation"></p>
+</form>
+</div>
+{% endblock content %}

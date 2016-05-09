@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>STODaP - Tag Analytics</title>
+        {% load static %}
+        <link href="{% static "tag_analytics/style.css" %}" rel="stylesheet" type="text/css" media="screen" />
+    </head>
+
+    <body>
+		<div id="header">
+			STODaP - Semantic Tags for Open Data Portals
+		</div>
+<!-- 		<div id="menu-back"><div id="menu">
+			<ul>
+				<li><a href="{% url 'index' %}">Home</a></li>
+				<li><a href="{% url 'globaltag_list' %}">Global Tags</a></li>
+				<li><a href="{% url 'globalgroup_list' %}">Global Groups</a></li>
+				<li><a href="{% url 'opendataportal_list' %}">Open Data Portals</a></li>
+				<li><a href="{% url 'search'%}">Search</a></li>
+				<li><a href="{% url 'faceted_search'%}">Faceted Search</a></li>
+			</ul>
+		</div></div> -->
+        {% block content %}{% endblock %}
+		<div id="footer">GRECO/PPGI/UFRJ - EIS/University of Bonn</div>
+    </body>
+</html>

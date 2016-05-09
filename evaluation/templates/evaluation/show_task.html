@@ -1,0 +1,31 @@
+{% extends 'evaluation/base.html' %}
+{% load class_tag %}
+
+{% block content %}
+
+<form action="{% url 'show_task' %}" method="POST">
+{% csrf_token %}
+<h2>Task {{task_p1}}</h2>
+{# task.title #}
+<h3>{{ task.description }}</h3>
+
+using 
+
+
+{{ search_method.description|safe }}
+
+<br />
+<br />
+
+{% for f in answer_fields %}
+	<input type="text" name="url" /><br/>
+{% endfor %}
+
+
+<input type="hidden" name="task_number" value="{{task_number}}" />
+<input type="hidden" name="subject" value="{{id}}" />
+<input type="hidden" name="start_time" value="{{start_time}}" />
+<input type="submit" />
+</form>
+
+{% endblock content %}
