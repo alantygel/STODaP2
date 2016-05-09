@@ -78,7 +78,7 @@ class FacetedSearchView(BaseFacetedSearchView):
 	facet_fields = ['language', 'portal','globaltags','globalgroups']
 	template_name = 'search/faceted_search.html'
 	context_object_name = 'page_object'
-	print "view"	
+	# pprint "view"	
 
 	def get_context_data(self, *args, **kwargs):
 		context = super(FacetedSearchView, self).get_context_data(*args, **kwargs)
@@ -121,6 +121,14 @@ class GlobalTagIndexView(generic.ListView):
 class ODPIndexView(generic.ListView):
 	model = OpenDataPortal
 	paginate_by = 30
+
+	def get_queryset(self):
+		return OpenDataPortal.objects.order_by('url')
+
+class ODPEditIndexView(generic.ListView):
+	model = OpenDataPortal
+	paginate_by = 200
+	template_name = 'tag_analytics/opendataportal_list_edit.html'
 
 	def get_queryset(self):
 		return OpenDataPortal.objects.order_by('url')
@@ -272,6 +280,9 @@ def load_metadata(request, open_data_portal_id,rnumber=None):
 
 	try:
 		o = OpenDataPortal.objects.get(id=open_data_portal_id)
+		if o.url[-1] == '/':
+			o.url = o.url[:-1]
+			o.save()
 	except:
 		return
 #		raise Http404("No ODP with id " + open_data_portal_id)
@@ -293,6 +304,7 @@ def load_metadata(request, open_data_portal_id,rnumber=None):
 	## get tags
 	tag_list_response = 0
 	tag_list = 0
+
 	try:		
 		tag_list_response = lib.urlopen_with_retry(o.url + '/api/3/action/tag_list?all_fields=True')
 	except:

@@ -8,6 +8,9 @@ class OpenDataPortal(models.Model):
 	insert_date = models.DateTimeField('insert date', default=datetime.now)
 	published = models.BooleanField(default = True,null=False,blank=False)
 
+	def last_round_success(self):
+		return self.loadround_set.last().success
+
 	def __str__(self):
 		return self.url
 
