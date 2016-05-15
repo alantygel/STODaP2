@@ -15,12 +15,19 @@
 		{% if r.success == 1 %}
 		{{r.odpmetadata_set.first.site_title }}: {{r.insert_date}}
 		<ul>
+			<li>ID: {{r.id}}</li>
 			<li>Description: {{r.odpmetadata_set.first.site_description }} </li>
 			<li>Insert Date: {{r.odpmetadata_set.first.insert_date}} </li>
 			<li>Ckan Version: {{r.odpmetadata_set.first.ckan_version}} </li>
 			<li>Language: {{r.odpmetadata_set.first.locale_default}} </li>
 			<li>Packages: {{r.odpmetadata_set.first.n_packages}} </li>
+			<li>Tags: {{r.number_of_tags}} </li>
+			<li>Main Tags: {{r.main_tags}} </li>
+			<li>Tag Meanings: {{r.tag_meanings}} </li>
 		</ul>
+		{% if r.main_tags == 0 %}
+		Looks like this round was not processed. <a href="{% url 'process_round' r.id %}">Process Metadata</a>
+		{% endif %}
 		</li>
 		{% else %}
 			<p style="color:red">Round Failed: {{r.insert_date}}</p>

@@ -20,6 +20,8 @@ from functions import CalculateStats
 from functions import CalculateCoocurrenceMatrix
 from functions import LexicalCleaning
 from functions import SyntacticSimilarity
+from functions import ProcessRoundTags
+from functions import AssocTagGlobalTag
 
 from django.db.models import Q
 from haystack.generic_views import SearchView
@@ -28,6 +30,9 @@ from haystack.query import SearchQuerySet
 from haystack.forms import FacetedSearchForm
 import forms
 import pprint
+import string
+import time
+from itertools import chain
 
 def autocomplete(request):
 	sqs = SearchQuerySet().autocomplete(name_auto=request.GET.get('q', ''))[:5]
@@ -82,14 +87,14 @@ class FacetedSearchView(BaseFacetedSearchView):
 
 	def get_context_data(self, *args, **kwargs):
 		context = super(FacetedSearchView, self).get_context_data(*args, **kwargs)
-		print "view context"	
+		# print "view context"	
 		# print dir(context)
 		# print context['paginator'].count
 		return context
 
 	def get_queryset(self):
 		queryset = super(FacetedSearchView, self).get_queryset()
-		print "view get queryset"	
+		# print "view get queryset"	
 		# further filter queryset based on some set of criteria
 		return queryset
 
@@ -106,17 +111,49 @@ class IndexView(generic.ListView):
 
 class GlobalGroupIndexView(generic.ListView):
 	model = GlobalGroup
-	paginate_by = 30
+	template_name = 'tag_analytics/globalgroup_list.html'
+	context_object_name = 'globalgroup_list'
 
 	def get_queryset(self):
-		return GlobalGroup.objects.order_by('name')
+		print self.request
+		context = {'chars' : string.ascii_lowercase}
+		for char in string.ascii_lowercase:
+			context[char] = GlobalGroup.objects.order_by('name').filter(Q(name__startswith = char) |  Q(name__startswith = char.upper()))
+		return context
+
+def globalgroup_list_alpha(request,char):
+	gg = GlobalGroup.objects.filter(name__startswith = char).order_by('name')
+	context = {
+		'globalgroup_list' : gg
+	}
+	template = loader.get_template('tag_analytics/globalgroup_list_alpha.html')
+
+	return HttpResponse(template.render(context,request))
+
 
 class GlobalTagIndexView(generic.ListView):
 	model = GlobalTag
-	paginate_by = 30
+	template_name = 'tag_analytics/globaltag_list.html'
+	# paginate_by = 30
+	context_object_name = 'globaltag_list'
 
 	def get_queryset(self):
-		return GlobalTag.objects.order_by('name')
+		print self.request
+		context = {'chars' : string.ascii_lowercase}
+		for char in string.ascii_lowercase:
+			context[char] = GlobalTag.objects.order_by('name').filter(name__startswith = char)[:5]
+		
+		return context
+
+def globaltag_list_alpha(request,char):
+	gt = GlobalTag.objects.filter(name__startswith = char).order_by('name')
+	context = {
+		'globaltag_list' : gt
+	}
+	template = loader.get_template('tag_analytics/globaltag_list_alpha.html')
+
+	return HttpResponse(template.render(context,request))
+
 
 class ODPIndexView(generic.ListView):
 	model = OpenDataPortal
@@ -191,20 +228,6 @@ def show_tags(request):
 			if tag.main_tag == True:
 				all_tags.append(tag)
 
-
-#	round_tags = []
-#	clean_local_tags = []
-#	for r in rounds:
-#		local_tags = r.tag_set.all()
-#		for tag in local_tags:
-#			if LexicalCleaning(tag):
-#				clean_local_tags.append(tag)
-
-#		round_tags.append(SyntacticSimilarity(clean_local_tags))
-#	
-#	tag_tras
-
-
 	context = {
 		'all_tags' : all_tags}
 
@@ -275,6 +298,18 @@ def load_all(request,start=None):
 		load_metadata(request,o.id,None)
 
 	return render (request,'tag_analytics/index.html')
+
+
+def process_round(request, round_id):
+
+	try:
+		r = LoadRound.objects.get(id = round_id)
+	except:
+		raise Http404("No round with id " + round_id)
+
+	ProcessRoundTags(r)
+	AssocTagGlobalTag(r)
+
 
 def load_metadata(request, open_data_portal_id,rnumber=None):
 
@@ -391,15 +426,16 @@ def load_metadata(request, open_data_portal_id,rnumber=None):
 				START += LIMIT
 
 			for dataset in dataset_list:
-				if dataset.get('name') == "actuaciones-de-fiscalizacion":
-					print "here"	
 				dataset_response = 0
 				if type(dataset['title']) is dict:
 					dataset_name = dataset.get('title').values()[0]
 				else:
 					dataset_name = dataset.get('title')
-		#		print "dataset name: " + dataset_name
-				d = lr.dataset_set.create(name=dataset.get('name'),display_name=dataset_name, ckan_id = dataset.get('id'), metadata_modified = dataset.get('metadata_modified'), n_tags = dataset.get('num_tags'), n_resources = dataset.get('num_resources'))
+				# print "dataset name: " + dataset_name
+				d = lr.dataset_set.create(name=dataset.get('name'),display_name=dataset_name, 
+					ckan_id = dataset.get('id'), metadata_modified = dataset.get('metadata_modified'), 
+					n_tags = dataset.get('num_tags'), n_resources = dataset.get('num_resources'),
+					description = dataset.get('notes'))
 				d.save()
 
 				if type(dataset.get('tags')) is list:

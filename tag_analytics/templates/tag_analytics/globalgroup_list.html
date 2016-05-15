@@ -1,4 +1,6 @@
 {% extends 'tag_analytics/base.html' %}
+{% load extras %}
+
 {% block content %}
 
 {% block breadcrumb %}
@@ -8,29 +10,20 @@
 
 {% if globalgroup_list %}
 
-<h1>Global Groups</h1>
-<ul>
-{% for gg in globalgroup_list %}
-	<li> <a href="{% url 'globalgroup' gg.id %}" >{{ gg.name }} {#gg.dataset_count#} </a></li>
-{% endfor %}
-</ul>
+    <ul class="globaltag_list_alpha">
+    {% for char in globalgroup_list.chars %}
+        {% resolve char globalgroup_list as value %}
+        {% if value.count > 0 %}
+            <li><div class="alpha">{{ char|upper }}</div>
+            {% for gg in value %}
+                <a href="{% url 'globalgroup' gg.id %}">{{ gg.name }}</a> , 
+            {% endfor %}
+            </li>
+        {% endif %}
+    {% endfor %}
+    </ul>
 
-	{% if is_paginated %}
-	<div class="pagination">
-		<span class="page-links">
-			{% if page_obj.has_previous %}
-                <a href="{% url 'globalgroup_list' %}?page={{ page_obj.previous_page_number }}">previous</a>
-            {% endif %}
-            <span class="page-current">
-                Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
-            </span>
-            {% if page_obj.has_next %}
-                <a href="{% url 'globalgroup_list' %}?page={{ page_obj.next_page_number }}">next</a>
-            {% endif %}
-        </span>
-        </div>
-    {% endif %}
 {% else %}
-    <p>No tags found!!! :(</p>
+    <p>No groups found!!! :(</p>
 {% endif %}
 {% endblock %}

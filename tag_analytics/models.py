@@ -37,6 +37,12 @@ class LoadRound(models.Model):
 	def number_of_datasets(self):
 		return self.dataset_set.count()
 
+	def main_tags(self):
+		return len(Tag.objects.filter(load_round_id = self.id, main_tag = True))
+
+	def tag_meanings(self):
+		return len(TagMeaning.objects.filter(tag__load_round_id = self.id))
+
 
 class ODPMetadata(models.Model):
 	site_title = models.CharField(max_length=200, null=True,blank=True)
@@ -90,6 +96,18 @@ class GlobalGroup(models.Model):
 			datasets += gt.datasets()
 		return len(set(datasets))
 
+	def first_datasets(self):
+		SIZE = 5
+		datasets = []
+		for g in self.groups.all():
+			datasets += g.dataset_set.all()
+			if len(datasets) > SIZE:
+				return set(datasets[:SIZE])
+		for gt in self.globaltag_set.all():
+			datasets += gt.datasets()
+			if len(datasets) > SIZE:
+				return set(datasets[:SIZE])
+		return set(datasets)
 
 class Dataset(models.Model):
 	name = models.CharField(max_length=200)

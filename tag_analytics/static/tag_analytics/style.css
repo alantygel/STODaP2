@@ -165,3 +165,24 @@ ul#id_models {
     border: 1px solid red;
     margin: 10px 100px;
 }
+
+.subject_answers{
+	width: 80%;
+	margin: 0 auto;
+}
+
+.subject_answers td{
+	border: 1px solid black;
+	text-align: center;
+}
+
+ul.globaltag_list_alpha{
+	list-style: none;
+}
+
+div.alpha{
+	width: 50px; 
+	height: 50px; 
+	font-size: 200%; 
+	display: inline-block;
+}

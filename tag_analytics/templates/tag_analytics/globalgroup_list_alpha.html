@@ -1,0 +1,26 @@
+{% extends 'tag_analytics/base.html' %}
+
+{% load extras %}
+
+{% block content %}
+
+{% block breadcrumb %}
+	<a href="{% url 'index' %}">Home</a> >
+	Global Tags</a>
+{% endblock %}
+
+{% if globalgroup_list %}
+<ul class="">
+{% for gg in globalgroup_list %}
+	<li><a href="{% url 'globalgroup' gg.id %}">{{ gg.name }}</a> ({{gg.dataset_count }} datasets): {{gg.description}} </li>
+
+{% endfor%}
+</ul>
+
+{% else %}
+    <p>No tags found!!! :(</p>
+{% endif %}
+
+
+
+{% endblock %}

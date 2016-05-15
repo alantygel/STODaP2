@@ -8,7 +8,6 @@
 	{{ globalgroup.name }}
 {% endblock %}
 
-
 <h1>{{ globalgroup.name }}</h1>
 <p class="URI">URI: <a href="{{ globalgroup.uri }}">{{ globalgroup.uri }}</a></p>
 
@@ -28,24 +27,17 @@
 	</li>
 {% endfor%}
 </ul>
+{% endif %}
 
 <h2>Datasets</h2>
-{% for g in globalgroup.groups.all %}
-	<p>{{ g.load_round.open_data_portal.url }} ({{ g.display_name }})<p>
+{% for d in globalgroup.first_datasets %}
 	<ul>
-	{% for d in g.dataset_set.all %}
-		<li class="dataset">
-		<h3><a href="{{ d.get_url }}">{{ d.display_name }}</a></h3>
-		<p> {{ d.description }}</p>
-		{% for t in d.tag_set.all %}
-		<a class="tag localtag" href="{{ d.load_round.open_data_portal.url }}/dataset?tags={{ t.name }}">{{ t.display_name }}</a>
-		{% endfor%}		
-		</li>
-	{% endfor%}
+		{% include "tag_analytics/snippets/dataset2.html" %}
 	</ul>
 {% endfor%}
 
-{% endif %}
+<p><a href="{% url 'faceted_search' %}?q={{globalgroup.name}}&selected_facets=globalgroups_exact:{{globalgroup.name}}">See all {{ globalgroup.dataset_count }} datasets related to this group.</p>
+
 
 
 

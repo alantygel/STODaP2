@@ -1,0 +1,9 @@
+<li class="dataset">
+<h3 class="portal_title">{{ d.load_round.open_data_portal.url }} ({{ d.display_name }})</h3>
+<h3><a href="{{ result.object.get_url }}">{{ d.display_name }}</a></h3>
+<p> {{ d.description }}</p>
+{% for t in d.tag_set.all %}
+<a class="tag localtag" href="{{ d.load_round.open_data_portal.url }}/dataset?tags={{ t.name }}">{{ t.display_name }}</a>
+{% endfor%}		
+</li>
+

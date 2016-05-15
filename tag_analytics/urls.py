@@ -6,6 +6,8 @@ urlpatterns = [
     url(r'^$', views.IndexView.as_view(), name='index'),
     url(r'^globalgroups/$', views.GlobalGroupIndexView.as_view(), name='globalgroup_list'),
     url(r'^globaltags/$', views.GlobalTagIndexView.as_view(), name='globaltag_list'),
+    url(r'^globaltags/(?P<char>[a-z])/$', views.globaltag_list_alpha, name='globaltag_list_alpha'),
+    url(r'^globalgroups/(?P<char>[a-z])/$', views.globalgroup_list_alpha, name='globalgroup_list_alpha'),
     url(r'^tag/(?P<pk>[0-9]+)/$', views.TagDetailView.as_view(), name='tag'),
     url(r'^group/(?P<pk>[0-9]+)/$', views.GroupDetailView.as_view(), name='group'),
     url(r'^globaltag/(?P<pk>[0-9]+)/$', views.GlobalTagDetailView.as_view(), name='globaltag'),
@@ -17,6 +19,8 @@ urlpatterns = [
     url(r'^opendataportals_edit/$', views.ODPEditIndexView.as_view(), name='opendataportal_list_edit'),
     url(r'^opendataportal/(?P<pk>[0-9]+)/$', views.ODPDetailView.as_view(), name='opendataportal'),
     url(r'^load_metadata/(?P<open_data_portal_id>[0-9]+)$', views.load_metadata, name='load_metadata'),
+    url(r'^process_round/(?P<round_id>[0-9]+)$', views.process_round, name='process_round'),
+
     url(r'^load_odps/$', views.load_odps, name='load_odps'),
     url(r'^edit_groups/$', views.edit_groups, name='edit_groups'),
     url(r'^calculate_cooc_matrix/$', views.calculate_cooc_matrix, name='calculate_cooc_matrix'),

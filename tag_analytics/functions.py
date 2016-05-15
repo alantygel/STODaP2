@@ -139,12 +139,14 @@ def SyntacticSimilarity(tags):
 	i = 0
 	while i < len(tags)-1:
 		j = 1
-#		print i,
+		# print i
 		tags[i].similar_tags = []
 		tags[i].main_tag = False
 		while (j < RANGE) and (i+j < len(tags)):
 			#check if difference is only on special chars or capitals
 			if unidecode(tags[i].display_name.lower()) == unidecode(tags[i+j].display_name.lower()):
+				# print tags[i]
+				# print tags[i+j]	
 				similar_tags.append([tags[i],tags[i+j]])
 				tags[i].similar_tags.add(tags[i+j])
 				tags.pop(i+j)
@@ -153,16 +155,22 @@ def SyntacticSimilarity(tags):
 				#check if difference is on edit distance, excluding tags with only numbers. tags containing numbers are already excluded
 				if (Levenshtein.distance(unidecode(tags[i].display_name.lower()),unidecode(tags[i+j].display_name.lower())) < 2) and (tags[i].display_name.isdigit() == False):
 					similar_tags.append([tags[i],tags[i+j]])
-#					print tags[i]
-#					print tags[i+j]
+					# print tags[i]
+					# print tags[i+j]	
 					tags[i].similar_tags.add(tags[i+j])
 					tags.pop(i+j)
 					j = j-1
 #				else:
 			j += 1
-		tags[i].main_tag = 1
+		tags[i].main_tag = True
 		tags[i].save()
 		i+=1
+
+	if	i == (len(tags)-1):
+		tags[i].main_tag = True
+		tags[i].save()
+
+
 	#				grouped_tags.append(tags[i])
 
 #	tags.save()
@@ -262,20 +270,28 @@ def LexicalCleaning(tag):
 
 	if tag.datasets.count() == 0:
 		not_used = True
+		# print "not_used"
 	else:
-		if (name[0] == '.') or (name[0] == ' ') or (name[0] == '-') or (len(name.split(' ')) > 5) or (name.isdigit() and (len(name) != 4)):
+		if (tag_name[0] == '.') or (tag_name[0] == ' ') or (tag_name[0] == '-') or \
+			(len(tag_name.split(' ')) > 5) or (tag_name.isdigit() and (len(tag_name) != 4)):
+			# print "bad_format"
 			bad_format = True
 
-		elif ([int(tag_name[i]) for i in range(0,len(tag_name)) if tag_name[i].encode('utf-8').isdigit()] == []) or tag_name.encode('utf-8').isdigit():
-			nodigits_or_only_digits = True
-
-		elif len(tag_name) >= MIN_LENGTH:
-			length = True
-
 		elif tag_name.isupper():
+			# print "upp"
 			uppercase = True
 
+		if ([int(tag_name[i]) for i in range(0,len(tag_name)) if tag_name[i].encode('utf-8').isdigit()] == []) or \
+		tag_name.encode('utf-8').isdigit():
+			# print "nodigits_or_only_digits"
+			nodigits_or_only_digits = True
+
+		if len(tag_name) >= MIN_LENGTH:
+			# print "length"
+			length = True
+
 	if nodigits_or_only_digits and length and not uppercase and not bad_format:
+		# print "true"
 		return True
 	else:
 		return False
@@ -406,7 +422,7 @@ def ProcessRoundTags(r):
 		t.main_tag = False
 		t.similar_tags = []
 		t.save()
-		if LexicalCleaning(t):
+		if LexicalCleaning(t): 
 			clean_tags.append(t)
 
 	print "Syntactic Groupping " + r.open_data_portal.url
@@ -449,6 +465,7 @@ def ProcessRoundTags(r):
 
 			meanings = set(meanings) #remove duplicates
 #			print t.display_name
+			t.tagmeaning_set.all().delete()	
 			for m in meanings:
 #				print ">>" + m
 				TagMeaning(tag = t,meaning = m).save()
@@ -919,7 +936,7 @@ def MergeGroups(g1,g2,action='show'):
 
 def HarvestDatasetDescriptions():
 
-	rounds = LoadRound.objects.filter(success=1, roundn =1, id__gt = 6)
+	rounds = LoadRound.objects.filter(success=1, roundn =1, id = 85)
 
 	print "getting dataset descriptions"
 
@@ -988,9 +1005,9 @@ def HarvestDatasetDescriptions():
 #			break
 
 
-def HarvestDatasetDescriptions2():
+def HarvestDatasetDescriptions2(roundn):
 
-	datasets = Dataset.objects.filter(description = None, load_round_id = 147)
+	datasets = Dataset.objects.filter(load_round_id = roundn)
 
 	for d in datasets:
 		url = d.load_round.open_data_portal.url + '/api/3/action/package_search?fq=id:' + d.ckan_id
@@ -1065,3 +1082,14 @@ def ManualReconcile():
 #failing examples: health-care not assigned to health care
 # PROCUREMENT not assigned to public procurement
 #tags containing - in the begging also failing
+
+def AssocTagGlobalTag(load_round_id):
+
+	tags = Tag.objects.filter(load_round_id = load_round_id)
+	for t in tags:
+		for m in t.tagmeaning_set.all():
+			gts = GlobalTag.objects.filter(uri = m.meaning)
+			for gt in gts:
+				print gt
+				gt.tags.add(t)
+				gt.save()
