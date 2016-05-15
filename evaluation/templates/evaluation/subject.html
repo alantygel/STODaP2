@@ -1,0 +1,22 @@
+{% extends 'evaluation/base.html' %}
+
+{% block content %}
+
+<h1>{{ subject.id }}</h1>
+
+<form action="{% url 'subject_edit' %}" method="POST">
+{% csrf_token %}
+<ul>
+{% for da in subject.datasetanswer_set.all %}
+	<li>{{ da.task }} - {{ da.search_method }}</li>
+	<ul>
+		{% for answer in da.answer_set.all %}
+			<li><input type="checkbox" name="{{answer.id}}" value="1" {% if answer.confirmed %}checked="True"{% endif %} />{{ answer.url }}</li>
+		{% endfor %}
+	</ul>
+{% endfor %}
+</ul>
+<input type="hidden" name="s_id" value="{{ subject.id }}">
+<input type="submit">
+</form>
+{% endblock content %}

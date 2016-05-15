@@ -3,11 +3,13 @@ from django.http import HttpResponse
 from django.template import loader
 from random import shuffle
 import time    
+from django.views import generic
 
 from .models import Subject
 from .models import Task
 from .models import SearchMethod
 from .models import DatasetAnswer
+from .models import Answer
 
 def index(request):
 	template = loader.get_template('evaluation/index.html')
@@ -97,3 +99,41 @@ def finish(request):
 
 	template = loader.get_template('evaluation/thankyou.html')
 	return HttpResponse(template.render(None,request))
+
+#### RESULTS #####
+
+def quest_answers(request):
+	subjects = Subject.objects.all()
+	tasks = Task.objects.all()
+	search_methods = SearchMethod.objects.all()
+	dataset_answers = DatasetAnswer.objects.all()
+	context = {
+		'subjects' : subjects,
+		'search_methods' : search_methods,
+		'tasks' : tasks,
+		'dataset_answers' : dataset_answers
+		}
+	template = loader.get_template('evaluation/quest_answers.html')
+	return HttpResponse(template.render(context,request))
+
+class SubjectDetailView(generic.DetailView):
+	model = Subject
+	template_name = 'evaluation/subject.html'
+
+def subject_edit(request):
+	answers = Answer.objects.filter(dataset_answer__subject_id = request.POST['s_id'])
+
+	for a in answers:
+		try:
+			v = request.POST[str(a.id)]
+			a.confirmed = True
+		except:
+			a.confirmed = False
+		a.save()
+	subjects = Subject.objects.all()
+	context = {
+		'subjects' : subjects
+	}
+
+	template = loader.get_template('evaluation/subjects.html')
+	return HttpResponse(template.render(context,request))

@@ -1,0 +1,13 @@
+{% extends 'evaluation/base.html' %}
+
+{% block content %}
+
+<h1>Subjects</h1>
+
+<ul>
+{% for s in subjects %}
+	<li><a href="{% url 'subject' s.id %}">{{ s.id }} >> {{ s.accepted_answers}}</li>
+{% endfor %}
+</ul>
+
+{% endblock content %}

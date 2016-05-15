@@ -1,0 +1,89 @@
+{% extends 'evaluation/base.html' %}
+{% load class_tag %}
+
+{% block content %}
+
+<h1>Entry and Finish Questionnaire</h1>
+
+<table class="subject_answers">
+    <colgroup>
+       <col span="1" style="width: 5%;">
+       <col span="1" style="width: 5%;">
+       <col span="1" style="width: 5%;">
+       <col span="1" style="width: 5%;">
+       <col span="1" style="width: 5%;">
+       <col span="1" style="width: 5%;">
+       <col span="1" style="width: 5%;">
+       <col span="1" style="width: 13%;">
+       <col span="1" style="width: 13%;">
+       <col span="1" style="width: 50%;">
+    </colgroup>
+<tr>
+<th>ID</th>
+<th>age</th>
+<th>internet ability</th>
+<th>data ability</th>
+<th>opendata ability</th>
+<th>usefulness</th>
+<th>usability</th>
+<th>average TCT</th>
+<th>Accepted answers</th>
+<th>comments</th>
+</tr>
+{% for s in subjects %}
+<tr>
+<td>{{ s.id }}</td>
+<td>{{ s.age }}</td>
+<td>{{ s.internet_ability }}</td>
+<td>{{ s.data_ability }}</td>
+<td>{{ s.opendata_ability }}</td>
+<td>{{ s.usefulness }}</td>
+<td>{{ s.usability }}</td>
+<td>{{ s.average_time.0 }} +/- {{ s.average_time.1 }}</td>
+<td>{{ s.accepted_answers }}</td>
+</tr>
+{% endfor %}
+</table>
+
+<h1>Task Completion Time (s)</h1>
+
+<table class="subject_answers">
+	<tr>
+		<th></th>
+		{% for t in tasks %}
+			<th>{{t.title}}</th>
+		{% endfor %}
+		<th>Average and Standard Deviation</th>
+		<th>Accepted Answers (%)</th>
+	</tr>
+	{% for sm in search_methods %}
+	<tr>
+		<th>{{sm.title}}</th>
+		{% for t in tasks %}
+		<td>
+			{% for da in dataset_answers %}
+				{% if da.task_id == t.id and da.search_method_id == sm.id %}
+					{{ da.time }}
+				{% endif %}
+			{% endfor %}
+		</td>
+		{% endfor %}
+		<td>{{sm.average_time.0}} +/- {{ sm.average_time.1 }}</td>
+		<td>{{sm.accepted_answers}} </td>
+	</tr>
+	{% endfor %}
+	<tr>
+		<th>Average and Standard Deviation</th>
+		{% for t in tasks %}
+			<td> {{t.average_time.0}} +/- {{ t.average_time.1 }}</td>
+		{% endfor %}
+	</tr>
+	<tr>
+		<th>Accepted Answers (%)</th>
+		{% for t in tasks %}
+			<td> {{t.accepted_answers}}</td>
+		{% endfor %}
+	</tr>
+</table>
+
+{% endblock content %}
