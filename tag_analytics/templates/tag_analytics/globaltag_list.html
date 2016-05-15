@@ -4,6 +4,8 @@
 
 {% block content %}
 
+{% print_time %}
+
 {% block breadcrumb %}
 	<a href="{% url 'index' %}">Home</a> >
 	Global Tags</a>
@@ -13,7 +15,7 @@
 
     <ul class="globaltag_list_alpha">
     {% for char in globaltag_list.chars %}
-        <li><span style="font-size: 200%; padding-right: 10px">{{ char|upper }}</span>
+        <li><div class="alpha">{{ char|upper }}</div>
         {% resolve char globaltag_list as value %}
         {% for gt in value %}
             <a href="{% url 'globaltag' gt.id %}">{{ gt.name }}</a> ({{gt.dataset_count }})
@@ -26,5 +28,5 @@
 {% else %}
     <p>No tags found!!! :(</p>
 {% endif %}
-
+{% print_time %}
 {% endblock %}
