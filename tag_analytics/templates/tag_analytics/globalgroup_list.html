@@ -16,7 +16,7 @@
         {% if value.count > 0 %}
             <li><div class="alpha">{{ char|upper }}</div>
             {% for gg in value %}
-                <a href="{% url 'globalgroup' gg.id %}">{{ gg.name }}</a> , 
+                <a href="{% url 'globalgroup' gg.id %}">{{ gg.name }} ({{ gg.number_of_datasets }})</a> , 
             {% endfor %}
             </li>
         {% endif %}

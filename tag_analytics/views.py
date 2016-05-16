@@ -80,7 +80,7 @@ class MySearchSpecView(SearchView):
 
 class FacetedSearchView(BaseFacetedSearchView):
 	form_class = forms.MyFacetedSearchForm
-	facet_fields = ['language', 'portal','globaltags','globalgroups']
+	facet_fields = ['language', 'portal','globaltags','globalgroups','country']
 	template_name = 'search/faceted_search.html'
 	context_object_name = 'page_object'
 	# pprint "view"	
@@ -132,20 +132,17 @@ def globalgroup_list_alpha(request,char):
 
 
 class GlobalTagIndexView(generic.ListView):
-	print time.time()
 	model = GlobalTag
 	template_name = 'tag_analytics/globaltag_list.html'
 	# paginate_by = 30
 	context_object_name = 'globaltag_list'
 
 	def get_queryset(self):
-		print time.time()
 		context = {'chars' : string.ascii_lowercase}
 		for char in string.ascii_lowercase:
 			context[char] = GlobalTag.objects.order_by('name').filter(name__startswith = char)[:5]
-		print time.time()
 		return context
-	print time.time()
+
 
 def globaltag_list_alpha(request,char):
 	gt = GlobalTag.objects.filter(name__startswith = char).order_by('name')

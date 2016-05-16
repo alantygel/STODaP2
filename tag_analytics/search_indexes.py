@@ -21,6 +21,7 @@ class DatasetIndex(indexes.SearchIndex, indexes.Indexable):
 	text = indexes.CharField(document=True, use_template=True)
 	# name = indexes.CharField(model_attr='display_name')
 	language = indexes.CharField(model_attr='get_language',faceted=True)
+	country = indexes.CharField(model_attr='get_country',faceted=True)
 	portal = indexes.CharField(model_attr='get_portal',faceted=True)
 	globaltags = indexes.MultiValueField(model_attr='get_globaltags',faceted=True)
 	globalgroups = indexes.MultiValueField(model_attr='get_globalgroups',faceted=True)

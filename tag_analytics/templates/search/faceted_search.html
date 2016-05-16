@@ -31,33 +31,13 @@
         <dl>
             {% if facets.fields.globaltags %}
                 <dt>Global Tag</dt>
-                {% for f in facets.fields.globaltags|slice:":15" %}
+                {% for f in facets.fields.globaltags|slice:":10" %}
                     {% if f.1 > 0 %}
                         <dd><a href="{{ request.get_full_path }}&amp;selected_facets=globaltags_exact:{{ f.0|urlencode }}">{{ f.0 }}</a> ({{ f.1 }})</dd>
                     {% endif %}
                 {% endfor %}
             {% else %}
-                <p>No author facets.</p>
-            {% endif %}
-            {% if facets.fields.language %}
-                <dt>Language</dt>
-                {% for f in facets.fields.language|slice:":15" %}
-                    {% if f.1 > 0 %}
-                    <dd><a href="{{ request.get_full_path }}&amp;selected_facets=language_exact:{{ f.0|urlencode }}">{{ f.0 }}</a> ({{ f.1 }})</dd>
-                    {% endif %}
-                {% endfor %}
-            {% else %}
-                <p>No author facets.</p>
-            {% endif %}
-            {% if facets.fields.portal %}
-                <dt>Portals</dt>
-                {% for f in facets.fields.portal|slice:":15" %}
-                    {% if f.1 > 0 %}
-                    <dd><a href="{{ request.get_full_path }}&amp;selected_facets=portal_exact:{{ f.0|urlencode }}">{{ f.0 }}</a> ({{ f.1 }})</dd>
-                    {% endif %}
-                {% endfor %}
-            {% else %}
-                <p>No author facets.</p>
+                <p>No global tag facets.</p>
             {% endif %}
             {% if facets.fields.globalgroups %}
                 <dt>Global Groups</dt>
@@ -68,6 +48,36 @@
                 {% endfor %}
             {% else %}
                 <p>No Global Groups facets.</p>
+            {% endif %}
+            {% if facets.fields.language %}
+                <dt>Language</dt>
+                {% for f in facets.fields.language|slice:":15" %}
+                    {% if f.1 > 0 %}
+                    <dd><a href="{{ request.get_full_path }}&amp;selected_facets=language_exact:{{ f.0|urlencode }}">{{ f.0 }}</a> ({{ f.1 }})</dd>
+                    {% endif %}
+                {% endfor %}
+            {% else %}
+                <p>No language facets.</p>
+            {% endif %}
+            {% if facets.fields.portal %}
+                <dt>Portals</dt>
+                {% for f in facets.fields.portal|slice:":15" %}
+                    {% if f.1 > 0 %}
+                    <dd><a href="{{ request.get_full_path }}&amp;selected_facets=portal_exact:{{ f.0|urlencode }}">{{ f.0 }}</a> ({{ f.1 }})</dd>
+                    {% endif %}
+                {% endfor %}
+            {% else %}
+                <p>No portal facets.</p>
+            {% endif %}
+            {% if facets.fields.country %}
+                <dt>Country</dt>
+                {% for f in facets.fields.country|slice:":15" %}
+                    {% if f.1 > 0 %}
+                        <dd><a href="{{ request.get_full_path }}&amp;selected_facets=country_exact:{{ f.0|urlencode }}">{{ f.0 }}</a> ({{ f.1 }})</dd>
+                    {% endif %}
+                {% endfor %}
+            {% else %}
+                <p>No country facets.</p>
             {% endif %}
         </dl>
     </div>

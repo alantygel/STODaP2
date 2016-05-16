@@ -24,7 +24,9 @@ def initialize(request):
 	s = Subject(age = request.POST['age'], 
 			internet_ability = request.POST['internet_ability'], 
 			data_ability = request.POST['data_ability'],
-			opendata_ability = request.POST['open_data_ability'])
+			opendata_ability = request.POST['open_data_ability'],
+			english_proficiency = request.POST['english_proficiency'],)
+
 	tasks = Task.objects.all()
 	tasks_id = map(lambda x: x.id, tasks)
 	search_methods = SearchMethod.objects.all()

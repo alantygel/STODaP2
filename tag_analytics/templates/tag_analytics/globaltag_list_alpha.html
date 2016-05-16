@@ -12,7 +12,7 @@
 {% if globaltag_list %}
 <ul>
 {% for gt in globaltag_list %}
-	<li><a href="{% url 'globaltag' gt.id %}">{{ gt.name }}</a> ({{gt.dataset_count }} datasets): {{gt.description}} </li>
+	<li><a href="{% url 'globaltag' gt.id %}">{{ gt.name }}</a> ({{gt.number_of_datasets }} datasets): {{gt.description}} </li>
 
 {% endfor%}
 </ul>

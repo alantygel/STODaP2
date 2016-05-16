@@ -1,4 +1,7 @@
 {{ object.display_name }}
 {{ object.description }}
 {{ object.get_globaltags }}
+{{ object.get_language }}
+{{ object.get_language_name }}
+{{ object.get_country }}
 

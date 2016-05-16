@@ -9,6 +9,7 @@ class Subject(models.Model):
 	internet_ability = models.IntegerField(null=True,blank=False)
 	data_ability = models.IntegerField(null=True,blank=False)
 	opendata_ability = models.IntegerField(null=True,blank=False)
+	english_proficiency = models.IntegerField(null=True,blank=False, default = 0 )
 	insert_date = models.DateTimeField('insert date', default=datetime.now)
 	usefulness = models.IntegerField(null=True,blank=False)
 	usability = models.IntegerField(null=True,blank=False)

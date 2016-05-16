@@ -1,7 +1,10 @@
 from __future__ import unicode_literals
 from datetime import datetime
 from django.db import models
+from pycountry import countries
+from pycountry import languages
 import numpy
+from urlparse import urlparse
 
 class OpenDataPortal(models.Model):
 	url = models.CharField(max_length=200)
@@ -13,6 +16,20 @@ class OpenDataPortal(models.Model):
 
 	def __str__(self):
 		return self.url
+
+	def get_country(self):
+		url = urlparse(self.url).netloc
+		try:
+			return countries.get(alpha2 = url[-2:].upper()).name
+		except:
+			if url[-4:] == '.gov':
+				return "United States of America"
+			elif url[-2:] == 'uk':
+				return "United Kingdom"
+			elif url[-2:] == 'eu':
+				return "Europe"
+			else:
+				return "Undefined"
 
 class LoadRound(models.Model):
 	open_data_portal = models.ForeignKey(OpenDataPortal, on_delete=models.CASCADE)
@@ -82,19 +99,21 @@ class Group(models.Model):
 class GlobalGroup(models.Model):
 	name = models.CharField(max_length=200)
 	groups = models.ManyToManyField(Group, blank=True)
+	number_of_datasets = models.IntegerField(null = True, blank=True, default = 0)
 	uri = models.CharField(max_length=400, blank=True)
 	insert_date = models.DateTimeField('insert date', default=datetime.now)
 
 	def __unicode__(self):
 		return self.name
 
-	def dataset_count(self):
+	def set_dataset_count(self):
 		datasets = []
 		for g in self.groups.all():
 			datasets += g.dataset_set.all()
 		for gt in self.globaltag_set.all():
 			datasets += gt.datasets()
-		return len(set(datasets))
+		self.number_of_datasets = len(set(datasets))
+		self.save()
 
 	def first_datasets(self):
 		SIZE = 5
@@ -129,6 +148,15 @@ class Dataset(models.Model):
 			return self.load_round.odpmetadata_set.first().locale_default
 		except:
 			return None
+
+	def get_language_name(self):
+		try:
+			return languages.get(iso639_1_code = self.get_language()).name
+		except:
+			return None
+
+	def get_country(self):
+		return self.load_round.open_data_portal.get_country()
 
 	def get_portal(self):
 		return self.load_round.open_data_portal.url
@@ -230,20 +258,24 @@ class GlobalTag(models.Model):
 	related = models.ManyToManyField("self", blank=True,symmetrical=False,related_name='related_set')
 	globalgroups = models.ManyToManyField(GlobalGroup, blank=True)
 	insert_date = models.DateTimeField('insert date', default=datetime.now)
+	number_of_datasets = models.IntegerField(null = True, blank=True, default = 0)
 
 	def __unicode__(self):
 		return self.name
 
-	def dataset_count(self):
+	def set_dataset_count(self):
 		datasets = []
 		for t in self.tags.all():
 			datasets += t.datasets.all()
-		return len(set(datasets))
+		self.number_of_datasets = len(set(datasets))
+		self.save()
 
 	def datasets(self):
 		datasets = []
 		for t in self.tags.all():
 			datasets += t.datasets.all()
 		return datasets
+
+
 
 

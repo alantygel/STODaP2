@@ -7,14 +7,12 @@
 {% csrf_token %}
 <h2>Task {{task_p1}}</h2>
 {# task.title #}
-<h3>{{ task.description }}</h3>
+<div style="width: 80%">
+<p>{{ task.description|safe }}</p>
 
-using 
-
-
-{{ search_method.description|safe }}
-
-<br />
+<p>{{ search_method.description|safe }}
+Use the fields bellow to paste the datasets URL found. We just need an URL pointing to a page where the dataset can be downloaded.
+</p>
 <br />
 
 {% for f in answer_fields %}
@@ -27,5 +25,10 @@ using
 <input type="hidden" name="start_time" value="{{start_time}}" />
 <input type="submit" />
 </form>
+<br />
+<br />
+<em> If needed, you can always use auxiliary tools as translators and information sources like Wikipedia to help you completing the task. The dataset search should be done as specified above.
+</em>
+</div>
 
 {% endblock content %}
