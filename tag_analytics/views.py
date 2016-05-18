@@ -183,6 +183,7 @@ class GroupDetailView(generic.DetailView):
 
 class GlobalTagDetailView(generic.DetailView):
 	model = GlobalTag
+	# slug_field = 'name'
 	template_name = 'tag_analytics/globaltag.html'
 
 class GlobalGroupDetailView(generic.DetailView):
@@ -193,6 +194,15 @@ class DetailView(generic.DetailView):
 	model = LoadRound
 	template_name = 'tag_analytics/detail.html'
 
+def SemanticTagRdfDetailView(request,pk):
+	template = loader.get_template('tag_analytics/rdf/semantictag.rdf')
+	context = { 'semantictag' : GlobalTag.objects.get(pk = pk)}
+	return HttpResponse(template.render(context,request), content_type = 'application/rdf+xml')
+
+def SemanticGroupRdfDetailView(request,pk):
+	template = loader.get_template('tag_analytics/rdf/semanticgroup.rdf')
+	context = { 'semanticgroup' : GlobalGroup.objects.get(pk = pk)}
+	return HttpResponse(template.render(context,request), content_type = 'application/rdf+xml')
 
 def edit_groups(request):
 	for r in request.POST.getlist('global_group_group'):

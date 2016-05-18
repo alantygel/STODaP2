@@ -4,14 +4,14 @@ from . import views
 
 urlpatterns = [
     url(r'^$', views.IndexView.as_view(), name='index'),
-    url(r'^globalgroups/$', views.GlobalGroupIndexView.as_view(), name='globalgroup_list'),
-    url(r'^globaltags/$', views.GlobalTagIndexView.as_view(), name='globaltag_list'),
-    url(r'^globaltags/(?P<char>[a-z])/$', views.globaltag_list_alpha, name='globaltag_list_alpha'),
-    url(r'^globalgroups/(?P<char>[a-z])/$', views.globalgroup_list_alpha, name='globalgroup_list_alpha'),
+    url(r'^semanticgroup/$', views.GlobalGroupIndexView.as_view(), name='globalgroup_list'),
+    url(r'^semantictag/$', views.GlobalTagIndexView.as_view(), name='globaltag_list'),
+    url(r'^semantictag/(?P<char>[a-z])/$', views.globaltag_list_alpha, name='globaltag_list_alpha'),
+    url(r'^semanticgroup/(?P<char>[a-z])/$', views.globalgroup_list_alpha, name='globalgroup_list_alpha'),
     url(r'^tag/(?P<pk>[0-9]+)/$', views.TagDetailView.as_view(), name='tag'),
     url(r'^group/(?P<pk>[0-9]+)/$', views.GroupDetailView.as_view(), name='group'),
-    url(r'^globaltag/(?P<pk>[0-9]+)/$', views.GlobalTagDetailView.as_view(), name='globaltag'),
-    url(r'^globalgroup/(?P<pk>[0-9]+)/$', views.GlobalGroupDetailView.as_view(), name='globalgroup'),
+    url(r'^semantictag/(?P<pk>[0-9]+)/$', views.GlobalTagDetailView.as_view(), name='globaltag'),
+    url(r'^semanticgroup/(?P<pk>[0-9]+)/$', views.GlobalGroupDetailView.as_view(), name='globalgroup'),
 	url(r'^search_specific/', views.MySearchSpecView.as_view(),name='search_specific'),
 	url(r'^search/?$', views.MySearchView.as_view(), name='search'),
 	url(r'^search/autocomplete/', views.autocomplete,name='autocomplete'),
@@ -31,6 +31,9 @@ urlpatterns = [
     url(r'^(?P<open_data_portal_id>[0-9]+)/load/$', views.load_metadata, name='load'),
     url(r'^load_all/(?P<start>[0-9]+)$', views.load_all, name='load'),
     url(r'^faceted_search/$', views.FacetedSearchView.as_view(), name='faceted_search'),
+
+    url(r'^semantictag/(?P<pk>[0-9]+).rdf$', views.SemanticTagRdfDetailView, name='semantictag_rdf'),
+    url(r'^semanticgroup/(?P<pk>[0-9]+).rdf$', views.SemanticGroupRdfDetailView, name='semanticgroup_rdf'),
 ]
 
     

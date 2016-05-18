@@ -86,6 +86,9 @@ class Group(models.Model):
 	def __unicode__(self):
 		return self.translation if self.translation != None else self.display_name
 
+	def get_url(self):
+		return self.load_round.open_data_portal.url + "/group/" + self.name
+
 	def translated(self):
 		return self.translation if self.translation != None else self.display_name
 
@@ -102,6 +105,7 @@ class GlobalGroup(models.Model):
 	number_of_datasets = models.IntegerField(null = True, blank=True, default = 0)
 	uri = models.CharField(max_length=400, blank=True)
 	insert_date = models.DateTimeField('insert date', default=datetime.now)
+	# slug = models.SlugField(max_length=40, unique = True)
 
 	def __unicode__(self):
 		return self.name
@@ -200,6 +204,9 @@ class Tag(models.Model):
 
 	def __unicode__(self):
 		return self.tagtranslation_set.first().translation if self.tagtranslation_set.count() > 0 else self.display_name
+
+	def get_url(self):
+		return self.load_round.open_data_portal.url + "/dataset?tags=" + self.name
 
 	def get_similar_tags(self,length=50,threshold=.0):
 		srtd = sorted(self.tag_1_set.all(),reverse=True,key=lambda m: m.similarity)

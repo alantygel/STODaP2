@@ -1,5 +1,9 @@
 {% extends 'tag_analytics/base.html' %}
 
+{% block header %}
+  <link rel="alternate" type="application/rdf+xml" href="http://{{ request.get_host }}{% url 'semanticgroup_rdf' globalgroup.id %}"/>
+{% endblock %}
+
 {% block content %}
 
 {% block breadcrumb %}
@@ -7,6 +11,8 @@
 	<a href="{% url 'globalgroup_list' %}">Global Groups</a> > 
 	{{ globalgroup.name }}
 {% endblock %}
+
+<p><a href="{% url 'semanticgroup_rdf' globalgroup.id %}">RDF</a></p>
 
 <h1>{{ globalgroup.name }}</h1>
 <p class="URI">URI: <a href="{{ globalgroup.uri }}">{{ globalgroup.uri }}</a></p>

@@ -1,0 +1,78 @@
+<rdf:RDF 
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
+	xmlns:owl="http://www.w3.org/2002/07/owl#" 
+	xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#" 
+	xmlns:foaf="http://xmlns.com/foaf/0.1/" 
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:stodap="http://stodap.org/ontology/"
+>
+
+	<owl:Ontology rdf:about="http://stodap.org/" dc:title="Semantic Tags for Open Data Portal" dc:description="The STODaP vocabulary is designed to described semantic tags that lift tags in open data portals to the semantic web. It can also be used for other purposes." >
+	</owl:Ontology>
+
+	<!-- Class: stodap:SemanticTag -->
+ 	<rdfs:Class rdf:about="http://stodap.org/SemanticTag" rdfs:label="Semantic Tag" rdfs:comment="A stodap:SemanticTag is a super tag that groups open data portal tags and is connected to a semantic resource on the Linked Open Data Cloud." vs:term_status="stable">
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+		<rdfs:isDefinedBy rdf:resource="http://stodap.org"/>
+	</rdfs:Class>
+
+	<!-- Class: stodap:SemanticGroup -->
+	<rdfs:Class rdf:about="http://stodap.org/SemanticGroup" rdfs:label="Semantic Group" rdfs:comment="A stodap:SemanticGroup is a super group of tags that groups open data portal groups, open data portal tags, and semantic tags. It is connected to a semantic resource on the Linked Open Data Cloud." vs:term_status="stable">
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+		<rdfs:isDefinedBy rdf:resource="http://stodap.org"/>
+	</rdfs:Class>
+
+	<!-- Class: stodap:Group -->
+	<rdfs:Class rdf:about="http://stodap.org/Group" rdfs:label="Group" rdfs:comment="A stodap:Group is a group of datasets that groups open data portal groups" vs:term_status="stable">
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+		<rdfs:isDefinedBy rdf:resource="http://stodap.org"/>
+	</rdfs:Class>
+
+	<!-- Class: stodap:Tag -->
+	<rdfs:Class rdf:about="http://stodap.org/Tag" rdfs:label="Tag" rdfs:comment="A stodap:Tag is a tag that marks open data portal datasets." vs:term_status="stable">
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+		<rdfs:isDefinedBy rdf:resource="http://stodap.org"/>
+		<owl:equivalentClass rdf:resource="http://www.w3.org/ns/dcat#keyword"/>
+		<owl:equivalentClass rdf:resource="http://purl.org/muto/core#tag"/>
+	</rdfs:Class>
+
+	<!-- Class: stodap:Dataset -->
+	<rdfs:Class rdf:about="http://stodap.org/Dataset" rdfs:label="Dataset" rdfs:comment="A stodap:Dataset is an open data portal dataset, which is tagged by stodap:Tag 's and located in stodap:OpenDataPortal .." vs:term_status="stable">
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+		<rdfs:isDefinedBy rdf:resource="http://stodap.org"/>
+		<owl:equivalentClass rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+	</rdfs:Class>
+
+	<!-- Class: stodap:OpenDataPortal -->
+	<rdfs:Class rdf:about="http://stodap.org/OpenDataPortal" rdfs:label="Open Data Portal" rdfs:comment="A stodap:OpenDataPortal is an open data portal, which holds several stodap:Dataset, stodap:Tag and stodap:Group." vs:term_status="stable">
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+		<rdfs:isDefinedBy rdf:resource="http://stodap.org"/>
+		<owl:equivalentClass rdf:resource="http://www.w3.org/ns/dcat#Catalog"/>
+	</rdfs:Class>
+
+	<rdf:Property rdf:about="http://stodap.org/opendataportal">
+		<rdfs:domain rdf:resource="http://stodap.org/Dataset" />
+		<rdfs:range rdf:resource="http://stodap.org/OpenDataPortal" />
+		<owl:equivalentProperty rdf:resource="http://www.w3.org/ns/dcat#dataset"/>
+	</rdf:Property>
+
+	<rdf:Property rdf:about="http://stodap.org/group">
+		<rdfs:domain rdf:resource="http://stodap.org/Dataset" />
+		<rdfs:domain rdf:resource="http://stodap.org/SemanticGroup" />
+		<rdfs:range rdf:resource="http://stodap.org/Group" />
+	</rdf:Property>
+
+	<rdf:Property rdf:about="http://stodap.org/tag">
+		<rdfs:domain rdf:resource="http://stodap.org/Dataset" />
+		<rdfs:domain rdf:resource="http://stodap.org/SemanticTag" />
+		<rdfs:range rdf:resource="http://stodap.org/Tag" />
+	</rdf:Property>
+
+	<rdf:Property rdf:about="http://stodap.org/semantic_group">
+		<rdfs:domain rdf:resource="http://stodap.org/Dataset" />
+		<rdfs:domain rdf:resource="http://stodap.org/SemanticTag" />
+		<rdfs:range rdf:resource="http://stodap.org/SemanticGroup" />
+	</rdf:Property>
+
+</rdf:RDF>
