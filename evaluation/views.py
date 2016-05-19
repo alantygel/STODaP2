@@ -27,16 +27,31 @@ def initialize(request):
 			opendata_ability = request.POST['open_data_ability'],
 			english_proficiency = request.POST['english_proficiency'],)
 
-	tasks = Task.objects.all()
-	tasks_id = map(lambda x: x.id, tasks)
-	search_methods = SearchMethod.objects.all()
-	search_methods_id = map(lambda x: x.id, search_methods)
+	last = Subject.objects.last()
+	to = last.task_order.split("#")	
+	to = to[1:] + to[:1]
+	# to = to[1:] + to[:1]
+	so = last.search_method_order.split("#")
+	# so = so[1:] + so[:1]
 
-	shuffle(tasks_id)
-	shuffle(search_methods_id)
+	ordering = range(len(so))
+	shuffle(ordering)
 
-	s.task_order = '#'.join([str(i) for i in tasks_id])
-	s.search_method_order = '#'.join([str(i) for i in search_methods_id])
+	tasks_id  = []; search_methods_id = []
+	for i in range(len(so)):
+		tasks_id.append(to[ordering[i]])
+		search_methods_id.append(so[ordering[i]])
+
+	# tasks = Task.objects.all()
+	# tasks_id = map(lambda x: x.id, tasks)
+	# search_methods = SearchMethod.objects.all()
+	# search_methods_id = map(lambda x: x.id, search_methods)
+
+	# shuffle(tasks_id)
+	# shuffle(search_methods_id)
+
+	s.task_order = '#'.join(tasks_id)
+	s.search_method_order = '#'.join(search_methods_id)
 	s.save()
 
 	task = Task.objects.get(id = s.task_order.split('#')[0])
@@ -64,9 +79,13 @@ def show_task(request):
 	search_method = SearchMethod.objects.get(id = s.search_method_order.split('#')[int(task_number)])
 
 	urls = "#".join(request.POST.getlist('url'))
-	t = DatasetAnswer(urls = urls, subject = s, task = task, 
+	t = DatasetAnswer(subject = s, task = task, 
 		search_method = search_method, start_time = start_time, end_time = time.strftime('%Y-%m-%d %H:%M:%S'))
 	t.save()
+
+	for url in request.POST.getlist('url'):
+		a = Answer(url = url, dataset_answer = t)
+		a.save()
 
 	if int(task_number) < 2:
 

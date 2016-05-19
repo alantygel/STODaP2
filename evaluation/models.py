@@ -9,7 +9,7 @@ class Subject(models.Model):
 	internet_ability = models.IntegerField(null=True,blank=False)
 	data_ability = models.IntegerField(null=True,blank=False)
 	opendata_ability = models.IntegerField(null=True,blank=False)
-	english_proficiency = models.IntegerField(null=True,blank=False, default = 0 )
+	english_proficiency = models.IntegerField(null=True,blank=False, default = 0)
 	insert_date = models.DateTimeField('insert date', default=datetime.now)
 	usefulness = models.IntegerField(null=True,blank=False)
 	usability = models.IntegerField(null=True,blank=False)
@@ -69,7 +69,7 @@ class DatasetAnswer(models.Model):
 	subject = models.ForeignKey(Subject, on_delete=models.CASCADE)
 	search_method = models.ForeignKey(SearchMethod, on_delete=models.CASCADE)
 	task = models.ForeignKey(Task, on_delete=models.CASCADE)
-	urls = models.CharField(max_length=1000)
+	urls = models.CharField(max_length=1000, blank = True, null = True)
 	start_time = models.DateTimeField('start time',null=False,blank=False,default=0)
 	end_time = models.DateTimeField('end time',null=False,blank=False,default=0)
 
