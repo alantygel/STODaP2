@@ -1,6 +1,7 @@
 from django.conf.urls import include, url
 from django.conf.urls import *
 from . import views
+from . import views_rdf
 
 urlpatterns = [
     url(r'^$', views.IndexView.as_view(), name='index'),
@@ -32,10 +33,23 @@ urlpatterns = [
     url(r'^load_all/(?P<start>[0-9]+)$', views.load_all, name='load'),
     url(r'^faceted_search/$', views.FacetedSearchView.as_view(), name='faceted_search'),
 
-    url(r'^semantictag/(?P<pk>[0-9]+).rdf$', views.SemanticTagRdfDetailView, name='semantictag_rdf'),
-    url(r'^semanticgroup/(?P<pk>[0-9]+).rdf$', views.SemanticGroupRdfDetailView, name='semanticgroup_rdf'),
+    url(r'^semantictag/(?P<pk>[0-9]+).rdf$', views_rdf.SemanticTagRdfDetailView, name='semantictag_rdf'),
+    url(r'^tag/(?P<pk>[0-9]+).rdf$', views_rdf.TagRdfDetailView, name='tag_rdf'),
+    url(r'^group/(?P<pk>[0-9]+).rdf$', views_rdf.GroupRdfDetailView, name='group_rdf'),
+    url(r'^dataset/(?P<pk>[0-9]+).rdf$', views_rdf.DatasetRdfDetailView, name='dataset_rdf'),
+    url(r'^semanticgroup/(?P<pk>[0-9]+).rdf$', views_rdf.SemanticGroupRdfDetailView, name='semanticgroup_rdf'),
+    url(r'^opendataportal/(?P<pk>[0-9]+).rdf$', views_rdf.OpenDataPortalRdfDetailView, name='opendataportal_rdf'),
+
+    url(r'^semantictag.rdf$', views_rdf.SemanticTagRdfListView, name='semantictags_rdf'),
+    url(r'^tag.rdf$', views_rdf.TagRdfListView, name='tags_rdf'),
+    url(r'^group.rdf$', views_rdf.GroupRdfListView, name='groups_rdf'),
+    url(r'^dataset.rdf$', views_rdf.DatasetRdfListView, name='datasets_rdf'),
+    url(r'^semanticgroup.rdf$', views_rdf.SemanticGroupRdfListView, name='semanticgroups_rdf'),
+    url(r'^opendataportal.rdf$', views_rdf.OpenDataPortalRdfListView, name='opendataportals_rdf'),
+
 ]
 
     
+
 
 

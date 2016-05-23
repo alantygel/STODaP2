@@ -7,6 +7,7 @@ from .models import Coocurrence
 from .models import Group
 from .models import GlobalGroup
 from .models import Dataset
+from .models import OpenDataPortal
 
 import numpy
 from sklearn.metrics.pairwise import cosine_similarity
@@ -777,6 +778,8 @@ def CreateGlobalTags(ontology):
 		tags = TagMeaning.objects.filter(meaning = tm)
 		for t in tags:
 			gt.tags.add(t.tag)
+			for st in t.similar_tags.all():
+				gt.tags.add(st)
 		gt.save
 	
 def SetRelations():
@@ -1092,4 +1095,24 @@ def AssocTagGlobalTag(load_round_id):
 			for gt in gts:
 				print gt
 				gt.tags.add(t)
+				for st in t.similar_tags.all():
+					gt.tags.add(st)
 				gt.save()
+
+def SetMeaningToSimilarTags():
+
+	main_tags = Tag.objects.filter(main_tag = True)
+	for t in main_tags:
+		for gt in t.globaltag_set.all():
+			for st in t.similar_tags.all():
+				gt.tags.add(st)
+				gt.save()
+			
+
+def RemoveTrailOpenDataPortalUrl():
+	oo = OpenDataPortal.objects.all()
+
+	for o in oo:
+		o.url = o.url.strip('/')
+		o.save()
+
