@@ -9,6 +9,7 @@
   xmlns:muto="http://purl.org/muto/core#"
   xmlns:stodap="http://stodap.org/ontology/"
   xmlns:skos="http://www.w3.org/2004/02/skos/core"
+  xmlns:sioc="http://rdfs.org/sioc/ns#"
 >
 
 {% block content %}{% endblock %}

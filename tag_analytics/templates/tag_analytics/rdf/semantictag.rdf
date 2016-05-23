@@ -1,50 +1,7 @@
 {% extends 'tag_analytics/rdf/base.rdf' %}
 
 {% block content %}
-
-<stodap:SemanticTag rdf:about="{{ request.build_absolute_uri }}">
-
-    <dct:description>{{ semantictag.description }}</dct:description>
-    <foaf:homepage rdf:resource="{{ request.build_absolute_uri }}"/>
-    <rdfs:label>{{ semantictag.name }}</rdfs:label>
-    <dct:identifier>{{ semantictag.name }}</dct:identifier>
-    <dct:title>{{ semantictag.name }}</dct:title>
-    <muto:TagMeaning rdf:resource="{{ semantictag.uri }}" />
-
-<!-- Local Tags -->
-{% for tag in semantictag.tags.all %}
-    <stodap:hasLocalTag rdf:resource="{{ tag.get_url }}"/>
-{% endfor %}
-
-<!-- Semantic Groups -->
-{% for sem_group in semantictag.globalgroups.all %}
-    <stodap:belongstoSemanticGroup rdf:resource="http://{{ request.get_host }}{% url 'semanticgroup' sem_group.id %}"/>
-{% endfor %}
-
-<!-- Narrower -->
-{% for n in semantictag.narrower.all %}
-    <skos:narrower rdf:resource="http://{{ request.get_host }}{% url 'semantictag' n.id %}rdf"/>
-{% endfor%}
-
-<!-- <Broader -->
-{% for b in semantictag.broader.all %}
-    <skos:broader rdf:resource="http://{{ request.get_host }}{% url 'semantictag' b.id %}rdf"/>
-{% endfor%}
-
-<!-- Related -->
-{% for r in semantictag.related.all %}
-    <skos:related rdf:resource="http://{{ request.get_host }}{% url 'semantictag' r.id %}"/>
-{% endfor%}
-
-<!-- Datasets -->
-{% for t in semantictag.tags.all %}
-    {% for d in t.datasets.all %}
-    <muto:taggedResource rdf:resource="{{ d.get_url }}"/>
-    {% endfor%}
-{% endfor%}
-
-</stodap:SemanticTag>
-
+    {% include 'tag_analytics/rdf/snippets/semantictag_snippet.rdf' %}
 {% endblock content %}
 
 

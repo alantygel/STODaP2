@@ -1,0 +1,11 @@
+{% extends 'tag_analytics/rdf/base.rdf' %}
+
+{% block content %}
+
+{% for opendataportal in opendataportal_list %}
+{% include 'tag_analytics/rdf/snippets/opendataportal_snippet.rdf' %}
+{% endfor %}
+
+{% endblock content %}
+
+

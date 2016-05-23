@@ -1,0 +1,11 @@
+<stodap:SemanticGroup rdf:about="http://{{ request.get_host }}{% url 'semanticgroup_rdf' semanticgroup.id %}">
+    <rdfs:label>{{ semanticgroup.name }}</rdfs:label>
+    <dct:identifier>{{ semanticgroup.name }}</dct:identifier>
+    <dct:title>{{ semanticgroup.name }}</dct:title>
+    <muto:tagMeaning rdf:resource="{{ semanticgroup.uri }}" />
+<!-- Local Groups -->
+{% for group in semanticgroup.groups.all %}
+    <stodap:group rdf:resource="{{ group.get_url }}"/>{% endfor %}
+    <!-- To access datasets, you must go first through groups, tags and semantics tags -->
+</stodap:SemanticGroup>
+

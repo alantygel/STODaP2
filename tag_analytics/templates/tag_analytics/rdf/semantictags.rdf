@@ -1,0 +1,11 @@
+{% extends 'tag_analytics/rdf/base.rdf' %}
+
+{% block content %}
+
+{% for semantictag in semantictag_list %}
+{% include 'tag_analytics/rdf/snippets/semantictag_snippet.rdf' %}
+{% endfor %}
+
+{% endblock content %}
+
+

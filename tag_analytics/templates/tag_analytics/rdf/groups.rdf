@@ -1,0 +1,11 @@
+{% extends 'tag_analytics/rdf/base.rdf' %}
+
+{% block content %}
+
+{% for group in group_list %}
+{% include 'tag_analytics/rdf/snippets/group_snippet.rdf' %}
+{% endfor %}
+
+{% endblock content %}
+
+

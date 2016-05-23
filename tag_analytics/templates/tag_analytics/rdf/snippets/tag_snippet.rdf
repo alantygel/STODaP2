@@ -1,0 +1,7 @@
+<stodap:Tag rdf:about="http://{{ request.get_host }}{% url 'tag_rdf' tag.id %}">
+    <dct:title>{{ tag.display_name }}</dct:title>
+    <foaf:homepage rdf:resource="{{ tag.get_url }}"/>
+    <rdfs:label>{{ tag.name }}</rdfs:label>    
+</stodap:Tag>
+
+

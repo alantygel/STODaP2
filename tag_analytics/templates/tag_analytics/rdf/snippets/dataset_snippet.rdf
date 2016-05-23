@@ -1,0 +1,13 @@
+<stodap:Dataset rdf:about="http://{{ request.get_host }}{% url 'dataset_rdf' dataset.id %}">
+    <dct:title>{{ dataset.display_name }}</dct:title>
+    <dct:description>{{ dataset.description }}</dct:description>
+    <foaf:homepage rdf:resource="{{ dataset.get_url }}"/>
+    <rdfs:label>{{ dataset.name }}</rdfs:label>    
+    <dct:language>{{ dataset.get_language }}</dct:language>
+    <dct:location>{{ dataset.get_country }}</dct:location>
+    <sioc:has_space rdf:resource="{{ dataset.load_round.open_data_portal.url }}"/>
+    {% for tag in dataset.tag_set.all %}<muto:taggedBy rdf:resource="http://{{ request.get_host }}{% url 'tag_rdf' tag.id %}" />
+    {% endfor%}
+ </stodap:Dataset>
+
+

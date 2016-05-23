@@ -1,7 +1,7 @@
 {% extends 'tag_analytics/rdf/base.rdf' %}
 
 {% block content %}
-    {% include 'tag_analytics/rdf/snippets/semanticgroup_snippet.rdf' %}
+{% include 'tag_analytics/rdf/snippets/tag_snippet.rdf' %}
 {% endblock content %}
 
 
