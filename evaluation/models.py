@@ -2,6 +2,7 @@ from django.db import models
 from datetime import datetime
 from numpy import array
 from numpy import round
+from django.db.models import Q
 	
 class Subject(models.Model):
 
@@ -17,8 +18,8 @@ class Subject(models.Model):
 	task_order = models.CharField(max_length=50,null=True,blank=True)
 	search_method_order = models.CharField(max_length=50,null=True,blank=True)
 
-	def __str__(self):
-		return str(self.id)
+	def __unicode__(self):
+		return str(self.id) + ' - ' + str(self.usefulness) + ' - ' + str(self.usability)
 
 	def average_time(self):
 		d = DatasetAnswer.objects.filter(subject = self)
@@ -28,7 +29,10 @@ class Subject(models.Model):
 	def accepted_answers(self):
 		a = float(len(Answer.objects.filter(dataset_answer__subject = self, confirmed = True)))
 		b = len(Answer.objects.filter(dataset_answer__subject = self))
-		return round(a/b*100)
+		if b:
+			return round(a/b*100)
+		else:
+			return 0
 
 class Task(models.Model):
 	title = models.CharField(max_length=500) 
@@ -36,14 +40,17 @@ class Task(models.Model):
 	answer_fields = models.IntegerField(null=False,blank=False)	
 
 	def average_time(self):
-		d = DatasetAnswer.objects.filter(task = self)
+		d = DatasetAnswer.objects.filter(Q(task = self), ~Q(subject__usability = None))
 		t = array(map(lambda x: x.time(),d))
 		return round(t.mean(),1), round(t.std(),1)
 
 	def accepted_answers(self):
 		a = float(len(Answer.objects.filter(dataset_answer__task = self, confirmed = True)))
-		b = len(Answer.objects.filter(dataset_answer__task = self))
-		return round(a/b*100)
+		b = len(Answer.objects.filter(Q(dataset_answer__task = self), ~Q(dataset_answer__subject__usability = None)))
+		if b:
+			return round(a/b*100)
+		else:
+			return 0
 
 	def __str__(self):
 		return self.title
@@ -56,13 +63,13 @@ class SearchMethod(models.Model):
 		return self.title
 
 	def average_time(self):
-		d = DatasetAnswer.objects.filter(search_method = self)
+		d = DatasetAnswer.objects.filter(Q(search_method = self), ~Q(subject__usability = None))
 		t = array(map(lambda x: x.time(),d))
 		return round(t.mean(),1), round(t.std(),1)
 
 	def accepted_answers(self):
 		a = float(len(Answer.objects.filter(dataset_answer__search_method = self, confirmed = True)))
-		b = len(Answer.objects.filter(dataset_answer__search_method = self))
+		b = len(Answer.objects.filter(Q(dataset_answer__search_method = self), ~Q(dataset_answer__subject__usability = None)))
 		return round(a/b*100)
 
 class DatasetAnswer(models.Model):

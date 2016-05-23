@@ -4,6 +4,7 @@ from django.template import loader
 from random import shuffle
 import time    
 from django.views import generic
+from django.db.models import Q
 
 from .models import Subject
 from .models import Task
@@ -124,10 +125,10 @@ def finish(request):
 #### RESULTS #####
 
 def quest_answers(request):
-	subjects = Subject.objects.all()
+	subjects = Subject.objects.filter(~Q(usability = None))
 	tasks = Task.objects.all()
 	search_methods = SearchMethod.objects.all()
-	dataset_answers = DatasetAnswer.objects.all()
+	dataset_answers = DatasetAnswer.objects.filter(~Q(subject__usability = None))
 	context = {
 		'subjects' : subjects,
 		'search_methods' : search_methods,
@@ -141,6 +142,10 @@ class SubjectDetailView(generic.DetailView):
 	model = Subject
 	template_name = 'evaluation/subject.html'
 
+class SubjectListView(generic.ListView):
+	model = Subject
+	template_name = 'evaluation/subjects.html'
+
 def subject_edit(request):
 	answers = Answer.objects.filter(dataset_answer__subject_id = request.POST['s_id'])
 
@@ -153,7 +158,7 @@ def subject_edit(request):
 		a.save()
 	subjects = Subject.objects.all()
 	context = {
-		'subjects' : subjects
+		'subject_list' : subjects
 	}
 
 	template = loader.get_template('evaluation/subjects.html')
