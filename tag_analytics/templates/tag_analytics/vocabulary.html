@@ -1,0 +1,32 @@
+{% extends 'tag_analytics/base.html' %}
+{% load static %}
+{% block content %}
+  
+  <div id="title">
+    <div class="left"> <a href="http://stodap.org/vocabulary"><img src="{% static "tag_analytics/stodap-logo.png" %}" style="width: 130px; float: left; margin-right: 20px" alt="stodap logo" /></a></div>
+    <div id="titleText">
+      <h1>Semantic Tags for Open Data Portals Vocabulary (STODaP)</h1>
+      <h2>Specification of STODaP Core - 23 May 2016</h2>
+    </div>
+    <div class="cleaner"></div>
+  </div>
+  <hr />
+  <dl>
+    <dt>Namespace URI:</dt>
+    <dd><a href="http://stodap.org/vocabulary">http://stodap.org/vocabulary</a></dd>
+    <dt>Latest version:</dt>
+    <dd><a href="http://stodap.org/vocabulary">Version 1.0</a> - (<a href="http://stodap.org/vocabulary.rdf">RDF/XML</a>, <a href="http://stodap.org/vocabulary/">HTML</a>)</dd>
+    <dt>Last update:</dt>
+    <dd>2016-05-23</dd>
+    <dt>Author:</dt>
+    <dd>Alan Tygel</dd>
+  </dl>
+  <hr />
+  <h3>Schema</h3>
+  <img src="{% static "tag_analytics/stodap_vocabulary.png" %}" height="400px" alt="Vocabulary"/>
+  <h3>Abstract</h3>
+  <p>The STODaP vocabulary is aimed to describe resources curated by the STODaP approach, namely Semantic Tags and Semantic Groups, and link them though DCAT and MUTO to resources located at Open Data Portals. </p>
+
+
+
+{% endblock content %}

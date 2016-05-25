@@ -13,6 +13,10 @@ from .models import Dataset
 
 from django.db.models import Q
 
+def VocabularyRDFView(request):
+	template = loader.get_template('tag_analytics/rdf/stodap.rdf')
+	return HttpResponse(template.render(None,request), content_type = 'application/rdf+xml')
+
 def SemanticTagRdfDetailView(request,pk):
 	template = loader.get_template('tag_analytics/rdf/semantictag.rdf')
 	context = { 'semantictag' : GlobalTag.objects.get(pk = pk)}
@@ -50,7 +54,7 @@ def SemanticTagRdfListView(request):
 
 def TagRdfListView(request):
 	template = loader.get_template('tag_analytics/rdf/tags.rdf')
-	context = { 'tag_list' : Tag.objects.all()[:10000]}
+	context = { 'tag_list' : Tag.objects.all()}
 	return HttpResponse(template.render(context,request), content_type = 'application/rdf+xml')
 
 def GroupRdfListView(request):
@@ -60,7 +64,7 @@ def GroupRdfListView(request):
 
 def DatasetRdfListView(request):
 	template = loader.get_template('tag_analytics/rdf/datasets.rdf')
-	context = { 'dataset_list' : Dataset.objects.all()[:10000]}
+	context = { 'dataset_list' : Dataset.objects.all()[0:1000]}
 	return HttpResponse(template.render(context,request), content_type = 'application/rdf+xml')
 
 def SemanticGroupRdfListView(request):

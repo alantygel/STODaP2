@@ -109,6 +109,10 @@ class IndexView(generic.ListView):
 		}
 		return context
 
+class VocabularyView(generic.ListView):
+	template_name = 'tag_analytics/vocabulary.html'
+	model = Tag
+
 class GlobalGroupIndexView(generic.ListView):
 	model = GlobalGroup
 	template_name = 'tag_analytics/globalgroup_list.html'

@@ -5,6 +5,7 @@ from . import views_rdf
 
 urlpatterns = [
     url(r'^$', views.IndexView.as_view(), name='index'),
+    url(r'^vocabulary/$', views.VocabularyView.as_view(), name='vocabulary'),
     url(r'^semanticgroup/$', views.GlobalGroupIndexView.as_view(), name='globalgroup_list'),
     url(r'^semantictag/$', views.GlobalTagIndexView.as_view(), name='globaltag_list'),
     url(r'^semantictag/(?P<char>[a-z])/$', views.globaltag_list_alpha, name='globaltag_list_alpha'),
@@ -40,6 +41,7 @@ urlpatterns = [
     url(r'^semanticgroup/(?P<pk>[0-9]+).rdf$', views_rdf.SemanticGroupRdfDetailView, name='semanticgroup_rdf'),
     url(r'^opendataportal/(?P<pk>[0-9]+).rdf$', views_rdf.OpenDataPortalRdfDetailView, name='opendataportal_rdf'),
 
+    url(r'^vocabulary.rdf$', views_rdf.VocabularyRDFView, name='vocabulary_rdf'),
     url(r'^semantictag.rdf$', views_rdf.SemanticTagRdfListView, name='semantictags_rdf'),
     url(r'^tag.rdf$', views_rdf.TagRdfListView, name='tags_rdf'),
     url(r'^group.rdf$', views_rdf.GroupRdfListView, name='groups_rdf'),
