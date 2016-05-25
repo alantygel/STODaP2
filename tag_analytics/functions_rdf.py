@@ -1,12 +1,15 @@
 from .models import GlobalTag
 from urllib import urlopen
 
-def genRDF(class_):
+def genRDF(class_,start=0, step=0):
 
-	rdf = urlopen("http://127.0.0.1:8000/" + class_ + ".rdf")
+	if class_ == 'dataset':
+		rdf = urlopen("http://127.0.0.1:8000/" + class_ + "/" + str(start) + "/" + str(step) + "/rdf")
+	else:
+		rdf = urlopen("http://127.0.0.1:8000/" + class_ + ".rdf")
 	rdf = rdf.read()	
 	rdf.splitlines()
-	rdf_file = open( class_ + '.rdf', 'w')
+	rdf_file = open( class_ + "_" + str(start) + '.rdf', 'w')
 	rdf_file.write("".join(rdf))
 	rdf_file.close()
 

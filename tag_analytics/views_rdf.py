@@ -3,6 +3,8 @@ from django.shortcuts import render
 from django.template import loader
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
+from time import time
+
 from .models import OpenDataPortal
 from .models import LoadRound
 from .models import Tag
@@ -62,9 +64,11 @@ def GroupRdfListView(request):
 	context = { 'group_list' : Group.objects.all()}
 	return HttpResponse(template.render(context,request), content_type = 'application/rdf+xml')
 
-def DatasetRdfListView(request):
+def DatasetRdfListView(request,start=0,step=50):
 	template = loader.get_template('tag_analytics/rdf/datasets.rdf')
-	context = { 'dataset_list' : Dataset.objects.all()[0:1000]}
+	end = int(start) + int(step)
+	print end
+	context = { 'dataset_list' : Dataset.objects.all()[start:end]}
 	return HttpResponse(template.render(context,request), content_type = 'application/rdf+xml')
 
 def SemanticGroupRdfListView(request):
