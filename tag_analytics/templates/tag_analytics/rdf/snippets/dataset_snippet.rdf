@@ -1,4 +1,4 @@
-<stodap:Dataset rdf:about="http://{{ request.get_host }}{% url 'dataset_rdf' dataset.id %}">
+<stodap:Dataset rdf:about="{{ vocab_host }}{% url 'dataset_rdf' dataset.id %}">
     <dct:title>{{ dataset.display_name }}</dct:title>
     <dct:description>{{ dataset.description }}</dct:description>
     <foaf:homepage rdf:resource="{{ dataset.get_url }}"/>
@@ -6,8 +6,11 @@
     <dct:language>{{ dataset.get_language }}</dct:language>
     <dct:location>{{ dataset.get_country }}</dct:location>
     <sioc:has_space rdf:resource="{{ dataset.load_round.open_data_portal.url }}"/>
-    {% for tag in dataset.tag_set.all %}<muto:taggedBy rdf:resource="http://{{ request.get_host }}{% url 'tag_rdf' tag.id %}" />
+    {% for tag in dataset.tag_set.all %}<stodap:taggedBy rdf:resource="{{ vocab_host }}{% url 'tag_rdf' tag.id %}" />
+    {% endfor%}
+    {% for group in dataset.groups.all %}<stodap:groupedBy rdf:resource="{{ vocab_host }}{% url 'group_rdf' group.id %}" />
     {% endfor%}
  </stodap:Dataset>
+
 
 

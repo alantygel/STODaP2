@@ -131,11 +131,12 @@ ul#id_models {
 /* facets*/
 #facets {
     float:left;
-    width: 300px;
+    width: 30%
+    min-width: 250px;
 }
 #search_results {
     float:right;
-    width: 900px;
+    width: 70%;
 }
 #wrapper {
     display: inline-block;

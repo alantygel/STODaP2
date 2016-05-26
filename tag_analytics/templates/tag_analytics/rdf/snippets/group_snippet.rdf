@@ -1,4 +1,4 @@
-<stodap:Group rdf:about="http://{{ request.get_host }}{% url 'group_rdf' group.id %}">
+<stodap:Group rdf:about="{{ vocab_host }}{% url 'group_rdf' group.id %}">
     <dct:title>{{ group.display_name }}</dct:title>
     <foaf:homepage rdf:resource="{{ group.get_url }}"/>
     <rdfs:label>{{ group.name }}</rdfs:label>    

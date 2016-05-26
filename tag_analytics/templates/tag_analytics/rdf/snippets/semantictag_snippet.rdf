@@ -1,4 +1,4 @@
-<stodap:SemanticTag rdf:about="http://{{ request.get_host }}{% url 'semantictag_rdf' semantictag.id %}">
+<stodap:SemanticTag rdf:about="{{ vocab_host }}{% url 'semantictag_rdf' semantictag.id %}">
 
     <dct:description>{{ semantictag.description }}</dct:description>
     <rdfs:label>{{ semantictag.name }}</rdfs:label>
@@ -7,17 +7,17 @@
     <muto:tagMeaning rdf:resource="{{ semantictag.uri }}" />
 <!-- Local Tags -->
 {% for tag in semantictag.tags.all %}
-    <stodap:hasTag rdf:resource="http://{{ request.get_host }}{% url 'tag_rdf' tag.id %}"/>{% endfor %}
+    <stodap:hasTag rdf:resource="{{ vocab_host }}{% url 'tag_rdf' tag.id %}"/>{% endfor %}
 <!-- Semantic Groups -->
 {% for sem_group in semantictag.globalgroups.all %}
-    <stodap:sGrouppedBy rdf:resource="http://{{ request.get_host }}{% url 'semanticgroup_rdf' sem_group.id %}"/>{% endfor %}
+    <stodap:sGrouppedBy rdf:resource="{{ vocab_host }}{% url 'semanticgroup_rdf' sem_group.id %}"/>{% endfor %}
 <!-- Narrower -->
 {% for n in semantictag.narrower.all %}
-    <skos:narrower rdf:resource="http://{{ request.get_host }}{% url 'semantictag_rdf' n.id %}"/>{% endfor%}
+    <skos:narrower rdf:resource="{{ vocab_host }}{% url 'semantictag_rdf' n.id %}"/>{% endfor%}
 <!-- <Broader -->
 {% for b in semantictag.broader.all %}
-    <skos:broader rdf:resource="http://{{ request.get_host }}{% url 'semantictag_rdf' b.id %}"/>{% endfor%}
+    <skos:broader rdf:resource="{{ vocab_host }}{% url 'semantictag_rdf' b.id %}"/>{% endfor%}
 <!-- Related -->
 {% for r in semantictag.related.all %}
-    <skos:related rdf:resource="http://{{ request.get_host }}{% url 'semantictag_rdf' r.id %}"/>{% endfor%}
+    <skos:related rdf:resource="{{ vocab_host }}{% url 'semantictag_rdf' r.id %}"/>{% endfor%}
 </stodap:SemanticTag>

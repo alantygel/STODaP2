@@ -1,4 +1,4 @@
-<stodap:OpenDataPortal rdf:about="http://{{ request.get_host }}{% url 'opendataportal_rdf' opendataportal.id %}">    
+<stodap:OpenDataPortal rdf:about="{{ vocab_host }}{% url 'opendataportal_rdf' opendataportal.id %}">  
     <foaf:homepage rdf:resource="{{ opendataportal.url }}"/>
     <dct:title>{{opendataportal.loadround_set.last.odpmetadata_set.first.site_title}}</dct:title>
     <rdfs:label>{{opendataportal.loadround_set.last.odpmetadata_set.first.site_title}}</rdfs:label>
