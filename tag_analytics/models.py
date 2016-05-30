@@ -19,6 +19,8 @@ class OpenDataPortal(models.Model):
 
 	def get_country(self):
 		url = urlparse(self.url).netloc
+		if url[-2:] == 'io':
+				return "Undefined"
 		try:
 			return countries.get(alpha2 = url[-2:].upper()).name
 		except:
@@ -27,7 +29,7 @@ class OpenDataPortal(models.Model):
 			elif url[-2:] == 'uk':
 				return "United Kingdom"
 			elif url[-2:] == 'eu':
-				return "Europe"
+				return "Europe"	
 			else:
 				return "Undefined"
 

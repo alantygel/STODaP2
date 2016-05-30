@@ -21,10 +21,10 @@ class Subject(models.Model):
 	def __unicode__(self):
 		return str(self.id) + ' - ' + str(self.usefulness) + ' - ' + str(self.usability)
 
-	def average_time(self):
+	def total_time(self):
 		d = DatasetAnswer.objects.filter(subject = self)
-		t = array(map(lambda x: x.time(),d))
-		return round(t.mean(),1), round(t.std(),1)
+		t = sum(map(lambda x: x.time(),d))
+		return t#round(t.mean(),1), round(t.std(),1)
 
 	def accepted_answers(self):
 		a = float(len(Answer.objects.filter(dataset_answer__subject = self, confirmed = True)))
@@ -40,13 +40,17 @@ class Task(models.Model):
 	answer_fields = models.IntegerField(null=False,blank=False)	
 
 	def average_time(self):
-		d = DatasetAnswer.objects.filter(Q(task = self), ~Q(subject__usability = None))
+		d = DatasetAnswer.objects.filter(task = self)
+		d = filter(lambda x: x.valid() == True, d)
 		t = array(map(lambda x: x.time(),d))
 		return round(t.mean(),1), round(t.std(),1)
 
 	def accepted_answers(self):
-		a = float(len(Answer.objects.filter(dataset_answer__task = self, confirmed = True)))
-		b = len(Answer.objects.filter(Q(dataset_answer__task = self), ~Q(dataset_answer__subject__usability = None)))
+		a = Answer.objects.filter(dataset_answer__task = self, confirmed = True)
+		b = Answer.objects.filter(dataset_answer__task = self)
+		a = float(len(filter(lambda x: x.dataset_answer.valid() == True,a)))
+		b = len(filter(lambda x: x.dataset_answer.valid() == True,b))
+
 		if b:
 			return round(a/b*100)
 		else:
@@ -63,13 +67,17 @@ class SearchMethod(models.Model):
 		return self.title
 
 	def average_time(self):
-		d = DatasetAnswer.objects.filter(Q(search_method = self), ~Q(subject__usability = None))
+		d = DatasetAnswer.objects.filter(search_method = self)
+		d = filter(lambda x: x.valid() == True, d)
 		t = array(map(lambda x: x.time(),d))
 		return round(t.mean(),1), round(t.std(),1)
 
 	def accepted_answers(self):
-		a = float(len(Answer.objects.filter(dataset_answer__search_method = self, confirmed = True)))
-		b = len(Answer.objects.filter(Q(dataset_answer__search_method = self), ~Q(dataset_answer__subject__usability = None)))
+		a = Answer.objects.filter(dataset_answer__search_method = self, confirmed = True)
+		b = Answer.objects.filter(dataset_answer__search_method = self)
+		a = float(len(filter(lambda x: x.dataset_answer.valid() == True,a)))
+		b = len(filter(lambda x: x.dataset_answer.valid() == True,b))
+
 		return round(a/b*100)
 
 class DatasetAnswer(models.Model):
@@ -85,6 +93,18 @@ class DatasetAnswer(models.Model):
 
 	def time(self):
 		return (self.end_time - self.start_time).seconds
+
+	def valid(self):
+		if (self.accepted_answers() > 0) and (self.time() < 10000):
+			return True
+		else:
+			return False
+
+	def accepted_answers(self):
+		a = float(len(Answer.objects.filter(dataset_answer = self, confirmed = True)))
+		b = len(Answer.objects.filter(dataset_answer = self))
+		return round(a/b*100)
+
 
 class Answer(models.Model):
 	url = models.CharField(max_length=1000,null=True,blank=True,default=0)

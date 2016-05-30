@@ -5,6 +5,7 @@ from random import shuffle
 import time    
 from django.views import generic
 from django.db.models import Q
+from numpy import array
 
 from .models import Subject
 from .models import Task
@@ -126,10 +127,29 @@ def finish(request):
 
 def quest_answers(request):
 	subjects = Subject.objects.filter(~Q(usability = None))
+	subjects = filter(lambda x: x.accepted_answers() > 0, subjects)
+	av_age  = round(array(map(lambda x: x.age, subjects)).mean(),1)
+	av_internet  = round(array(map(lambda x: x.internet_ability, subjects)).mean(),1)
+	av_data_ability  = round(array(map(lambda x: x.data_ability, subjects)).mean(),1)
+	av_opendata_ability  = round(array(map(lambda x: x.opendata_ability, subjects)).mean(),1)
+	av_usefulness  = round(array(map(lambda x: x.usefulness, subjects)).mean(),1)
+	av_usability  = round(array(map(lambda x: x.usability, subjects)).mean(),1)
+	av_TCT  = round(array(map(lambda x: x.total_time(), subjects)).mean(),1)
+	av_accepted  = round(array(map(lambda x: x.accepted_answers(), subjects)).mean(),1)
+	
 	tasks = Task.objects.all()
 	search_methods = SearchMethod.objects.all()
-	dataset_answers = DatasetAnswer.objects.filter(~Q(subject__usability = None))
+	dataset_answers = DatasetAnswer.objects.all()#filter(~Q(subject__usability = None))
+	dataset_answers = filter(lambda x: x.valid() == True, dataset_answers)
 	context = {
+		'av_age' : av_age,
+		'av_internet' : av_internet,
+		'av_data_ability': av_data_ability,
+		'av_opendata_ability' : av_opendata_ability,
+		'av_usefulness' : av_usefulness,
+		'av_usability' : av_usability,
+		'av_TCT' : av_TCT,
+		'av_accepted' : av_accepted,
 		'subjects' : subjects,
 		'search_methods' : search_methods,
 		'tasks' : tasks,

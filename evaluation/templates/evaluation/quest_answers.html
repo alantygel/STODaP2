@@ -14,9 +14,10 @@
        <col span="1" style="width: 5%;">
        <col span="1" style="width: 5%;">
        <col span="1" style="width: 5%;">
+       <col span="1" style="width: 5%;">
        <col span="1" style="width: 13%;">
        <col span="1" style="width: 13%;">
-       <col span="1" style="width: 50%;">
+       <col span="1" style="width: 45%;">
     </colgroup>
 <tr>
 <th>ID</th>
@@ -24,6 +25,7 @@
 <th>internet ability</th>
 <th>data ability</th>
 <th>opendata ability</th>
+<th>english</th>
 <th>usefulness</th>
 <th>usability</th>
 <th>average TCT</th>
@@ -37,12 +39,26 @@
 <td>{{ s.internet_ability }}</td>
 <td>{{ s.data_ability }}</td>
 <td>{{ s.opendata_ability }}</td>
+<td>{{ s.english_proficiency }}</td>
 <td>{{ s.usefulness }}</td>
 <td>{{ s.usability }}</td>
-<td>{{ s.average_time.0 }} +/- {{ s.average_time.1 }}</td>
+<td>{{ s.total_time }}</td>
 <td>{{ s.accepted_answers }}</td>
+<td>{{ s.comments }}</td>
 </tr>
 {% endfor %}
+<tr>
+<td> {{ subjects|length }}</td>
+<td>{{ av_age }}</td>
+<td>{{ av_internet }}</td>
+<td>{{ av_data_ability }}</td>
+<td>{{ av_opendata_ability }}</td>
+<td>{{ av_usefulness }}</td>
+<td>{{ av_usability }}</td>
+<td>{{ av_TCT }}</td>
+<td>{{ av_accepted }}</td>
+<td>{{ s.comments }}</td>
+</tr>
 </table>
 
 <h1>Task Completion Time (s)</h1>

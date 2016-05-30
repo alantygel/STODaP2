@@ -23,11 +23,11 @@
     <!-- Begin faceting. -->
 <div id="wrapper">
 <div id="facets">
-    <h2>Filters</h2>
+    <h2>Filters</h2><em>Click on filter to narrow your search.</em>
     <div>
         <dl>
             {% if facets.fields.globaltags %}
-                <dt>Global Tag</dt>
+                <dt>Semantic Tags</dt>
                 {% for f in facets.fields.globaltags|slice:":10" %}
                     {% if f.1 > 0 %}
                         <dd><a href="{{ request.get_full_path }}&amp;selected_facets=globaltags_exact:{{ f.0|urlencode }}">{{ f.0 }}</a> ({{ f.1 }})</dd>
@@ -37,7 +37,7 @@
                 <p>No global tag facets.</p>
             {% endif %}
             {% if facets.fields.globalgroups %}
-                <dt>Global Groups</dt>
+                <dt>Semantic Groups</dt>
                 {% for f in facets.fields.globalgroups|slice:":10" %}
                     {% if f.1 > 0 %}
                     <dd><a href="{{ request.get_full_path }}&amp;selected_facets=globalgroups_exact:{{ f.0|urlencode }}">{{ f.0 }}</a> ({{ f.1 }})</dd>

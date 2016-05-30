@@ -8,7 +8,7 @@
 {% csrf_token %}
 <ul>
 {% for da in subject.datasetanswer_set.all %}
-	<li>{{ da.task }} - {{ da.search_method }}</li>
+	<li>{{ da.task }} - {{ da.search_method }} >> {{da.time}}</li>
 	<ul>
 		{% for answer in da.answer_set.all %}
 			<li><input type="checkbox" name="{{answer.id}}" value="1" {% if answer.confirmed %}checked="True"{% endif %} />{{ answer.url }}</li>
