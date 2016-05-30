@@ -62,9 +62,10 @@ def SemanticTagRdfListView(request):
 				'vocab_host' : settings.VOCAB_HOST}
 	return HttpResponse(template.render(context,request), content_type = 'application/rdf+xml')
 
-def TagRdfListView(request):
+def TagRdfListView(request,start=0,step=50):
 	template = loader.get_template('tag_analytics/rdf/tags.rdf')
-	context = { 'tag_list' : Tag.objects.all(),
+	end = int(start) + int(step)
+	context = { 'tag_list' : Tag.objects.all()[start:end],
 				'vocab_host' : settings.VOCAB_HOST}
 	return HttpResponse(template.render(context,request), content_type = 'application/rdf+xml')
 

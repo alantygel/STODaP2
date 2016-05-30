@@ -43,7 +43,7 @@ urlpatterns = [
 
     url(r'^vocabulary.rdf$', views_rdf.VocabularyRDFView, name='vocabulary_rdf'),
     url(r'^semantictag.rdf$', views_rdf.SemanticTagRdfListView, name='semantictags_rdf'),
-    url(r'^tag.rdf$', views_rdf.TagRdfListView, name='tags_rdf'),
+    url(r'^tag/(?P<start>[0-9]+)/(?P<step>[0-9]+)/rdf$', views_rdf.TagRdfListView, name='tags_rdf'),
     url(r'^group.rdf$', views_rdf.GroupRdfListView, name='groups_rdf'),
     url(r'^dataset/(?P<start>[0-9]+)/(?P<step>[0-9]+)/rdf$', views_rdf.DatasetRdfListView, name='datasets_rdf'),
     url(r'^semanticgroup.rdf$', views_rdf.SemanticGroupRdfListView, name='semanticgroups_rdf'),
