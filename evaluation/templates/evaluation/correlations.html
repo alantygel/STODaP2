@@ -1,0 +1,28 @@
+{% extends 'evaluation/base.html' %}
+{% block content %}
+
+<table>
+<tr>
+	<th>age</th>
+	<th>internet</th>
+	<th>english_proficiency</th>
+	<th>data_ability</th>
+	<th>opendata_ability</th>
+	<th>usefulness</th>
+	<th>usability</th>
+	<th>TCT</th>
+	<th>accepted</th>
+</tr>
+{%for corrs in correlations %}
+	<tr>
+	{%for c in corrs %}
+		<td> &amp; {{c}}</td>
+	{% endfor %}
+	<td>\\ \hline </td></tr>
+{% endfor %}
+
+
+</tr>
+</table>
+
+{% endblock content %}
