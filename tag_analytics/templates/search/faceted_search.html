@@ -28,7 +28,7 @@
         <dl>
             {% if facets.fields.globaltags %}
                 <dt>Semantic Tags</dt>
-                {% for f in facets.fields.globaltags|slice:":3" %}
+                {% for f in facets.fields.globaltags|slice:":10" %}
                     {% if f.1 > 0 %}
                         <dd><a href="{{ request.get_full_path }}&amp;selected_facets=globaltags_exact:{{ f.0|urlencode }}">{{ f.0 }}</a> ({{ f.1 }})</dd>
                     {% endif %}
@@ -38,7 +38,7 @@
             {% endif %}
             {% if facets.fields.globalgroups %}
                 <dt>Semantic Groups</dt>
-                {% for f in facets.fields.globalgroups|slice:":3" %}
+                {% for f in facets.fields.globalgroups|slice:":10" %}
                     {% if f.1 > 0 %}
                     <dd><a href="{{ request.get_full_path }}&amp;selected_facets=globalgroups_exact:{{ f.0|urlencode }}">{{ f.0 }}</a> ({{ f.1 }})</dd>
                     {% endif %}
@@ -48,7 +48,7 @@
             {% endif %}
             {% if facets.fields.language %}
                 <dt>Language</dt>
-                {% for f in facets.fields.language|slice:":3" %}
+                {% for f in facets.fields.language|slice:":10" %}
                     {% if f.1 > 0 %}
                     <dd><a href="{{ request.get_full_path }}&amp;selected_facets=language_exact:{{ f.0|urlencode }}">{{ f.0 }}</a> ({{ f.1 }})</dd>
                     {% endif %}
@@ -58,7 +58,7 @@
             {% endif %}
             {% if facets.fields.portal %}
                 <dt>Portals</dt>
-                {% for f in facets.fields.portal|slice:":3" %}
+                {% for f in facets.fields.portal|slice:":10" %}
                     {% if f.1 > 0 %}
                     <dd><a href="{{ request.get_full_path }}&amp;selected_facets=portal_exact:{{ f.0|urlencode }}">{{ f.0 }}</a> ({{ f.1 }})</dd>
                     {% endif %}
@@ -68,7 +68,7 @@
             {% endif %}
             {% if facets.fields.country %}
                 <dt>Country</dt>
-                {% for f in facets.fields.country|slice:":3" %}
+                {% for f in facets.fields.country|slice:":10" %}
                     {% if f.1 > 0 %}
                         <dd><a href="{{ request.get_full_path }}&amp;selected_facets=country_exact:{{ f.0|urlencode }}">{{ f.0 }}</a> ({{ f.1 }})</dd>
                     {% endif %}
