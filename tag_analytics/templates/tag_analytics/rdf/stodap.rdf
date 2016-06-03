@@ -5,7 +5,7 @@
 	xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#" 
 	xmlns:foaf="http://xmlns.com/foaf/0.1/" 
 	xmlns:dc="http://purl.org/dc/elements/1.1/"
-	xmlns:stodap="http://stodap.org/ontology/"
+	xmlns:stodap="http://stodap.org/"
 >
 
 	<owl:Ontology rdf:about="http://stodap.org/" dc:title="Semantic Tags for Open Data Portal" dc:description="The STODaP vocabulary is designed to described semantic tags that lift tags in open data portals to the semantic web. It can also be used for other purposes." >
