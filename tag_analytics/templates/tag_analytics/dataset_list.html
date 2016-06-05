@@ -1,0 +1,36 @@
+{% extends 'tag_analytics/base.html' %}
+{% block content %}
+
+{% block breadcrumb %}
+	<a href="{% url 'index' %}">Home</a> >
+	Datasets</a>
+{% endblock %}
+
+{% if dataset_list %}
+
+<h1>Datasets</h1>
+<ul>
+{% for p in dataset_list %}
+	<li> <a href="{% url 'dataset' p.id %}" >{{ p.url }}</a></li>
+{% endfor %}
+</ul>
+
+	{% if is_paginated %}
+	<div class="pagination">
+		<span class="page-links">
+			{% if page_obj.has_previous %}
+                <a href="{% url 'dataset_list' %}?page={{ page_obj.previous_page_number }}">previous</a>
+            {% endif %}
+            <span class="page-current">
+                Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
+            </span>
+            {% if page_obj.has_next %}
+                <a href="{% url 'dataset_list' %}?page={{ page_obj.next_page_number }}">next</a>
+            {% endif %}
+        </span>
+        </div>
+    {% endif %}
+{% else %}
+    <p>No Dataset found!!! :(</p>
+{% endif %}
+{% endblock %}

@@ -173,6 +173,15 @@ class ODPEditIndexView(generic.ListView):
 	def get_queryset(self):
 		return OpenDataPortal.objects.order_by('url')
 
+class DatasetIndexView(generic.ListView):
+	model = Dataset
+	paginate_by = 200
+	template_name = 'tag_analytics/dataset_list.html'
+
+class DatasetDetailView(generic.DetailView):
+	model = Dataset
+	template_name = 'tag_analytics/dataset.html'
+
 class ODPDetailView(generic.DetailView):
 	model = OpenDataPortal
 	template_name = 'tag_analytics/opendataportal.html'
