@@ -9,16 +9,18 @@
 {% block breadcrumb %}
 	<a href="{% url 'index' %}">Home</a> >
 	<a href="{% url 'dataset_list' %}">Datasets</a> > 
-	{{ dataset.name }}
+	{{ dataset.display_name }}
 {% endblock %}
 
 <p><a href="{% url 'dataset_rdf' dataset.id %}">RDF</a></p>
 
-<h1>{{ dataset.name }}</h1>
+<h1>{{ dataset.display_name }}</h1>
+<p>{{ dataset.description }}</p>
+<p>URL: <a href="{{ dataset.get_url }} target="_blank" ">{{ dataset.get_url }}</a></p>
 
 <h2>Global Tags</h2>
 <ul class="inline_list">
-{% for gt in dataset.globaltag_set.all %}
+{% for gt in dataset.get_globaltags %}
 	<li><a class="tag globaltag" href="{% url 'globaltag' gt.id %}">{{ gt.name }} ({{gt.tags.count}})</a>
 	</li>
 {% endfor%}

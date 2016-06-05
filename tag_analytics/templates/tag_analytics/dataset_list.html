@@ -11,7 +11,7 @@
 <h1>Datasets</h1>
 <ul>
 {% for p in dataset_list %}
-	<li> <a href="{% url 'dataset' p.id %}" >{{ p.url }}</a></li>
+	<li> <a href="{% url 'dataset' p.id %}" >{{ p.display_name }}</a></li>
 {% endfor %}
 </ul>
 

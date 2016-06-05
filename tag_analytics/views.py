@@ -7,12 +7,7 @@ from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 from datetime import datetime
 
-from .models import OpenDataPortal
-from .models import LoadRound
-from .models import Tag
-from .models import GlobalTag
-from .models import GlobalGroup
-from .models import Group
+from .models import OpenDataPortal, LoadRound, Tag, GlobalTag, GlobalGroup, Group, Dataset
 
 import lib
 import json
