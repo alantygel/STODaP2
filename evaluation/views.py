@@ -5,13 +5,9 @@ from random import shuffle
 import time    
 from django.views import generic
 from django.db.models import Q
-from numpy import array
 
-from .models import Subject
-from .models import Task
-from .models import SearchMethod
-from .models import DatasetAnswer
-from .models import Answer
+from numpy import array, corrcoef, zeros, sort
+from .models import Subject, Task, SearchMethod, DatasetAnswer, Answer
 
 def index(request):
 	template = loader.get_template('evaluation/index.html')
@@ -177,9 +173,52 @@ def subject_edit(request):
 			a.confirmed = False
 		a.save()
 	subjects = Subject.objects.all()
+	vsubjects = Subject.objects.filter(~Q(usability = None))
+	vsubjects = filter(lambda x: x.accepted_answers() > 0, subjects)
 	context = {
-		'subject_list' : subjects
+		'subject_list' : subjects,
+		'valid_subjects' : vsubjects
 	}
 
 	template = loader.get_template('evaluation/subjects.html')
+	return HttpResponse(template.render(context,request))
+
+
+def correlations(request):
+
+	#opendata ability with TCT
+	subjects = Subject.objects.filter(~Q(usability = None))
+	subjects = filter(lambda x: x.accepted_answers() > 50, subjects)
+	opendata_ability  = (array(map(lambda x: x.opendata_ability, subjects)))
+	TCT  = (array(map(lambda x: x.total_time(), subjects)))
+	age  = (array(map(lambda x: x.age, subjects)))
+	internet  = (array(map(lambda x: x.internet_ability, subjects)))
+	data_ability  = (array(map(lambda x: x.data_ability, subjects)))
+	opendata_ability  = (array(map(lambda x: x.opendata_ability, subjects)))
+	english_proficiency  = (array(map(lambda x: x.english_proficiency, subjects)))
+	usefulness  = (array(map(lambda x: x.usefulness, subjects)))
+	usability  = (array(map(lambda x: x.usability, subjects)))
+	accepted  = (array(map(lambda x: x.accepted_answers(), subjects)))
+
+	arrays = []
+	arrays.append(age)
+	arrays.append(internet)
+	arrays.append(english_proficiency)
+	arrays.append(data_ability)
+	arrays.append(opendata_ability)
+	arrays.append(usefulness)
+	arrays.append(usability)
+	arrays.append(TCT)
+	arrays.append(accepted)
+
+	corrs = []
+	for i in range(len(arrays)):
+		corrs.append(zeros(len(arrays)))
+		for j in range(len(arrays)):
+			x = round(corrcoef(arrays[i], arrays[j])[0][1]*100,0)/100
+			corrs[i][j] = x
+
+	context = {'correlations' : corrs}
+
+	template = loader.get_template('evaluation/correlations.html')
 	return HttpResponse(template.render(context,request))

@@ -4,9 +4,12 @@
 
 <h1>Subjects</h1>
 
+<p>Total: {{subject_list|length}}</p>
+<p>Valid: {{valid_subjects|length}}</p>
+
 <ul>
 {% for s in subject_list %}
-	<li><a href="{% url 'subject' s.id %}">{{ s.id }} >> {{ s.accepted_answers}}
+	<li><a href="{% url 'subject' s.id %}">{{ s.id }} >> {{ s.accepted_answers}}</a>
 	{% if s.usability%}
 	{% else %}
 	not finished

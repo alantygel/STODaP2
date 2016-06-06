@@ -14,4 +14,5 @@ urlpatterns = [
 	url(r'^subject/(?P<pk>[0-9]+)/$', views.SubjectDetailView.as_view(), name='subject'),
 	url(r'^subject/$', views.SubjectListView.as_view(), name='subject'),
 	url(r'^subject_edit/$', views.subject_edit, name='subject_edit'),
+	url(r'^correlations/$', views.correlations, name='correlations'),
 ]
