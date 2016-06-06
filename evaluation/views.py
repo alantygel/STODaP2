@@ -158,9 +158,18 @@ class SubjectDetailView(generic.DetailView):
 	model = Subject
 	template_name = 'evaluation/subject.html'
 
-class SubjectListView(generic.ListView):
-	model = Subject
-	template_name = 'evaluation/subjects.html'
+def SubjectListView(request):
+	subjects = Subject.objects.all()
+	vsubjects = Subject.objects.filter(~Q(usability = None))
+	vsubjects = filter(lambda x: x.accepted_answers() > 0, vsubjects)
+	context = {
+		'subject_list' : subjects,
+		'valid_subjects' : vsubjects
+	}
+
+	template = loader.get_template('evaluation/subjects.html')
+	return HttpResponse(template.render(context,request))
+
 
 def subject_edit(request):
 	answers = Answer.objects.filter(dataset_answer__subject_id = request.POST['s_id'])
@@ -174,7 +183,7 @@ def subject_edit(request):
 		a.save()
 	subjects = Subject.objects.all()
 	vsubjects = Subject.objects.filter(~Q(usability = None))
-	vsubjects = filter(lambda x: x.accepted_answers() > 0, subjects)
+	vsubjects = filter(lambda x: x.accepted_answers() > 0, vsubjects)
 	context = {
 		'subject_list' : subjects,
 		'valid_subjects' : vsubjects
