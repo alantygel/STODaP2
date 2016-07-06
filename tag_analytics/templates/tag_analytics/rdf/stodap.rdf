@@ -25,6 +25,7 @@
 
 	<!-- Class: stodap:Group -->
 	<rdfs:Class rdf:about="http://stodap.org/Group" rdfs:label="Group" rdfs:comment="A stodap:Group is a group of datasets that groups open data portal groups" vs:term_status="stable">
+		<rdfs:label xml:lang="EN">Group</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
 		<rdfs:isDefinedBy rdf:resource="http://stodap.org"/>
 	</rdfs:Class>
@@ -38,6 +39,7 @@
 
 	<!-- Class: stodap:Dataset -->
 	<rdfs:Class rdf:about="http://stodap.org/Dataset" rdfs:label="Dataset" rdfs:comment="A stodap:Dataset is an open data portal dataset, which is tagged by stodap:Tag 's and located in stodap:OpenDataPortal .." vs:term_status="stable">
+		<rdfs:label xml:lang="EN">Dataset</rdfs:label>
 		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
 		<rdfs:isDefinedBy rdf:resource="http://stodap.org"/>
 		<owl:equivalentClass rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
@@ -50,27 +52,30 @@
 		<owl:equivalentClass rdf:resource="http://www.w3.org/ns/dcat#Catalog"/>
 	</rdfs:Class>
 
-	<owl:ObjectProperty rdf:about="http://stodap.org/taggedBy">
+	<owl:ObjectProperty rdf:about="http://stodap.org/taggedBy" rdfs:label="taggedBy">	
 		<rdfs:domain rdf:resource="http://stodap.org/Dataset" />
 		<rdfs:range rdf:resource="http://stodap.org/Tag" />
 	</owl:ObjectProperty>
 
-	<owl:ObjectProperty rdf:about="http://stodap.org/grouppedBy">
+	<rdf:Description rdf:about="http://stodap.org/grouppedBy" rdfs:label="grouppedBy">
+		<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+		<rdfs:label xml:lang="EN">grouppedBy</rdfs:label>
 		<rdfs:domain rdf:resource="http://stodap.org/Dataset" />
 		<rdfs:range rdf:resource="http://stodap.org/Group" />
-	</owl:ObjectProperty>
+	</rdf:Description>
 
-	<owl:ObjectProperty rdf:about="http://stodap.org/sGrouppedBy">
+	<owl:ObjectProperty rdf:about="http://stodap.org/sGrouppedBy" rdfs:label="sGrouppedBy">
 		<rdfs:domain rdf:resource="http://stodap.org/SemanticGroup" />
 		<rdfs:range rdf:resource="http://stodap.org/Group" />
 	</owl:ObjectProperty>
 
-	<owl:ObjectProperty rdf:about="http://stodap.org/hasTag">
+	<owl:ObjectProperty rdf:about="http://stodap.org/hasTag" rdfs:label="hasTag">
 		<rdfs:domain rdf:resource="http://stodap.org/SemanticTag" />
 		<rdfs:range rdf:resource="http://stodap.org/Tag" />
 	</owl:ObjectProperty>
 
-	<owl:ObjectProperty rdf:about="http://stodap.org/sGrouppedBy">
+	<owl:ObjectProperty rdf:about="http://stodap.org/sGrouppedBy" rdfs:label="sGrouppedBy">
 		<rdfs:domain rdf:resource="http://stodap.org/SemanticTag" />
 		<rdfs:range rdf:resource="http://stodap.org/SemanticGroup" />
 	</owl:ObjectProperty>

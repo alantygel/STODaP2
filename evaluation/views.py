@@ -6,7 +6,7 @@ import time
 from django.views import generic
 from django.db.models import Q
 
-from numpy import array, corrcoef, zeros, sort
+from numpy import array, corrcoef, zeros, sort, median
 from .models import Subject, Task, SearchMethod, DatasetAnswer, Answer
 
 def index(request):
@@ -122,17 +122,26 @@ def finish(request):
 #### RESULTS #####
 
 def quest_answers(request):
-	subjects = Subject.objects.filter(~Q(usability = None))
+	subjects = Subject.objects.filter(~Q(usability = None))# , Q(opendata_ability__lt = 4))
 	subjects = filter(lambda x: x.accepted_answers() > 0, subjects)
 	av_age  = round(array(map(lambda x: x.age, subjects)).mean(),1)
 	av_internet  = round(array(map(lambda x: x.internet_ability, subjects)).mean(),1)
 	av_data_ability  = round(array(map(lambda x: x.data_ability, subjects)).mean(),1)
 	av_opendata_ability  = round(array(map(lambda x: x.opendata_ability, subjects)).mean(),1)
+	av_english_proficiency  = round(array(map(lambda x: x.english_proficiency, subjects)).mean(),1)
 	av_usefulness  = round(array(map(lambda x: x.usefulness, subjects)).mean(),1)
 	av_usability  = round(array(map(lambda x: x.usability, subjects)).mean(),1)
-	av_TCT  = round(array(map(lambda x: x.total_time(), subjects)).mean(),1)
-	av_accepted  = round(array(map(lambda x: x.accepted_answers(), subjects)).mean(),1)
+	av_TCT  = median(array(map(lambda x: x.total_time(), subjects)))
+	av_accepted  = median(array(map(lambda x: x.accepted_answers(), subjects)))
 	
+	experts = filter(lambda x: x.opendata_ability > 3, subjects)
+	av_usefulness_exp  = round(array(map(lambda x: x.usefulness, experts)).mean(),1),len(experts)
+	av_usability_exp  = round(array(map(lambda x: x.usability, experts)).mean(),1),len(experts)
+
+	nexperts = filter(lambda x: x.opendata_ability < 4, subjects)
+	av_usefulness_nexp  = round(array(map(lambda x: x.usefulness, nexperts)).mean(),1),len(nexperts)
+	av_usability_nexp  = round(array(map(lambda x: x.usability, nexperts)).mean(),1),len(nexperts)
+
 	tasks = Task.objects.all()
 	search_methods = SearchMethod.objects.all()
 	dataset_answers = DatasetAnswer.objects.all()#filter(~Q(subject__usability = None))
@@ -142,6 +151,7 @@ def quest_answers(request):
 		'av_internet' : av_internet,
 		'av_data_ability': av_data_ability,
 		'av_opendata_ability' : av_opendata_ability,
+		'av_english_proficiency' : av_english_proficiency,
 		'av_usefulness' : av_usefulness,
 		'av_usability' : av_usability,
 		'av_TCT' : av_TCT,
@@ -149,8 +159,86 @@ def quest_answers(request):
 		'subjects' : subjects,
 		'search_methods' : search_methods,
 		'tasks' : tasks,
-		'dataset_answers' : dataset_answers
+		'dataset_answers' : dataset_answers,
+		'av_usefulness_nexp' : av_usefulness_nexp,
+		'av_usefulness_exp' : av_usefulness_exp,
+		'av_usability_nexp' : av_usability_nexp,
+		'av_usability_exp' : av_usability_exp,
 		}
+
+	f = open('evaluation/mfiles/results.m', 'w')
+	i = 0
+	for sm in search_methods:
+		for t in tasks:
+			i += 1
+			f.write('tct{' + str(i) + '} = [')
+			for da in dataset_answers:
+				if sm.id == da.search_method.id and t.id == da.task.id:
+					f.write(str(da.time()[0]) + " ")
+			f.write('];\n')	
+	i = 0
+	for sm in search_methods:
+			i += 1
+			f.write('tct_sm{' + str(i) + '} = [')
+			
+			for da in dataset_answers:
+				if sm.id == da.search_method.id:
+					f.write(str(da.time()[0]) + " ")
+			f.write('];\n')	
+
+	i = 0
+	for sm in search_methods:
+		for t in tasks:
+			i += 1
+			f.write('accept{' + str(i) + '} = [')
+			for da in dataset_answers:
+				if sm.id == da.search_method.id and t.id == da.task.id:
+					f.write(str(da.accepted_answers()) + " ")
+			f.write('];\n')	
+	f.close()
+
+	f = open('evaluation/mfiles/results_notnull.m', 'w')
+	i = 0
+	for sm in search_methods:
+		for t in tasks:
+			i += 1
+			f.write('tct{' + str(i) + '} = [')
+			for da in dataset_answers:
+				if sm.id == da.search_method.id and t.id == da.task.id:
+					f.write(str(da.time_notnull()) + " ")
+			f.write('];\n')	
+	i = 0
+	for sm in search_methods:
+			i += 1
+			f.write('tct_sm{' + str(i) + '} = [')
+			for da in dataset_answers:
+				if sm.id == da.search_method.id:
+					f.write(str(da.time_notnull()) + " ")
+			f.write('];\n')	
+
+	f.close()
+
+	f = open('evaluation/mfiles/results_correct.m', 'w')
+	i = 0
+	for sm in search_methods:
+		for t in tasks:
+			i += 1
+			f.write('tct{' + str(i) + '} = [')
+			for da in dataset_answers:
+				if sm.id == da.search_method.id and t.id == da.task.id:
+					f.write(str(da.time_correct()) + " ")
+			f.write('];\n')	
+	i = 0
+	for sm in search_methods:
+			i += 1
+			f.write('tct_sm{' + str(i) + '} = [')
+			for da in dataset_answers:
+				if sm.id == da.search_method.id:
+					f.write(str(da.time_correct()) + " ")
+			f.write('];\n')	
+
+	f.close()
+
 	template = loader.get_template('evaluation/quest_answers.html')
 	return HttpResponse(template.render(context,request))
 
@@ -197,7 +285,7 @@ def correlations(request):
 
 	#opendata ability with TCT
 	subjects = Subject.objects.filter(~Q(usability = None))
-	subjects = filter(lambda x: x.accepted_answers() > 50, subjects)
+	subjects = filter(lambda x: x.accepted_answers() > 30, subjects)
 	opendata_ability  = (array(map(lambda x: x.opendata_ability, subjects)))
 	TCT  = (array(map(lambda x: x.total_time(), subjects)))
 	age  = (array(map(lambda x: x.age, subjects)))
@@ -227,7 +315,29 @@ def correlations(request):
 			x = round(corrcoef(arrays[i], arrays[j])[0][1]*100,0)/100
 			corrs[i][j] = x
 
+	f = open('evaluation/mfiles/correlations.m','w')
+	for i,arr in enumerate(arrays):
+		f.write('vars{' + str(i+1) + '} = [')
+		for a in arr:
+			f.write(str(a) + " ")
+		f.write('];\n')			
+	
 	context = {'correlations' : corrs}
 
 	template = loader.get_template('evaluation/correlations.html')
 	return HttpResponse(template.render(context,request))
+
+def result_tables(request):
+	tasks = Task.objects.all()
+	search_methods = SearchMethod.objects.all()
+	dataset_answers = DatasetAnswer.objects.all()#filter(~Q(subject__usability = None))
+	dataset_answers = filter(lambda x: x.valid() == True, dataset_answers)
+
+	context = {
+		'dataset_answers' : dataset_answers,
+		'search_methods' : search_methods,
+		'tasks' : tasks,
+		}
+	template = loader.get_template('evaluation/result_tables.html')
+	return HttpResponse(template.render(context,request))
+

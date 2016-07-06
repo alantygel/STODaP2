@@ -11,6 +11,7 @@ urlpatterns = [
 	url(r'^show_task/$', views.show_task, name='show_task'),
 
 	url(r'^quest_answers/$', views.quest_answers, name='quest_answers'),
+	url(r'^result_tables/$', views.result_tables, name='result_tables'),
 	url(r'^subject/(?P<pk>[0-9]+)/$', views.SubjectDetailView.as_view(), name='subject'),
 	url(r'^subject/$', views.SubjectListView, name='subject'),
 	url(r'^subject_edit/$', views.subject_edit, name='subject_edit'),

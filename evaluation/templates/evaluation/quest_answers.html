@@ -53,11 +53,25 @@
 <td>{{ av_internet }}</td>
 <td>{{ av_data_ability }}</td>
 <td>{{ av_opendata_ability }}</td>
+<td>{{ av_english_proficiency }}</td>
 <td>{{ av_usefulness }}</td>
 <td>{{ av_usability }}</td>
 <td>{{ av_TCT }}</td>
 <td>{{ av_accepted }}</td>
 <td>{{ s.comments }}</td>
+</tr>
+</table>
+
+
+<table>
+<tr>
+<th>Question</th><th>Global</th><th>Non-experts</th><th>Experts</th>
+</tr>
+<tr>
+<td>Absolute Satisfaction</td><td>{{av_usefulness}}</td><td>{{av_usefulness_nexp}}</td><td>{{av_usefulness_exp}}</td>
+</tr>
+<tr>
+<td>Relative Satisfaction</td><td>{{av_usability}}</td><td>{{av_usability_nexp}}</td><td>{{av_usability_exp}}</td>
 </tr>
 </table>
 

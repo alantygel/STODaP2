@@ -1,0 +1,97 @@
+{% extends 'evaluation/base.html' %}
+
+{% load evaluation_extras %}
+
+{% block content %}
+
+<h1>Task Completion Time (s)</h1>
+
+<table class="subject_answers">
+	<tr>
+		<th></th>
+		{% for t in tasks %}
+			<th>&amp; {{t.title}}</th>
+		{% endfor %}
+		<th>&amp; Aggregate \\ \hline</th>
+	</tr>
+	{% for sm in search_methods %}
+	<tr>
+		<th>{{sm.title}}</th>
+		{% for t in tasks %}
+		<td>	
+			&amp; {% tct sm t 0 %}			
+		</td>
+		{% endfor %}
+		<td>&amp; {% tct sm None 0 %} \\ \hline </td>
+	</tr>
+	{% endfor %}
+	<tr>
+		<th> Aggregate </th>
+		{% for t in tasks %}
+			<td>&amp; {% tct None t 0 %} </td>
+		{% endfor %}
+		<td>&amp; \\ \hline </td>
+	</tr>
+</table>
+
+<h1>Task Completion Time Not Null (s)</h1>
+
+<table class="subject_answers">
+	<tr>
+		<th></th>
+		{% for t in tasks %}
+			<th>&amp; {{t.title}}</th>
+		{% endfor %}
+		<th>&amp; Aggregate \\ \hline</th>
+	</tr>
+	{% for sm in search_methods %}
+	<tr>
+		<th>{{sm.title}}</th>
+		{% for t in tasks %}
+		<td>	
+			&amp; {% tct sm t 1 %}			
+		</td>
+		{% endfor %}
+		<td>&amp; {% tct sm None 1 %} \\ \hline </td>
+	</tr>
+	{% endfor %}
+	<tr>
+		<th> Aggregate </th>
+		{% for t in tasks %}
+			<td>&amp; {% tct None t 1 %} </td>
+		{% endfor %}
+		<td>&amp; \\ \hline </td>
+	</tr>
+</table>
+
+<h1>Task Completion Time Correct (s)</h1>
+
+<table class="subject_answers">
+	<tr>
+		<th></th>
+		{% for t in tasks %}
+			<th>&amp; {{t.title}}</th>
+		{% endfor %}
+		<th>&amp; Aggregate Aggregate /th>
+	</tr>
+	{% for sm in search_methods %}
+	<tr>
+		<th>{{sm.title}}</th>
+		{% for t in tasks %}
+		<td>	
+			&amp; {% tct sm t 2 %}			
+		</td>
+		{% endfor %}
+		<td>&amp; {% tct sm None 2 %} \\ \hline </td>
+	</tr>
+	{% endfor %}
+	<tr>
+		<th> Aggregate </th>
+		{% for t in tasks %}
+			<td>&amp; {% tct None t 2 %} </td>
+		{% endfor %}
+		<td>&amp; \\ \hline </td>
+	</tr>
+</table>
+
+{% endblock content %}

@@ -93,3 +93,27 @@ def OpenDataPortalRdfListView(request):
 	context = { 'opendataportal_list' : OpenDataPortal.objects.all(),
 				'vocab_host' : settings.VOCAB_HOST}
 	return HttpResponse(template.render(context,request), content_type = 'application/rdf+xml')
+
+def PrintOpenDataPortalRdfListView(request):
+	template = loader.get_template('tag_analytics/rdf/opendataportals.rdf')
+	context = { 'opendataportal_list' : OpenDataPortal.objects.all(),
+				'vocab_host' : settings.VOCAB_HOST}
+
+	rdf_file = open( 'opendataportals.rdf', 'w')
+	out = template.render(context,request)
+	rdf_file.write(out.strip().encode('utf-8'))
+	rdf_file.close()
+
+	return HttpResponse('OK')
+
+def PrintTagRdfListView(request):
+	template = loader.get_template('tag_analytics/rdf/tags.rdf')
+	context = { 'tag_list' : Tag.objects.all(),
+				'vocab_host' : settings.VOCAB_HOST}
+
+	rdf_file = open( 'tags.rdf', 'w')
+	out = template.render(context,request)
+	rdf_file.write(out.strip().encode('utf-8'))
+	rdf_file.close()
+
+	return HttpResponse('OK')

@@ -1,9 +1,9 @@
 from .models import GlobalTag
 from urllib import urlopen
 
-def genRDF(class_,start=0, step=0):
+def genRDF(class_,start=0, step=10000):
 
-	if class_ == 'dataset':
+	if class_ == 'dataset' or class_ == 'tag':
 		rdf = urlopen("http://127.0.0.1:8000/" + class_ + "/" + str(start) + "/" + str(step) + "/rdf")
 	else:
 		rdf = urlopen("http://127.0.0.1:8000/" + class_ + ".rdf")
@@ -12,6 +12,7 @@ def genRDF(class_,start=0, step=0):
 	rdf_file = open( class_ + "_" + str(start) + '.rdf', 'w')
 	rdf_file.write("".join(rdf))
 	rdf_file.close()
+
 
 def genSemGroupRDF():
 	gt = GlobalGroup.objects.filter()

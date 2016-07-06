@@ -11,12 +11,7 @@ from .models import OpenDataPortal, LoadRound, Tag, GlobalTag, GlobalGroup, Grou
 
 import lib
 import json
-from functions import CalculateStats
-from functions import CalculateCoocurrenceMatrix
-from functions import LexicalCleaning
-from functions import SyntacticSimilarity
-from functions import ProcessRoundTags
-from functions import AssocTagGlobalTag
+from functions import CalculateStats, CalculateCoocurrenceMatrix, LexicalCleaning, SyntacticSimilarity, ProcessRoundTags, AssocTagGlobalTag
 
 from django.db.models import Q
 from haystack.generic_views import SearchView

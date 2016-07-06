@@ -1,13 +1,4 @@
-from .models import LoadRound
-from .models import Tag
-from .models import GlobalTag
-from .models import TagTranslation
-from .models import TagMeaning
-from .models import Coocurrence
-from .models import Group
-from .models import GlobalGroup
-from .models import Dataset
-from .models import OpenDataPortal
+from .models import LoadRound, Tag, GlobalTag, TagTranslation, TagMeaning, Coocurrence, Group, GlobalGroup, Dataset, OpenDataPortal
 
 import numpy
 from sklearn.metrics.pairwise import cosine_similarity
@@ -18,8 +9,7 @@ import urllib
 import json
 import lib
 import rdflib
-from rdflib import URIRef
-from rdflib import Graph
+from rdflib import URIRef, Graph
 from haystack.query import SearchQuerySet
 
 def MeaningAssocStats():

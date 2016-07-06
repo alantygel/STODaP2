@@ -49,7 +49,10 @@ urlpatterns = [
     url(r'^group.rdf$', views_rdf.GroupRdfListView, name='groups_rdf'),
     url(r'^dataset/(?P<start>[0-9]+)/(?P<step>[0-9]+)/rdf$', views_rdf.DatasetRdfListView, name='datasets_rdf'),
     url(r'^semanticgroup.rdf$', views_rdf.SemanticGroupRdfListView, name='semanticgroups_rdf'),
-    url(r'^opendataportal.rdf$', views_rdf.OpenDataPortalRdfListView, name='opendataportals_rdf'),
+    # url(r'^opendataportal.rdf$', views_rdf.OpenDataPortalRdfListView, name='opendataportals_rdf'),
+
+    url(r'^opendataportal.rdf$', views_rdf.PrintOpenDataPortalRdfListView, name='opendataportals_rdf'),
+    url(r'^tag.rdf$', views_rdf.PrintTagRdfListView, name='tags_rdf'),
 
 ]
 

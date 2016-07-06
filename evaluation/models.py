@@ -1,7 +1,6 @@
 from django.db import models
 from datetime import datetime
-from numpy import array
-from numpy import round
+from numpy import array, median, round
 from django.db.models import Q
 	
 class Subject(models.Model):
@@ -23,7 +22,7 @@ class Subject(models.Model):
 
 	def total_time(self):
 		d = DatasetAnswer.objects.filter(subject = self)
-		t = sum(map(lambda x: x.time(),d))
+		t = sum(map(lambda x: x.time()[0],d))
 		return t#round(t.mean(),1), round(t.std(),1)
 
 	def accepted_answers(self):
@@ -43,7 +42,7 @@ class Task(models.Model):
 		d = DatasetAnswer.objects.filter(task = self)
 		d = filter(lambda x: x.valid() == True, d)
 		t = array(map(lambda x: x.time(),d))
-		return round(t.mean(),1), round(t.std(),1)
+		return median(t), round(t.std(),1)
 
 	def accepted_answers(self):
 		a = Answer.objects.filter(dataset_answer__task = self, confirmed = True)
@@ -70,7 +69,7 @@ class SearchMethod(models.Model):
 		d = DatasetAnswer.objects.filter(search_method = self)
 		d = filter(lambda x: x.valid() == True, d)
 		t = array(map(lambda x: x.time(),d))
-		return round(t.mean(),1), round(t.std(),1)
+		return median(t), round(t.std(),1)
 
 	def accepted_answers(self):
 		a = Answer.objects.filter(dataset_answer__search_method = self, confirmed = True)
@@ -92,10 +91,27 @@ class DatasetAnswer(models.Model):
 		return str(self.subject_id) + " - " + self.search_method.title + " - " + self.task.title
 
 	def time(self):
-		return (self.end_time - self.start_time).seconds
+		if self.answer_set.count() > 0:
+			return round((self.end_time - self.start_time).seconds / self.answer_set.count()), self.answer_set.count()
+		else:
+			return 0,0
+
+	def time_notnull(self):
+		a = float(len(Answer.objects.filter(Q(dataset_answer = self), ~Q(url = ''))))
+		if a > 0:
+			return round((self.end_time - self.start_time).seconds / a),a
+		else:
+			return 0,0
+
+	def time_correct(self):
+		a = float(len(Answer.objects.filter(dataset_answer = self, confirmed = True)))
+		if a > 0:
+			return ((self.end_time - self.start_time).seconds / a), a
+		else:
+			return 0,0			
 
 	def valid(self):
-		if (self.accepted_answers() > 0) and (self.time() < 10000):
+		if (self.subject.usability != None) and (self.time()[0] < 1000) and (self.accepted_answers() > 30):
 			return True
 		else:
 			return False
@@ -103,7 +119,10 @@ class DatasetAnswer(models.Model):
 	def accepted_answers(self):
 		a = float(len(Answer.objects.filter(dataset_answer = self, confirmed = True)))
 		b = len(Answer.objects.filter(dataset_answer = self))
-		return round(a/b*100)
+		if b > 0:
+			return round(a/b*100)
+		else:
+			return 0
 
 
 class Answer(models.Model):
