@@ -5,6 +5,7 @@ from pycountry import countries
 from pycountry import languages
 import numpy
 from urlparse import urlparse
+from urllib import quote_plus
 
 class OpenDataPortal(models.Model):
 	url = models.CharField(max_length=200)
@@ -89,7 +90,7 @@ class Group(models.Model):
 		return self.translation if self.translation != None else self.display_name
 
 	def get_url(self):
-		return self.load_round.open_data_portal.url + "/group/" + self.name
+		return self.load_round.open_data_portal.url + "/group/" + quote_plus(self.name)
 
 	def translated(self):
 		return self.translation if self.translation != None else self.display_name
@@ -168,9 +169,9 @@ class Dataset(models.Model):
 		return self.load_round.open_data_portal.url
 
 	def get_url(self):
-		url = self.load_round.open_data_portal.url + "/dataset/" + self.name
+		url = self.load_round.open_data_portal.url + "/dataset/" + quote_plus(self.name)
 		if self.load_round.open_data_portal.url == "http://publicdata.eu":
-			url = "http://www.europeandataportal.eu/data/en/dataset/" + self.name 
+			url = "http://www.europeandataportal.eu/data/en/dataset/" + quote_plus(self.name)
 		return url
 
 	def get_globaltags(self):
@@ -208,7 +209,7 @@ class Tag(models.Model):
 		return self.tagtranslation_set.first().translation if self.tagtranslation_set.count() > 0 else self.display_name
 
 	def get_url(self):
-		return self.load_round.open_data_portal.url + "/dataset?tags=" + self.name
+		return self.load_round.open_data_portal.url + "/dataset?tags=" + quote_plus(self.name)
 
 	def get_similar_tags(self,length=50,threshold=.0):
 		srtd = sorted(self.tag_1_set.all(),reverse=True,key=lambda m: m.similarity)
