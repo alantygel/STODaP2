@@ -53,6 +53,7 @@ urlpatterns = [
 
     url(r'^opendataportal.rdf$', views_rdf.PrintOpenDataPortalRdfListView, name='opendataportals_rdf'),
     url(r'^tag.rdf$', views_rdf.PrintTagRdfListView, name='tags_rdf'),
+    url(r'^dataset.rdf$', views_rdf.PrintDatasetRdfListView, name='datasets_rdf'),
 
 ]
 

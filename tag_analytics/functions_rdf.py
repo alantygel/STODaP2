@@ -1,4 +1,4 @@
-from .models import GlobalTag
+from .models import GlobalTag, Dataset
 from urllib import urlopen
 
 def genRDF(class_,start=0, step=10000):
@@ -27,4 +27,29 @@ def genSemGroupRDF():
 	rdf_file.write("".join(all_rdf))
 	rdf_file.close()
 
-
+def cleanStr():
+	d = Dataset.objects.filter(id__gt = 439910)
+	for dd in d:
+		if type(dd.description) != type(None):
+			dd.description = dd.description.replace('\x01','')
+			dd.description = dd.description.replace('\x0b','')
+			dd.description = dd.description.replace('\x0d','')
+			dd.description = dd.description.replace('\x04','')
+			dd.description = dd.description.replace('\x10','')
+			dd.description = dd.description.replace('\x13','')
+			dd.description = dd.description.replace('\x16','')
+			dd.description = dd.description.replace('\x17','')
+			dd.description = dd.description.replace('\x1d','')
+		if type(dd.display_name) != type(None):
+			dd.display_name = dd.display_name.replace('\x01','')
+			dd.display_name = dd.display_name.replace('\x0b','')
+			dd.display_name = dd.display_name.replace('\x0d','')
+			dd.display_name = dd.display_name.replace('\x04','')
+			dd.display_name = dd.display_name.replace('\x10','')
+			dd.display_name = dd.display_name.replace('\x13','')
+			dd.display_name = dd.display_name.replace('\x16','')
+			dd.display_name = dd.display_name.replace('\x17','')
+			dd.display_name = dd.display_name.replace('\x1d','')
+      		dd.save()
+		
+# x01, x02, x0c

@@ -117,3 +117,25 @@ def PrintTagRdfListView(request):
 	rdf_file.close()
 
 	return HttpResponse('OK')
+
+def PrintDatasetRdfListView(request):
+	template = loader.get_template('tag_analytics/rdf/datasets.rdf')
+	d = Dataset.objects.all()
+	l = int(len(d)/4)
+	for i in range(2,3):
+		if i != 3:
+			dd = d[i*l:(i*l)+l]
+		else:
+			dd = d[i*l:]
+		print len(dd)
+		context = { 'dataset_list' : dd,
+		'vocab_host' : settings.VOCAB_HOST}
+
+		rdf_file = open( 'datasets_' + str(i) + '.rdf', 'w')
+		out = template.render(context,request)
+		rdf_file.write(out.strip().encode('utf-8'))
+		rdf_file.write('\n')
+
+	rdf_file.close()
+
+	return HttpResponse('OK')
