@@ -14,7 +14,7 @@ import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
+VOCAB_HOST = "http://stodap.org"
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.9/howto/deployment/checklist/
@@ -81,9 +81,9 @@ WSGI_APPLICATION = 'STODaP.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'tag_analytics_dj',
-        'USER': 'root',
-        'PASSWORD': 'lamp123',
+        'NAME': 'STODaP',
+        'USER': 'stodap',
+        'PASSWORD': 'passstodapword',
         'HOST': 'localhost',
     }
 }

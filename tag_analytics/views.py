@@ -348,8 +348,9 @@ def load_metadata(request, open_data_portal_id,rnumber=None):
 		lr.success = 0
 		lr.save()
 		print "Website not available while getting tags"
-		return
-#		raise Http404("Website not available while getting tags")
+		print o.url + '/api/3/action/tag_list?all_fields=True'
+#		return
+		raise Http404("Website not available while getting tags")
 
 
 	if tag_list_response: 
@@ -402,7 +403,7 @@ def load_metadata(request, open_data_portal_id,rnumber=None):
 			lr.success = 0
 			lr.save()
 			print "Website not available while getting datasets"
-			return
+		#	return
 			raise Http404("Website not available while getting datasets")
 
 		if dataset_list_response: 
